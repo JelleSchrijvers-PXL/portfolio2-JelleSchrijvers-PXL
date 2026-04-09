@@ -1,0 +1,10 @@
+{
+  "nav": {
+    "student": "Student",
+    "info": "Info",
+    "work": "Work",
+    "cv": "Resume"
+  },"about": {
+  "text": "My name is Jelle Schrijver and I am a Programming student at PXL University..."
+}
+}
