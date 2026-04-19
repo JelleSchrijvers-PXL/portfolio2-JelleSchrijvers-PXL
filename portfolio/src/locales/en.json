@@ -3,8 +3,17 @@
     "student": "Student",
     "info": "Info",
     "work": "Work",
-    "cv": "Resume"
+    "cv": "Resume",
+    "content": "Content",
+    "aboutme": "About me",
+    "logboek": "Logbook",
+    "ontwikkeling": "Development",
+    "reflectie": "Reflection",
+    "competenties": "Competencies",
+    "activiteiten": "Activities"
   },"about": {
   "text": "My name is Jelle Schrijver and I am a Programming student at PXL University..."
+},"footer": {
+  "backToTop": "Back to top"
 }
 }

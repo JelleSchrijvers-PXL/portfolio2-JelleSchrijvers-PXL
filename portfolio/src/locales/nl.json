@@ -3,8 +3,17 @@
     "student": "Student",
     "info": "Info",
     "work": "Werk",
-    "cv": "CV"
+    "cv": "CV",
+    "content": "Inhoud",
+    "aboutme": "Over mij",
+    "logboek": "Logboek",
+    "ontwikkeling": "Ontwikkeling",
+    "reflectie": "Reflectie",
+    "competenties": "Competenties",
+    "activiteiten": "Activiteiten"
   },"about": {
   "text": "Mijn naam is Jelle Schrijver en ik ben student Graduaat Programmeren aan Hogeschool PXL..."
+},"footer": {
+  "backToTop": "Terug naar boven"
 }
 }
