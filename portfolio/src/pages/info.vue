@@ -1,17 +1,12 @@
 <script setup>
-import Sidenav from '@/components/sidenav.vue';
-import Navbar from '../components/navbar.vue';
-import Footer from '@/components/footer.vue';
-
-
+import Overmij from '@/components/overmij.vue'
+import Ontwikkeling from '@/components/ontwikkeling.vue'
 </script>
 
 <template>
-    <Navbar/>
-    <Sidenav/>
-    <Footer/>
+  <Overmij />
+  <Ontwikkeling />
 </template>
 
 <style scoped>
-
 </style>
