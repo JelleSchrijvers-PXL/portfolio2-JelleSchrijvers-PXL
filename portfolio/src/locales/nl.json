@@ -11,20 +11,26 @@
     "reflectie": "Reflectie",
     "competenties": "Competenties",
     "activiteiten": "Activiteiten"
-  },"about": {
-  "text": "Mijn naam is Jelle Schrijver en ik ben student Graduaat Programmeren aan Hogeschool PXL. Dit online portfolio werd opgesteld in het kader van het opleidingsonderdeel Werkplekleren 1 en dient als weerspiegeling van mijn leerproces doorheen dit traject. In dit portfolio documenteer ik mijn ervaringen, opdrachten en projecten die ik zowel op school als op de werkplek heb uitgevoerd. Daarbij ligt de focus op het ontwikkelen van mijn technische vaardigheden, mijn probleemoplossend denken en mijn professionele houding. Daarnaast bevat dit portfolio reflecties over mijn groei als beginnend programmeur en de feedback die ik ontving van mijn lectoren. Elk onderdeel is gestructureerd opgebouwd om een duidelijk en overzichtelijk beeld te geven van mijn evolutie. Het portfolio is bedoeld als hulpmiddel voor evaluatie, begeleiding en zelfreflectie. Op die manier vormt het niet alleen een overzicht van mijn gerealiseerde resultaten, maar ook van de leerdoelen waaraan ik actief heb gewerkt."
-},"footer": {
-  "backToTop": "Terug naar boven"
-},"ontwikkeling": {
+  },
+  "about": {
+    "text": "Mijn naam is Jelle Schrijver en ik ben student Graduaat Programmeren aan Hogeschool PXL. Dit online portfolio werd opgesteld in het kader van het opleidingsonderdeel Werkplekleren 1 en dient als weerspiegeling van mijn leerproces doorheen dit traject. In dit portfolio documenteer ik mijn ervaringen, opdrachten en projecten die ik zowel op school als op de werkplek heb uitgevoerd. Daarbij ligt de focus op het ontwikkelen van mijn technische vaardigheden, mijn probleemoplossend denken en mijn professionele houding. Daarnaast bevat dit portfolio reflecties over mijn groei als beginnend programmeur en de feedback die ik ontving van mijn lectoren. Elk onderdeel is gestructureerd opgebouwd om een duidelijk en overzichtelijk beeld te geven van mijn evolutie. Het portfolio is bedoeld als hulpmiddel voor evaluatie, begeleiding en zelfreflectie. Op die manier vormt het niet alleen een overzicht van mijn gerealiseerde resultaten, maar ook van de leerdoelen waaraan ik actief heb gewerkt."
+  },
+  "footer": {
+    "backToTop": "Terug naar boven"
+  },
+  "ontwikkeling": {
     "title": "Ontwikkeling",
     "opleiding": {
       "title": "Keuze opleiding",
+
       "why_programming_title": "Waarom kies ik voor programmeren?",
+
       "why_programming_p1": "Mijn interesse in programmeren ontstond al op jonge leeftijd, tijdens de talentenlabo’s in het eerste middelbaar. Daar kwam ik voor het eerst in contact met logisch denken en probleemoplossing via kleine programmeeropdrachten. Het oplossen van deze opdrachten gaf mij meteen veel voldoening.",
       "why_programming_p2": " In de daaropvolgende jaren werd deze interesse verder verdiept binnen STEM-wetenschappen. Projecten met Minecraft Education, robotica en automatisering versterkten mijn enthousiasme voor het combineren van creativiteit en technologie.",
       "why_programming_p3": "Wat mij vooral aanspreekt in programmeren is het oplossen van problemen en het bouwen van creatieve oplossingen. Programmeren is voor mij zowel een passie als een toekomstgerichte carrièrekeuze.",
 
       "why_job_title": "Waarom past dit beroep bij mij?",
+      
       "why_job_p1": "Het beroep van programmeur sluit goed aan bij mijn manier van werken. Ik werk graag zelfstandig, experimenteer met oplossingen en leer uit fouten.",
       "why_job_p2": "Wanneer een probleem complex wordt, neem ik bewust even afstand om daarna met een frisse blik verder te werken. Dit helpt mij om ook bij uitdagende opdrachten vol te houden.",
       "why_job_p3": "Daarnaast beschik ik over eigenschappen zoals probleemoplossend denken, creativiteit en doorzettingsvermogen, die essentieel zijn binnen dit beroep."

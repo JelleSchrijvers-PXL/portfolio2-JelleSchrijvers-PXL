@@ -11,9 +11,30 @@
     "reflectie": "Reflection",
     "competenties": "Competencies",
     "activiteiten": "Activities"
-  },"about": {
-  "text": "My name is Jelle Schrijver and I am a Programming student at PXL University..."
-},"footer": {
-  "backToTop": "Back to top"
-}
+  },
+  "about": {
+    "text": "My name is Jelle Schrijver and I am a student in the Associate Degree Programming at Hogeschool PXL. This online portfolio was created as part of the Workplace Learning 1 course and serves as a reflection of my learning process throughout this trajectory. In this portfolio, I document my experiences, assignments, and projects that I have carried out both at school and in the workplace. The focus here is on developing my technical skills, my problem-solving thinking, and my professional attitude. Additionally, this portfolio contains reflections on my growth as a beginning programmer and the feedback I received from my lecturers. Each section is structured to provide a clear and organized overview of my progress. The portfolio is intended as a tool for evaluation, guidance, and self-reflection. In this way, it forms not only an overview of my achieved results but also of the learning objectives I have actively worked on."
+  },
+  "footer": {
+    "backToTop": "Back to top"
+  },
+  "ontwikkeling": {
+    "title": "Development",
+    "opleiding": {
+      "title": "Education choice",
+      
+      "why_programming_title": "Why do I choose programming?",
+
+      "why_programming_p1": "My interest in programming arose at a young age, during the talent labs in the first year of secondary school. There, I first came into contact with logical thinking and problem-solving through small programming assignments. Solving these assignments immediately gave me a lot of satisfaction.",
+      "why_programming_p2": " In the subsequent years, this interest was further deepened within STEM sciences. Projects with Minecraft Education, robotics, and automation reinforced my enthusiasm for combining creativity and technology.",
+      "why_programming_p3": "What appeals to me most about programming is solving problems and building creative solutions. For me, programming is both a passion and a future-oriented career choice.",
+
+      "why_job_title": "Why does this profession suit me?",
+
+      "why_job_p1": "The profession of programmer aligns well with my way of working. I enjoy working independently, experimenting with solutions, and learning from mistakes.",
+      "why_job_p2": "When a problem becomes complex, I consciously take a step back to continue working with a fresh perspective. This helps me to persevere, even with challenging assignments.",
+      "why_job_p3": "Additionally, I possess qualities such as problem-solving thinking, creativity, and perseverance, which are essential within this profession."
+
+    }
+  }
 }
