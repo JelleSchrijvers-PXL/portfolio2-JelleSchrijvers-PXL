@@ -1,5 +1,7 @@
 <script setup>
 import { useI18n } from 'vue-i18n'
+import profilePicture from '../assets/foto/profile-picture.jpg'
+import linkedIn from '../assets/icoon/linkedin-svgrepo-com.svg'
 
 const { locale } = useI18n()
 
@@ -16,7 +18,7 @@ function setLang(lang) {
       <div class="container-left">
         <div class="basis-info">
           <div class="container-profile-picture">
-          
+            <img :src="profilePicture" alt="foto van Jelle Schrijvers">
           </div>
 
           <div class="container-name">
@@ -40,7 +42,7 @@ function setLang(lang) {
       <div class="container-right">
         <div class="container-social">
           <a href="https://www.linkedin.com/in/jelleschrijvers/" target="_blank">
-            LinkedIn
+          <img :src="linkedIn" alt="icoon-linkedin">LinkedIn
           </a>
           <a href="#">{{ $t('nav.cv') }}</a>
         </div>
