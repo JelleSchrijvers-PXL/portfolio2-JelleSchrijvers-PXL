@@ -16,7 +16,7 @@ function setLang(lang) {
       <div class="container-left">
         <div class="basis-info">
           <div class="container-profile-picture">
-            <img src="/images/profile-picture.jpg" />
+          
           </div>
 
           <div class="container-name">
@@ -45,7 +45,7 @@ function setLang(lang) {
           <a href="#">{{ $t('nav.cv') }}</a>
         </div>
 
-        <!-- 🔥 Language switch -->
+        <!-- Language switch -->
         <div>
           <button @click="setLang('nl')">NL</button>
           <button @click="setLang('en')">EN</button>
@@ -55,3 +55,9 @@ function setLang(lang) {
     </div>
   </header>
 </template>
+
+<style scoped>
+h1{
+  color: white;
+}
+</style>
