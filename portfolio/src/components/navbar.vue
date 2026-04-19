@@ -57,7 +57,99 @@ function setLang(lang) {
 </template>
 
 <style scoped>
-h1{
-  color: white;
+/* Header */
+header {
+  padding: 1.5rem 2.5rem;
+}
+.container-nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+/* Navbar layout */
+.container-left {
+  justify-self: start;
+}
+.container-center {
+  justify-self: center;
+}
+.container-right {
+  justify-self: end;
+}
+
+/* Left */
+.basis-info {
+  display: flex;           
+  align-items: center;     
+  gap: 1rem;               
+}
+.container-profile-picture img {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;      
+  object-fit: cover;       
+}
+.container-name-functie {
+  display: flex;
+  flex-direction: column;  
+  justify-content: center; 
+}
+.container-name-functie h1 {
+  margin: 0;
+  font-size: 1.4rem;
+}
+.container-functie {
+  margin: 0;
+  font-size: 0.85rem;
+  color: #9ca3af;
+}
+
+/* Center nav */
+.container-center nav ul {
+  display: flex;
+  list-style: none;
+  gap: 0.25rem;
+  background: rgba(255, 255, 255, 0.06);
+  padding: 0.4rem;
+  border-radius: 999px;
+  backdrop-filter: blur(12px);
+}
+.container-center nav a {
+  padding: 0.45rem 1.1rem;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: #e5e7eb;
+  transition: background 0.2s ease;
+}
+.container-center nav a:hover,
+.container-center nav a[aria-current="page"] {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+/* Right */
+.container-social {
+  display: flex;
+  gap: 1rem;
+}
+.container-social a {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.85rem;
+  color: #e5e7eb;
+  text-decoration: none;
+}
+.container-social a:hover{
+  color: blue;
+}
+.container-social img {
+  width: 1rem;
+  height: 1rem;
 }
 </style>
