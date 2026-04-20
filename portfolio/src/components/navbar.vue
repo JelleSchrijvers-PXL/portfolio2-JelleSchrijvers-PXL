@@ -33,8 +33,8 @@ function setLang(lang) {
       <div class="container-center">
         <nav>
           <ul>
-            <li><a href="#">{{ $t('nav.info') }}</a></li>
-            <li><a href="#">{{ $t('nav.work') }}</a></li>
+            <li><RouterLink to="/" >{{ $t('nav.info') }}</RouterLink></li>
+            <li><RouterLink to="/work" >{{ $t('nav.work') }}</RouterLink></li>
           </ul>
         </nav>
       </div>
@@ -121,7 +121,7 @@ header {
   border-radius: 999px;
   backdrop-filter: blur(12px);
 }
-.container-center nav a {
+.container-center nav a{
   padding: 0.45rem 1.1rem;
   border-radius: 999px;
   font-size: 0.9rem;
@@ -129,8 +129,8 @@ header {
   color: #e5e7eb;
   transition: background 0.2s ease;
 }
-.container-center nav a:hover,
-.container-center nav a[aria-current="page"] {
+.container-center nav a :hover,
+.container-center nav .router-link-active {
   background: rgba(255, 255, 255, 0.12);
 }
 
