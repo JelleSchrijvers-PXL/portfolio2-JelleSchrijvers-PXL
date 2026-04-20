@@ -35,5 +35,149 @@
       "why_job_p2": "Wanneer een probleem complex wordt, neem ik bewust even afstand om daarna met een frisse blik verder te werken. Dit helpt mij om ook bij uitdagende opdrachten vol te houden.",
       "why_job_p3": "Daarnaast beschik ik over eigenschappen zoals probleemoplossend denken, creativiteit en doorzettingsvermogen, die essentieel zijn binnen dit beroep."
     }
+  },
+  "logboek": {
+    "weeks": [
+      {
+        "week": 1,
+        "periode": {
+          "van": "22/09",
+          "tot": "26/09"
+        },
+        "inhoud": "",
+        "opdrachten": "",
+        "Evaluation": ""
+      },
+      {
+        "week": 2,
+        "periode": {
+          "van": "29/09",
+          "tot": "03/10"
+        },
+        "inhoud": "",
+        "opdrachten": "",
+        "Evaluation": ""
+      },
+      {
+        "week": 3,
+        "periode": {
+          "van": "06/10",
+          "tot": "10/10"
+        },
+        "inhoud": "",
+        "opdrachten": "",
+        "Evaluation": ""
+      },
+      {
+        "week": 4,
+        "periode": {
+          "van": "13/10 ",
+          "tot": "17/10"
+        },
+        "inhoud": "",
+        "opdrachten": "",
+        "Evaluation": ""
+      },
+      {
+        "week": 5,
+        "periode": {
+          "van": "",
+          "tot": ""
+        },
+        "inhoud": "20/10",
+        "opdrachten": "24/10",
+        "Evaluation": ""
+      },
+      {
+        "week": 6,
+        "periode": {
+          "van": "03/11",
+          "tot": "07/11"
+        },
+        "inhoud": "",
+        "opdrachten": "",
+        "Evaluation": ""
+      },
+      {
+        "week": 7,
+        "periode": {
+          "van": "10/11",
+          "tot": "14/11"
+        },
+        "inhoud": "",
+        "opdrachten": "",
+        "Evaluation": ""
+      },
+      {
+        "week": 8,
+        "periode": {
+          "van": "17/11",
+          "tot": "21/11"
+        },
+        "inhoud": "",
+        "opdrachten": "",
+        "Evaluation": ""
+      },
+      {
+        "week": 9,
+        "periode": {
+          "van": "24/11",
+          "tot": "28/11"
+        },
+        "inhoud": "",
+        "opdrachten": "",
+        "Evaluation": ""
+      },
+      {
+        "week": 10,
+        "periode": {
+          "van": "01/12",
+          "tot": "05/12"
+        },
+        "inhoud": "",
+        "opdrachten": "",
+        "Evaluation": ""
+      },
+      {
+        "week": 11,
+        "periode": {
+          "van": "08/12",
+          "tot": "12/12"
+        },
+        "inhoud": "",
+        "opdrachten": "",
+        "Evaluation": ""
+      },
+      {
+        "week": 12,
+        "periode": {
+          "van": "15/12",
+          "tot": "19/12"
+        },
+        "inhoud": "",
+        "opdrachten": "",
+        "Evaluation": ""
+      },
+      {
+        "week": 13,
+        "periode": {
+          "van": "05/01",
+          "tot": "09/01"
+        },
+        "inhoud": "",
+        "opdrachten": "",
+        "Evaluation": ""
+      },
+      {
+        "week": 14,
+        "periode": {
+          "van": "12/01",
+          "tot": "16/01"
+        },
+        "inhoud": "",
+        "opdrachten": "",
+        "Evaluation": ""
+      }
+    ]
   }
 }
