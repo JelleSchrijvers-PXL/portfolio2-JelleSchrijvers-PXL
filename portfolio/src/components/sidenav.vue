@@ -5,7 +5,7 @@ const { locale, t } = useI18n()
 </script>
 
 <template>
-<nav>
+<aside>
   <div class="container-nav-content">
     <ul>
       <li class="header-lijst-sections">{{ t('nav.content') }}</li>
@@ -18,12 +18,13 @@ const { locale, t } = useI18n()
       <li><a href="#activiteiten">{{ t('nav.activiteiten') }}</a></li>
     </ul>
   </div>
-</nav>
+</aside>
 </template>
 
 <style scoped>
 .container-nav-content {
-  position: sticky;
+  position: fixed;
+  margin-top: 5rem;
   width: 200px;
   padding: 20px;
 }

@@ -61,7 +61,12 @@ function setLang(lang) {
 <style scoped>
 /* Header */
 header {
-  padding: 1.5rem 2.5rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  height: 80px;
 }
 .container-nav {
   position: sticky;
