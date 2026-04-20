@@ -9,4 +9,5 @@ import Ontwikkeling from '@/components/ontwikkeling.vue'
 </template>
 
 <style scoped>
+
 </style>
