@@ -16,6 +16,8 @@ const { t } = useI18n()
 <style scoped>
 .container-over-mij {
     margin: 2rem;
+    display: flex;
+    flex-direction: row;
 }
 .over-mij {
     display: grid;
