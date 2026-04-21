@@ -18,23 +18,230 @@
   "footer": {
     "backToTop": "Back to top"
   },
-  "ontwikkeling": {
+ "ontwikkeling": {
     "title": "Development",
     "opleiding": {
-      "title": "Education choice",
-      
-      "why_programming_title": "Why do I choose programming?",
-
-      "why_programming_p1": "My interest in programming arose at a young age, during the talent labs in the first year of secondary school. There, I first came into contact with logical thinking and problem-solving through small programming assignments. Solving these assignments immediately gave me a lot of satisfaction.",
-      "why_programming_p2": " In the subsequent years, this interest was further deepened within STEM sciences. Projects with Minecraft Education, robotics, and automation reinforced my enthusiasm for combining creativity and technology.",
-      "why_programming_p3": "What appeals to me most about programming is solving problems and building creative solutions. For me, programming is both a passion and a future-oriented career choice.",
-
+      "title": "Choice of Study",
+      "why_programming_title": "Why did I choose programming?",
+      "why_programming_p1":
+        "My interest in programming started at a young age, during talent labs in my first year of secondary school. That was where I first encountered logical thinking and problem-solving through small programming assignments. Solving those assignments gave me an immediate sense of satisfaction.",
+      "why_programming_p2":
+        "In the following years this interest deepened through STEM science courses. Projects with Minecraft Education, robotics, and automation strengthened my enthusiasm for combining creativity with technology.",
+      "why_programming_p3":
+        "What appeals to me most about programming is solving problems and building creative solutions. Programming is both a passion and a future-oriented career choice for me.",
       "why_job_title": "Why does this profession suit me?",
-
-      "why_job_p1": "The profession of programmer aligns well with my way of working. I enjoy working independently, experimenting with solutions, and learning from mistakes.",
-      "why_job_p2": "When a problem becomes complex, I consciously take a step back to continue working with a fresh perspective. This helps me to persevere, even with challenging assignments.",
-      "why_job_p3": "Additionally, I possess qualities such as problem-solving thinking, creativity, and perseverance, which are essential within this profession."
-
+      "why_job_p1":
+        "The profession of developer fits well with the way I work. I enjoy working independently, experimenting with solutions, and learning from mistakes.",
+      "why_job_p2":
+        "When a problem becomes complex, I consciously step back so I can return to it with a fresh perspective. This helps me to persist even with challenging assignments.",
+      "why_job_p3":
+        "In addition, I possess qualities such as problem-solving thinking, creativity, and perseverance — all of which are essential in this profession."
+    }
+  },
+ 
+  "reflectie": {
+    "title": "5.1 AIM Reflection on WPL1",
+    "introductie_label": "Introduction",
+    "introductie":
+      "My work-based learning period (WPL1) had its ups and downs, but I learned a great deal about myself and my skills.",
+    "positief_label": "Positive elements",
+    "positief":
+      "Through practical assignments I made noticeable progress in programming, especially in C#.",
+    "minder_label": "Less enjoyable elements",
+    "minder":
+      "The time pressure during practical exams was challenging, but gave me a realistic picture of the professional field.",
+    "inzichten_label": "Insights",
+    "inzichten":
+      "I work well independently and in a structured way, but I can still grow in managing stress and deadlines.",
+    "succes_label": "Personal success",
+    "succes":
+      "My greatest success is that I have come to know myself better and know where I can improve."
+  },
+ 
+  "volgendewpl": {
+    "title": "5.2 What I take into the next WPL",
+    "p1": "My independence, creativity, and boldness are strong points I want to keep using. At the same time I want to work more consciously on collaboration and communication.",
+    "p2": "Concretely, I want to ask for feedback more often, consult with others, and share my ideas better within a team context."
+  },
+ 
+  "xfactor": {
+    "title": "5.3 X-Factor",
+    "items": {
+      "leiderschap": {
+        "title": "Leadership / Initiative",
+        "tekst": "I take responsibility for my own learning process and start assignments proactively."
+      },
+      "creativiteit": {
+        "title": "Creativity / Innovation",
+        "tekst": "I always work out a design first before I start programming."
+      },
+      "samenwerking": {
+        "title": "Collaboration / Communication",
+        "tekst": "I actively ask for feedback from lecturers and classmates."
+      },
+      "professioneel": {
+        "title": "Professional Development",
+        "tekst": "I keep learning and applying new techniques in my projects."
+      }
+    }
+  },
+ 
+  "competenties": {
+    "title": "Programmer Competencies",
+    "labels": {
+      "situatie": "Where do you currently stand?",
+      "goed": "What are you already good at?",
+      "niet": "What are you not yet good at?"
+    },
+    "rollen": {
+      "ontwerper": {
+        "title": "Designer",
+        "situatie":
+          "I can create my own design and reproduce it within a few days. Given enough time I can work out many ideas well.",
+        "goed": "Building a basic idea for a project works well. I can work out an initial structure or concept.",
+        "niet": "It is harder to produce a fully worked-out project in a short time, including the right functions and choice of programming languages."
+      },
+      "programmeur": {
+        "title": "Programmer",
+        "situatie":
+          "I can build projects independently and usually work on my assignments without problems at a relaxed pace.",
+        "goed": "I am strong at building websites. In C# almost everything works, except working with classes.",
+        "niet": "Correctly using classes in C# remains a challenge. I can create them, but applying them in projects is still difficult."
+      },
+      "tester": {
+        "title": "Tester",
+        "situatie":
+          "I can find and fix errors fairly well, but I am less good at spotting typos.",
+        "goed": "I am good at debugging both practical and logical errors in code.",
+        "niet": "Recognising typos in code is something I am not yet so good at."
+      },
+      "communicator": {
+        "title": "Communicator / Team Player",
+        "situatie":
+          "I find working in a team difficult, but I am good at asking for feedback.",
+        "goed": "I can ask for feedback, process it, and improve my work based on it.",
+        "niet": "I prefer working independently and find it difficult to constantly consult within a team."
+      },
+      "levenslang": {
+        "title": "Lifelong Learning IT Professional",
+        "situatie":
+          "I follow new technologies to a limited extent, but I am very strict with myself about personal development.",
+        "goed": "I continually try to improve myself and work as independently as possible without constant external help.",
+        "niet": "I sometimes go too far by constantly adding new features, causing other important parts to be neglected."
+      }
+    }
+  },
+ 
+  "activiteiten": {
+    "title": "Examples of Activities per Role",
+    "motivatie_label": "Motivation",
+    "rollen": {
+      "ontwerper": {
+        "title": "Designer",
+        "items": [
+          {
+            "title": "Designing my CV website",
+            "beschrijving":
+              "For my CV I first created a design with layout, structure, colours, and navigation before I started programming.",
+            "motivatie":
+              "This activity belongs to the Designer role because it prepares the realisation of a software project."
+          },
+          {
+            "title": "Choice of programming languages",
+            "beschrijving":
+              "For web projects I deliberately chose HTML, CSS, and JavaScript.",
+            "motivatie": "Justifying language choices is part of the design process."
+          },
+          {
+            "title": "Determining functionalities",
+            "beschrijving":
+              "I decided in advance which functionalities my website needed to contain.",
+            "motivatie": "Planning functionalities is a design task."
+          }
+        ]
+      },
+      "programmeur": {
+        "title": "Programmer",
+        "items": [
+          {
+            "title": "Building websites",
+            "beschrijving":
+              "I developed websites with HTML and CSS, including responsive design.",
+            "motivatie": "This is the effective realisation of software."
+          },
+          {
+            "title": "C# console applications",
+            "beschrijving":
+              "I worked on C# assignments involving logic, methods, and variables.",
+           "motivatie": "This is at the core of programming."
+          },
+          {
+            "title": "Using GitHub",
+            "beschrijving": "I used GitHub to manage my projects.",
+            "motivatie": "This demonstrates responsibility for the work environment."
+          }
+        ]
+      },
+      "tester": {
+        "title": "Tester",
+        "items": [
+          {
+            "title": "Responsive testing",
+            "beschrijving": "I tested websites on desktop, tablet, and mobile.",
+            "motivatie": "This is testing functionality and layout."
+          },
+          {
+            "title": "Debugging errors",
+            "beschrijving": "I analysed and fixed logical errors in code.",
+            "motivatie": "Debugging is a testing activity."
+          },
+          {
+            "title": "Re-testing after feedback",
+            "beschrijving": "I retested my code after making changes.",
+            "motivatie": "Improving based on feedback is part of testing."
+          }
+        ]
+      },
+      "communicator": {
+        "title": "Communicator / Team Player",
+        "items": [
+          {
+            "title": "Asking for feedback",
+            "beschrijving": "I asked lecturers for feedback on my projects.",
+            "motivatie": "This demonstrates professional communication."
+          },
+          {
+            "title": "Processing feedback",
+            "beschrijving": "I adjusted my projects based on feedback received.",
+            "motivatie": "This demonstrates collaboration and consultation."
+          },
+          {
+            "title": "Explaining my work",
+            "beschrijving": "I explained my code to others.",
+            "motivatie": "Clarifying your work is part of communication."
+          }
+        ]
+      },
+      "levenslang": {
+        "title": "Lifelong Learning IT Professional",
+        "items": [
+          {
+            "title": "Learning new techniques",
+            "beschrijving": "I independently learned new CSS and JavaScript techniques.",
+            "motivatie": "This demonstrates ongoing professional development."
+          },
+          {
+            "title": "Self-reflection",
+            "beschrijving": "I critically evaluated my projects.",
+            "motivatie": "Self-criticism promotes growth."
+          },
+          {
+            "title": "Future improvement",
+            "beschrijving": "I want to learn to plan better in order to maintain focus.",
+            "motivatie": "This demonstrates awareness of areas for growth."
+          }
+        ]
+      }
     }
   },
   "logboek": {
