@@ -7,7 +7,7 @@ const { t } = useI18n()
 <template>
 <div id="aboutme" class="container-over-mij">
     <section class="over-mij section-card">
-        <p>{{ $t('about.text') }}</p>
+        <p>{{ t('about.text') }}</p>
     </section>
 </div>
 </template>
