@@ -176,7 +176,8 @@
           "tot": "28/11"
         },
         "inhoud": [
-          "Instroombevraging"
+          "Instroombevraging",
+          "HTML & CSS"
         ],
         "evaluaties": [
           "Feedback evaluatie"
@@ -189,8 +190,14 @@
           "van": "01/12",
           "tot": "05/12"
         },
-        "inhoud": [],
-        "evaluaties": [],
+        "inhoud": [
+          "Documenteren en debuggen in C#",
+          "Labo: Debugging (C#)"
+        ],
+        "evaluaties": [
+          "Debugging (idem aan labo)",
+          "Feedback evaluatie debugging"
+        ],
         "opdrachten": []
       },
       {
@@ -199,9 +206,9 @@
           "van": "08/12",
           "tot": "12/12"
         },
-        "inhoud": "",
-        "opdrachten": "",
-        "Evaluation": ""
+        "inhoud": [],
+        "evaluaties": [],
+        "opdrachten": []
       },
       {
         "week": 12,
@@ -209,9 +216,13 @@
           "van": "15/12",
           "tot": "19/12"
         },
-        "inhoud": "",
-        "opdrachten": "",
-        "Evaluation": ""
+        "inhoud": [
+          "Labo: WPF",
+          "Gastsprekers",
+          "SDG’s"
+        ],
+        "evaluaties": [],
+        "opdrachten": ["Curriculum Vitae"]
       },
       {
         "week": 13,
@@ -219,9 +230,13 @@
           "van": "05/01",
           "tot": "09/01"
         },
-        "inhoud": "",
-        "opdrachten": "",
-        "Evaluation": ""
+        "inhoud": [
+          "Introductie Corda",
+          "POP kernkwadranten",
+          "C# WPF"
+        ],
+        "evaluaties": [],
+        "opdrachten": ["Portfolio"]
       },
       {
         "week": 14,
@@ -229,9 +244,9 @@
           "van": "12/01",
           "tot": "16/01"
         },
-        "inhoud": "",
-        "opdrachten": "",
-        "Evaluation": ""
+        "inhoud": ["Feedback evaluatie C# WPF"],
+        "evaluaties": ["Inhaalmoment"],
+        "opdrachten": []
       }
     ]
   }
