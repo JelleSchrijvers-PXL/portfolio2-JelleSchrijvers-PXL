@@ -18,23 +18,203 @@
   "footer": {
     "backToTop": "Terug naar boven"
   },
-  "ontwikkeling": {
-    "title": "Ontwikkeling",
-    "opleiding": {
-      "title": "Keuze opleiding",
-
-      "why_programming_title": "Waarom kies ik voor programmeren?",
-
-      "why_programming_p1": "Mijn interesse in programmeren ontstond al op jonge leeftijd, tijdens de talentenlabo’s in het eerste middelbaar. Daar kwam ik voor het eerst in contact met logisch denken en probleemoplossing via kleine programmeeropdrachten. Het oplossen van deze opdrachten gaf mij meteen veel voldoening.",
-      "why_programming_p2": " In de daaropvolgende jaren werd deze interesse verder verdiept binnen STEM-wetenschappen. Projecten met Minecraft Education, robotica en automatisering versterkten mijn enthousiasme voor het combineren van creativiteit en technologie.",
-      "why_programming_p3": "Wat mij vooral aanspreekt in programmeren is het oplossen van problemen en het bouwen van creatieve oplossingen. Programmeren is voor mij zowel een passie als een toekomstgerichte carrièrekeuze.",
-
-      "why_job_title": "Waarom past dit beroep bij mij?",
-      
-      "why_job_p1": "Het beroep van programmeur sluit goed aan bij mijn manier van werken. Ik werk graag zelfstandig, experimenteer met oplossingen en leer uit fouten.",
-      "why_job_p2": "Wanneer een probleem complex wordt, neem ik bewust even afstand om daarna met een frisse blik verder te werken. Dit helpt mij om ook bij uitdagende opdrachten vol te houden.",
-      "why_job_p3": "Daarnaast beschik ik over eigenschappen zoals probleemoplossend denken, creativiteit en doorzettingsvermogen, die essentieel zijn binnen dit beroep."
-    }
+   "ontwikkeling": {
+      "titel": "Ontwikkeling",
+      "keuzeOpleiding": {
+        "titel": "Keuze opleiding",
+        "waaromProgrammeren": {
+          "subtitel": "Waarom kies ik voor programmeren?",
+          "paragrafen": [
+            "Mijn interesse in programmeren ontstond al op jonge leeftijd, tijdens de talentenlabo's in het eerste middelbaar. Daar kwam ik voor het eerst in contact met logisch denken en probleemoplossing via kleine programmeeropdrachten. Het oplossen van deze opdrachten gaf mij meteen veel voldoening.",
+            "In de daaropvolgende jaren werd deze interesse verder verdiept binnen STEM-wetenschappen. Projecten met Minecraft Education, robotica en automatisering versterkten mijn enthousiasme voor het combineren van creativiteit en technologie.",
+            "Wat mij vooral aanspreekt in programmeren is het oplossen van problemen en het bouwen van creatieve oplossingen. Programmeren is voor mij zowel een passie als een toekomstgerichte carrièrekeuze."
+          ]
+        },
+        "waaromPasstBeroep": {
+          "subtitel": "Waarom past dit beroep bij mij?",
+          "paragrafen": [
+            "Het beroep van programmeur sluit goed aan bij mijn manier van werken. Ik werk graag zelfstandig, experimenteer met oplossingen en leer uit fouten.",
+            "Wanneer een probleem complex wordt, neem ik bewust even afstand om daarna met een frisse blik verder te werken. Dit helpt mij om ook bij uitdagende opdrachten vol te houden.",
+            "Daarnaast beschik ik over eigenschappen zoals probleemoplossend denken, creativiteit en doorzettingsvermogen, die essentieel zijn binnen dit beroep."
+          ]
+        }
+      }
+    },
+    "reflectie": {
+      "titel": "5.1 AIM-reflectie op WPL1",
+      "introductie": "Mijn periode van Werkplekleren 1 kende ups en downs, maar ik heb er veel uit geleerd over mezelf en mijn vaardigheden.",
+      "positieveElementen": "Door praktische opdrachten heb ik merkbaar vooruitgang geboekt in programmeren, vooral binnen C#.",
+      "minderLeukeElementen": "De tijdsdruk tijdens praktijkexamens was uitdagend, maar gaf me een realistisch beeld van het werkveld.",
+      "inzichten": "Ik werk sterk zelfstandig en gestructureerd, maar kan nog groeien in omgaan met stress en deadlines.",
+      "persoonlijkSucces": "Mijn grootste succes is dat ik mezelf beter heb leren kennen en weet waar ik kan verbeteren."
+    },
+    "volgendWPL": {
+      "titel": "5.2 Wat neem ik mee naar volgende WPL",
+      "paragrafen": [
+        "Mijn zelfstandigheid, creativiteit en durf zijn sterke punten die ik wil blijven inzetten. Tegelijk wil ik bewuster werken aan samenwerking en communicatie.",
+        "Concreet wil ik vaker feedback vragen, overleggen met anderen en mijn ideeën beter delen binnen een teamcontext."
+      ]
+    },
+    "xFactor": {
+      "titel": "5.3 X-Factor",
+      "items": [
+        {
+          "titel": "Leiderschap / initiatief",
+          "beschrijving": "Ik neem verantwoordelijkheid voor mijn leerproces en start opdrachten proactief."
+        },
+        {
+          "titel": "Creativiteit / innovatie",
+          "beschrijving": "Ik werk altijd eerst een design uit voor ik begin programmeren."
+        },
+        {
+          "titel": "Samenwerking / communicatie",
+          "beschrijving": "Ik vraag actief feedback aan lectoren en klasgenoten."
+        },
+        {
+          "titel": "Professionele ontwikkeling",
+          "beschrijving": "Ik blijf nieuwe technieken leren en toepassen in mijn projecten."
+        }
+      ]
+    },
+    "competenties": {
+      "titel": "Competenties Programmeur",
+      "rollen": [
+        {
+          "rol": "Ontwerper",
+          "huidigeSituatie": "Ik kan mijn eigen design maken en dit binnen een paar dagen namaken. Met voldoende tijd kan ik veel ideeën goed uitwerken.",
+          "luktGoed": "Het opbouwen van een basisidee voor een project lukt goed. Ik kan een eerste structuur of concept uitwerken.",
+          "luktNogNiet": "Het is moeilijker om in een korte tijd een volledig uitgewerkt project te maken, inclusief de juiste functies en keuzes van programmeertalen."
+        },
+        {
+          "rol": "Programmeur",
+          "huidigeSituatie": "Ik kan zelfstandig projecten bouwen en werk meestal zonder problemen in een rustig tempo aan mijn opdrachten.",
+          "luktGoed": "Ik ben sterk in het bouwen van websites. Bij C# lukt bijna alles, behalve het werken met klassen.",
+          "luktNogNiet": "Het correct gebruiken van klassen in C# blijft een uitdaging. Ik kan ze aanmaken, maar het toepassen in projecten is nog moeilijk."
+        },
+        {
+          "rol": "Tester",
+          "huidigeSituatie": "Ik kan redelijk goed fouten opsporen en verbeteren, maar typfouten herken ik minder goed.",
+          "luktGoed": "Ik ben goed in het debuggen van zowel praktische als logische fouten in code.",
+          "luktNogNiet": "Het herkennen van typfouten in code lukt mij nog niet zo goed."
+        },
+        {
+          "rol": "Communicator / Teamspeler",
+          "huidigeSituatie": "Samenwerken in teamverband vind ik moeilijk, maar feedback vragen lukt mij wel goed.",
+          "luktGoed": "Ik kan feedback vragen, deze verwerken en mijn werk verbeteren op basis daarvan.",
+          "luktNogNiet": "Ik werk liever zelfstandig en vind het moeilijk om voortdurend overleg te moeten doen binnen een team."
+        },
+        {
+          "rol": "Levenslang lerende IT-professional",
+          "huidigeSituatie": "Ik volg nieuwe technologieën beperkt, maar ben zeer streng voor mezelf in mijn persoonlijke ontwikkeling.",
+          "luktGoed": "Ik probeer mezelf continu te verbeteren en zo veel mogelijk zelfstandig te werken zonder constante externe hulp.",
+          "luktNogNiet": "Ik ga soms te ver door steeds nieuwe functies toe te voegen, waardoor andere belangrijke onderdelen verwaarloosd worden."
+        }
+      ]
+    },
+    "activiteiten": {
+      "titel": "Voorbeelden van activiteiten per rol",
+      "rollen": [
+        {
+          "rol": "Ontwerper",
+          "activiteiten": [
+            {
+              "titel": "Ontwerpen van mijn CV-website",
+              "beschrijving": "Voor mijn CV maakte ik eerst een ontwerp met layout, structuur, kleuren en navigatie voordat ik begon te programmeren.",
+              "motivatie": "Deze activiteit hoort bij de rol Ontwerper omdat het de realisatie van een softwareproject voorbereidt."
+            },
+            {
+              "titel": "Keuze van programmeertalen",
+              "beschrijving": "Voor webprojecten koos ik bewust voor HTML, CSS en JavaScript.",
+              "motivatie": "Het onderbouwen van taalkeuzes hoort bij het ontwerpproces."
+            },
+            {
+              "titel": "Bepalen van functionaliteiten",
+              "beschrijving": "Ik bepaalde vooraf welke functionaliteiten mijn website moest bevatten.",
+              "motivatie": "Het plannen van functionaliteiten is een ontwerptaak."
+            }
+          ]
+        },
+        {
+          "rol": "Programmeur",
+          "activiteiten": [
+            {
+              "titel": "Bouwen van websites",
+              "beschrijving": "Ik ontwikkelde websites met HTML en CSS, inclusief responsive design.",
+              "motivatie": "Dit is het effectief realiseren van software."
+            },
+            {
+              "titel": "C# console-applicaties",
+              "beschrijving": "Ik werkte aan C# opdrachten met logica, methodes en variabelen.",
+              "motivatie": "Dit hoort bij de kern van programmeren."
+            },
+            {
+              "titel": "Gebruik van GitHub",
+              "beschrijving": "Ik gebruikte GitHub om mijn projecten te beheren.",
+              "motivatie": "Dit toont verantwoordelijkheid voor de werkomgeving."
+            }
+          ]
+        },
+        {
+          "rol": "Tester",
+          "activiteiten": [
+            {
+              "titel": "Responsive testen",
+              "beschrijving": "Ik testte websites op desktop, tablet en mobiel.",
+              "motivatie": "Dit is het testen van functionaliteit en layout."
+            },
+            {
+              "titel": "Debuggen van fouten",
+              "beschrijving": "Ik analyseerde en verbeterde logische fouten in code.",
+              "motivatie": "Debuggen is een testactiviteit."
+            },
+            {
+              "titel": "Her-testen na feedback",
+              "beschrijving": "Ik testte mijn code opnieuw na aanpassingen.",
+              "motivatie": "Verbeteren op basis van feedback hoort bij testen."
+            }
+          ]
+        },
+        {
+          "rol": "Communicator / Teamspeler",
+          "activiteiten": [
+            {
+              "titel": "Feedback vragen",
+              "beschrijving": "Ik vroeg feedback aan lectoren over mijn projecten.",
+              "motivatie": "Dit toont professionele communicatie."
+            },
+            {
+              "titel": "Feedback verwerken",
+              "beschrijving": "Ik paste mijn projecten aan op basis van feedback.",
+              "motivatie": "Dit toont samenwerking en overleg."
+            },
+            {
+              "titel": "Uitleg geven",
+              "beschrijving": "Ik legde mijn code uit aan anderen.",
+              "motivatie": "Het toelichten van werk hoort bij communicatie."
+            }
+          ]
+        },
+        {
+         "rol": "Levenslang lerende IT-professional",
+          "activiteiten": [
+           {
+             "titel": "Nieuwe technieken leren",
+             "beschrijving": "Ik leerde zelfstandig nieuwe CSS- en JavaScript-technieken.",
+             "motivatie": "Dit toont blijvende professionele ontwikkeling."
+           },
+           {
+             "titel": "Zelfreflectie",
+             "beschrijving": "Ik evalueerde mijn projecten kritisch.",
+             "motivatie": "Zelfkritiek bevordert groei."
+           },
+           {
+             "titel": "Toekomstige verbetering",
+             "beschrijving": "Ik wil beter leren plannen om focus te behouden.",
+             "motivatie": "Dit toont bewustzijn van groeipunten."
+           }
+         ]
+       }
+    ]
   },
   "logboek": {
     "col": {
