@@ -37,6 +37,13 @@
     }
   },
   "logboek": {
+    "col": {
+      "week": "Week",
+      "periode": "Periode",
+      "inhoud": "Inhoud",
+      "evaluaties": "Evaluaties",
+      "opdrachten": "Opdrachten"
+    },
     "weeks": [
       {
         "week": 1,
@@ -44,9 +51,14 @@
           "van": "22/09",
           "tot": "26/09"
         },
-        "inhoud": "",
-        "opdrachten": "",
-        "Evaluation": ""
+        "inhoud": [
+          "Introductie werkplekleren",
+          "Wat is programmeren",
+          "Introductie POP, X-Factor & SDG's",
+          "Introductie Scratch"
+        ],
+        "evaluaties": [],
+        "opdrachten": []
       },
       {
         "week": 2,
@@ -54,9 +66,15 @@
           "van": "29/09",
           "tot": "03/10"
         },
-        "inhoud": "",
-        "opdrachten": "",
-        "Evaluation": ""
+        "inhoud": [
+          "Oriënteringstraject",
+          "Installatie Git & GitHub",
+          "Introductie Git & GitHub"
+        ],
+        "evaluaties": [
+          "LockDownBrowser"
+        ],
+        "opdrachten": []
       },
       {
         "week": 3,
@@ -64,9 +82,14 @@
           "van": "06/10",
           "tot": "10/10"
         },
-        "inhoud": "",
-        "opdrachten": "",
-        "Evaluation": ""
+        "inhoud": [
+          "POP motivatie, kernwadranten en reflecteren",
+          "Labo: Git & GitHub"
+        ],
+        "evaluaties": [],
+        "opdrachten": [
+          "Scratch"
+        ]
       },
       {
         "week": 4,
@@ -74,29 +97,44 @@
           "van": "13/10 ",
           "tot": "17/10"
         },
-        "inhoud": "",
-        "opdrachten": "",
-        "Evaluation": ""
+        "inhoud": [
+          "POP planning & studieaanpak"
+        ],
+        "evaluaties": [
+          "Git & GitHub"
+        ],
+        "opdrachten": [
+          "Reflecteren"
+        ]
       },
       {
         "week": 5,
         "periode": {
-          "van": "",
-          "tot": ""
+          "van": "20/10",
+          "tot": "24/10"
         },
-        "inhoud": "20/10",
-        "opdrachten": "24/10",
-        "Evaluation": ""
+        "inhoud": [
+          "Gastsprekers",
+          "EPOS reflectie van oriënteringstraject"
+        ],
+        "evaluaties": [
+          "Gastsprekers"
+        ],
+        "opdrachten": [
+          "Planning"
+        ]
       },
       {
         "week": 6,
-        "periode": {
+        "periode":{
           "van": "03/11",
           "tot": "07/11"
         },
-        "inhoud": "",
-        "opdrachten": "",
-        "Evaluation": ""
+        "inhoud": [
+          "POP leren analyseren"
+        ],
+        "evaluaties": [],
+        "opdrachten": []
       },
       {
         "week": 7,
@@ -104,9 +142,16 @@
           "van": "10/11",
           "tot": "14/11"
         },
-        "inhoud": "",
-        "opdrachten": "",
-        "Evaluation": ""
+        "inhoud": [
+          "POP carrièrekompas",
+          "C# Console"
+        ],
+        "evaluaties": [
+          "Feedback evaluatie"
+        ],
+        "opdrachten": [
+          "POP carrièrekompas"
+        ]
       },
       {
         "week": 8,
@@ -114,9 +159,15 @@
           "van": "17/11",
           "tot": "21/11"
         },
-        "inhoud": "",
-        "opdrachten": "",
-        "Evaluation": ""
+        "inhoud": [
+          "POP personal branding",
+          "Introductie curriculum vitae",
+          "Introductie portfolio"
+        ],
+        "evaluaties": [
+          "Feedback evaluatie C# Console"
+        ],
+        "opdrachten": []
       },
       {
         "week": 9,
@@ -124,19 +175,23 @@
           "van": "24/11",
           "tot": "28/11"
         },
-        "inhoud": "",
-        "opdrachten": "",
-        "Evaluation": ""
+        "inhoud": [
+          "Instroombevraging"
+        ],
+        "evaluaties": [
+          "Feedback evaluatie"
+        ],
+        "opdrachten": []
       },
       {
         "week": 10,
-        "periode": {
+        "periode":{
           "van": "01/12",
           "tot": "05/12"
         },
-        "inhoud": "",
-        "opdrachten": "",
-        "Evaluation": ""
+        "inhoud": [],
+        "evaluaties": [],
+        "opdrachten": []
       },
       {
         "week": 11,

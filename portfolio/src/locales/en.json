@@ -82,11 +82,11 @@
       {
         "week": 5,
         "periode": {
-          "van": "",
-          "tot": ""
+          "van": "20/10",
+          "tot": "24/10"
         },
-        "inhoud": "20/10",
-        "opdrachten": "24/10",
+        "inhoud": "",
+        "opdrachten": "",
         "Evaluation": ""
       },
       {
