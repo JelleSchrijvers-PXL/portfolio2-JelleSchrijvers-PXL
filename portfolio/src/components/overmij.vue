@@ -9,6 +9,7 @@ const { t } = useI18n()
     <section class="over-mij section-card">
         <p>{{ t('about.text') }}</p>
     </section>
+    <img src = "../assets/foto/Schermafbeelding 2025-11-21 170209.png" alt="foto van basketbal"/>
 </div>
 </template>
 
