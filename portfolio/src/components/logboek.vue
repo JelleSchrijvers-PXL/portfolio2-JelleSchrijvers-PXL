@@ -32,7 +32,7 @@ function isEmptyWeek(week) {
 </script>
 
 <template>
-  <section class="logboek">
+  <section id="logboek" class="logboek">
     <h2 class="logboek__title">{{ $t('nav.logboek') }}</h2>
 
     <table class="logboek__table">

@@ -7,7 +7,7 @@ const { t } = useI18n()
 <template>
 <footer>
     <p>© 2025 Jelle Schrijvers</p>
-    <a href="#boven" class="scroll-to-top" :aria-label="t('footer.backToTop')">
+    <a href="#aboutme" class="scroll-to-top" :aria-label="t('footer.backToTop')">
         ↑
     </a>
 </footer>
