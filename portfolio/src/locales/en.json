@@ -38,6 +38,13 @@
     }
   },
   "logboek": {
+    "col": {
+      "week": "Week",
+      "periode": "Period",
+      "inhoud": "Content",
+      "evaluaties": "Evaluations",
+      "opdrachten": "Assignments"
+    },
     "weeks": [
       {
         "week": 1,
@@ -45,9 +52,14 @@
           "van": "22/09",
           "tot": "26/09"
         },
-        "inhoud": "",
-        "opdrachten": "",
-        "Evaluation": ""
+        "inhoud": [
+          "Introduction to workplace learning",
+          "What is programming",
+          "Introduction POP, X-Factor & SDGs",
+          "Introduction Scratch"
+        ],
+        "evaluaties": [],
+        "opdrachten": []
       },
       {
         "week": 2,
@@ -55,9 +67,15 @@
           "van": "29/09",
           "tot": "03/10"
         },
-        "inhoud": "",
-        "opdrachten": "",
-        "Evaluation": ""
+        "inhoud": [
+          "Orientation track",
+          "Installation Git & GitHub",
+          "Introduction Git & GitHub"
+        ],
+        "evaluaties": [
+          "LockDownBrowser"
+        ],
+        "opdrachten": []
       },
       {
         "week": 3,
@@ -65,19 +83,30 @@
           "van": "06/10",
           "tot": "10/10"
         },
-        "inhoud": "",
-        "opdrachten": "",
-        "Evaluation": ""
+        "inhoud": [
+          "POP motivation, core quadrants and reflection",
+          "Lab: Git & GitHub"
+        ],
+        "evaluaties": [],
+        "opdrachten": [
+          "Scratch"
+        ]
       },
       {
         "week": 4,
         "periode": {
-          "van": "13/10 ",
+          "van": "13/10",
           "tot": "17/10"
         },
-        "inhoud": "",
-        "opdrachten": "",
-        "Evaluation": ""
+        "inhoud": [
+          "POP planning & study approach"
+        ],
+        "evaluaties": [
+          "Git & GitHub"
+        ],
+        "opdrachten": [
+          "Reflection"
+        ]
       },
       {
         "week": 5,
@@ -85,9 +114,16 @@
           "van": "20/10",
           "tot": "24/10"
         },
-        "inhoud": "",
-        "opdrachten": "",
-        "Evaluation": ""
+        "inhoud": [
+          "Guest speakers",
+          "EPOS reflection of orientation track"
+        ],
+        "evaluaties": [
+          "Guest speakers"
+        ],
+        "opdrachten": [
+          "Planning"
+        ]
       },
       {
         "week": 6,
@@ -95,9 +131,11 @@
           "van": "03/11",
           "tot": "07/11"
         },
-        "inhoud": "",
-        "opdrachten": "",
-        "Evaluation": ""
+        "inhoud": [
+          "POP learning to analyze"
+        ],
+        "evaluaties": [],
+        "opdrachten": []
       },
       {
         "week": 7,
@@ -105,9 +143,16 @@
           "van": "10/11",
           "tot": "14/11"
         },
-        "inhoud": "",
-        "opdrachten": "",
-        "Evaluation": ""
+        "inhoud": [
+          "POP career compass",
+          "C# Console"
+        ],
+        "evaluaties": [
+          "Feedback evaluation"
+        ],
+        "opdrachten": [
+          "POP career compass"
+        ]
       },
       {
         "week": 8,
@@ -115,9 +160,15 @@
           "van": "17/11",
           "tot": "21/11"
         },
-        "inhoud": "",
-        "opdrachten": "",
-        "Evaluation": ""
+        "inhoud": [
+          "POP personal branding",
+          "Introduction curriculum vitae",
+          "Introduction portfolio"
+        ],
+        "evaluaties": [
+          "Feedback evaluation C# Console"
+        ],
+        "opdrachten": []
       },
       {
         "week": 9,
@@ -125,9 +176,14 @@
           "van": "24/11",
           "tot": "28/11"
         },
-        "inhoud": "",
-        "opdrachten": "",
-        "Evaluation": ""
+        "inhoud": [
+          "Intake survey",
+          "HTML & CSS"
+        ],
+        "evaluaties": [
+          "Feedback evaluation"
+        ],
+        "opdrachten": []
       },
       {
         "week": 10,
@@ -135,9 +191,15 @@
           "van": "01/12",
           "tot": "05/12"
         },
-        "inhoud": "",
-        "opdrachten": "",
-        "Evaluation": ""
+        "inhoud": [
+          "Documenting and debugging in C#",
+          "Lab: Debugging (C#)"
+        ],
+        "evaluaties": [
+          "Debugging (same as lab)",
+          "Feedback evaluation debugging"
+        ],
+        "opdrachten": []
       },
       {
         "week": 11,
@@ -145,9 +207,9 @@
           "van": "08/12",
           "tot": "12/12"
         },
-        "inhoud": "",
-        "opdrachten": "",
-        "Evaluation": ""
+        "inhoud": [],
+        "evaluaties": [],
+        "opdrachten": []
       },
       {
         "week": 12,
@@ -155,9 +217,15 @@
           "van": "15/12",
           "tot": "19/12"
         },
-        "inhoud": "",
-        "opdrachten": "",
-        "Evaluation": ""
+        "inhoud": [
+          "Lab: WPF",
+          "Guest speakers",
+          "SDGs"
+        ],
+        "evaluaties": [],
+        "opdrachten": [
+          "Curriculum Vitae"
+        ]
       },
       {
         "week": 13,
@@ -165,9 +233,15 @@
           "van": "05/01",
           "tot": "09/01"
         },
-        "inhoud": "",
-        "opdrachten": "",
-        "Evaluation": ""
+        "inhoud": [
+          "Introduction Corda",
+          "POP core quadrants",
+          "C# WPF"
+        ],
+        "evaluaties": [],
+        "opdrachten": [
+          "Portfolio"
+        ]
       },
       {
         "week": 14,
@@ -175,10 +249,14 @@
           "van": "12/01",
           "tot": "16/01"
         },
-        "inhoud": "",
-        "opdrachten": "",
-        "Evaluation": ""
-      }
+        "inhoud": [
+          "Feedback evaluation C# WPF"
+        ],
+        "evaluaties": [
+          "Catch-up moment"
+        ],
+        "opdrachten": []
+       }
     ]
   }
 }

@@ -206,7 +206,11 @@
           "van": "08/12",
           "tot": "12/12"
         },
-        "inhoud": [],
+         "inhoud": [
+          "Labo: WPF",
+          "Gastsprekers",
+          "SDG’s"
+        ],
         "evaluaties": [],
         "opdrachten": []
       },
@@ -217,9 +221,8 @@
           "tot": "19/12"
         },
         "inhoud": [
-          "Labo: WPF",
-          "Gastsprekers",
-          "SDG’s"
+          "Afwerken curriculum vitae",
+          "Infosessie Thalento"
         ],
         "evaluaties": [],
         "opdrachten": ["Curriculum Vitae"]
