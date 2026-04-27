@@ -7,7 +7,7 @@ const { t } = useI18n()
 <template>
 <div id="aboutme" class="container-over-mij">
     <section class="over-mij section-card">
-        <p>{{ t('about.text') }}</p>
+        <p>{{ t('infoPage.about.text') }}</p>
     </section>
     <img src = "../assets/foto/Schermafbeelding 2025-11-21 170209.png" alt="foto van basketbal"/>
 </div>

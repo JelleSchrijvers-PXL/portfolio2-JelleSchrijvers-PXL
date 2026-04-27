@@ -4,7 +4,7 @@ import { useI18n } from 'vue-i18n'
 
 const { tm } = useI18n()
 
-const logboek = computed(() => tm('logboek'))
+const logboek = computed(() => tm('infoPage.logboek'))
 
 function formatPeriode(periode) {
   if (!periode) return '—'
@@ -33,16 +33,16 @@ function isEmptyWeek(week) {
 
 <template>
   <section id="logboek" class="logboek">
-    <h2 class="logboek__title">{{ $t('nav.logboek') }}</h2>
+    <h2 class="logboek__title">{{ $t('infoPage.nav.logboek') }}</h2>
 
     <table class="logboek__table">
       <thead>
         <tr>
-          <th>{{ $t('logboek.col.week') }}</th>
-          <th>{{ $t('logboek.col.periode') }}</th>
-          <th>{{ $t('logboek.col.inhoud') }}</th>
-          <th>{{ $t('logboek.col.evaluaties') }}</th>
-          <th>{{ $t('logboek.col.opdrachten') }}</th>
+          <th>{{ $t('infoPage.logboek.col.week') }}</th>
+          <th>{{ $t('infoPage.logboek.col.periode') }}</th>
+          <th>{{ $t('infoPage.logboek.col.inhoud') }}</th>
+          <th>{{ $t('infoPage.logboek.col.evaluaties') }}</th>
+          <th>{{ $t('infoPage.logboek.col.opdrachten') }}</th>
         </tr>
       </thead>
       <tbody>
@@ -51,7 +51,7 @@ function isEmptyWeek(week) {
           :key="week.week"
           :class="{ 'row--empty': isEmptyWeek(week) }"
         >
-          <td class="col-week">{{ week.week }}</td>
+          <td class="col-week">{{week.week }}</td>
           <td class="col-periode">{{ formatPeriode(week.periode) }}</td>
           <td class="col-list">
             <ul v-if="toArray(week.inhoud).length">

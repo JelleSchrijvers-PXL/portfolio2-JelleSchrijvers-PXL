@@ -12,11 +12,12 @@
     "competenties": "Competencies",
     "activiteiten": "Activities"
   },
-  "about": {
-    "text": "My name is Jelle Schrijvers and I am a student in the Associate Degree Programming at Hogeschool PXL. This online portfolio was created as part of the Workplace Learning 1 course and serves as a reflection of my learning process throughout this trajectory. In this portfolio, I document my experiences, assignments, and projects that I have carried out both at school and in the workplace. The focus here is on developing my technical skills, my problem-solving thinking, and my professional attitude. Additionally, this portfolio contains reflections on my growth as a beginning programmer and the feedback I received from my lecturers. Each section is structured to provide a clear and organized overview of my progress. The portfolio is intended as a tool for evaluation, guidance, and self-reflection. In this way, it forms not only an overview of my achieved results but also of the learning objectives I have actively worked on."
-  },
   "footer": {
     "backToTop": "Back to top"
+  },
+  "infoPage" :{ 
+    "about": {
+    "text": "My name is Jelle Schrijvers and I am a student in the Associate Degree Programming at Hogeschool PXL. This online portfolio was created as part of the Workplace Learning 1 course and serves as a reflection of my learning process throughout this trajectory. In this portfolio, I document my experiences, assignments, and projects that I have carried out both at school and in the workplace. The focus here is on developing my technical skills, my problem-solving thinking, and my professional attitude. Additionally, this portfolio contains reflections on my growth as a beginning programmer and the feedback I received from my lecturers. Each section is structured to provide a clear and organized overview of my progress. The portfolio is intended as a tool for evaluation, guidance, and self-reflection. In this way, it forms not only an overview of my achieved results but also of the learning objectives I have actively worked on."
   },
  "ontwikkeling": {
     "title": "Development",
@@ -439,4 +440,5 @@
        }
     ]
   }
+}
 }
