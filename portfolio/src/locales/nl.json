@@ -12,11 +12,12 @@
     "competenties": "Competenties",
     "activiteiten": "Activiteiten"
   },
-  "about": {
-    "text": "Mijn naam is Jelle Schrijvers en ik ben student Graduaat Programmeren aan Hogeschool PXL. Dit online portfolio werd opgesteld in het kader van het opleidingsonderdeel Werkplekleren 1 en dient als weerspiegeling van mijn leerproces doorheen dit traject. In dit portfolio documenteer ik mijn ervaringen, opdrachten en projecten die ik zowel op school als op de werkplek heb uitgevoerd. Daarbij ligt de focus op het ontwikkelen van mijn technische vaardigheden, mijn probleemoplossend denken en mijn professionele houding. Daarnaast bevat dit portfolio reflecties over mijn groei als beginnend programmeur en de feedback die ik ontving van mijn lectoren. Elk onderdeel is gestructureerd opgebouwd om een duidelijk en overzichtelijk beeld te geven van mijn evolutie. Het portfolio is bedoeld als hulpmiddel voor evaluatie, begeleiding en zelfreflectie. Op die manier vormt het niet alleen een overzicht van mijn gerealiseerde resultaten, maar ook van de leerdoelen waaraan ik actief heb gewerkt."
-  },
   "footer": {
     "backToTop": "Terug naar boven"
+  },
+  "infoPage":{
+  "about": {
+    "text": "Mijn naam is Jelle Schrijvers en ik ben student Graduaat Programmeren aan Hogeschool PXL. Dit online portfolio werd opgesteld in het kader van het opleidingsonderdeel Werkplekleren 1 en dient als weerspiegeling van mijn leerproces doorheen dit traject. In dit portfolio documenteer ik mijn ervaringen, opdrachten en projecten die ik zowel op school als op de werkplek heb uitgevoerd. Daarbij ligt de focus op het ontwikkelen van mijn technische vaardigheden, mijn probleemoplossend denken en mijn professionele houding. Daarnaast bevat dit portfolio reflecties over mijn groei als beginnend programmeur en de feedback die ik ontving van mijn lectoren. Elk onderdeel is gestructureerd opgebouwd om een duidelijk en overzichtelijk beeld te geven van mijn evolutie. Het portfolio is bedoeld als hulpmiddel voor evaluatie, begeleiding en zelfreflectie. Op die manier vormt het niet alleen een overzicht van mijn gerealiseerde resultaten, maar ook van de leerdoelen waaraan ik actief heb gewerkt."
   },
   "ontwikkeling": {
     "title": "Ontwikkeling",
@@ -434,4 +435,443 @@
       }
     ]
   }
+},
+"workPage":{
+  "opdrachten" : [
+  {
+    "id": "scratch",
+    "title": "Scratch",
+    "image": "scratch-foto-inleinding.png",
+    "alt": "foto van scratch project",
+    "pageInfo" : {
+      "containerTitle" : {
+        "h1" : "Scratch game",
+        "h2" : "Werkplekleren 1 - 8/10/2025"
+      },
+      "descprition" : {
+        "id" : "beschrijving",
+        "h3" : "Beschrijving",
+        "p" : "In deze opdracht ontwikkelde ik een eenvoudig spel in Scratch waarbij de speler een ballon bestuurt die langzaam omhoog stijgt. De speler kan de ballon horizontaal bewegen met de pijltjestoetsen om vliegtuigen te ontwijken die op willekeurige tijdstippen en posities verschijnen. Het spel bevat een startscherm met een New Game-knop, levels die automatisch verhogen, kleurveranderingen van de ballon per level en een Game Over-scherm bij een botsing. Door gebruik te maken van events, variabelen, lussen, voorwaarden, randomisatie en clones maakte ik kennis met de basisprincipes van programmeren zonder een klassieke programmeertaal te gebruiken."
+      }, 
+      "personalChallenges" :{
+        "id" : "persoonlijke-uitdagingen",
+        "h3" : "Persoonlijke uitdagingen",
+        "p" : "Mijn grootste uitdaging was het structureren van de logica binnen Scratch. Vooral het correct laten samenwerken van meerdere sprites via events en variabelen vroeg wat denkwerk. Daarnaast was het niet eenvoudig om ervoor te zorgen dat het spel volledig herstartbaar was zonder bugs, zoals variabelen die niet correct resetten of sprites die zichtbaar bleven. Ook het correct instellen van de botsingsdetectie en het dynamisch verhogen van het level vereiste meerdere tests en aanpassingen."
+      },
+      "bijgeleerd" : {
+        "id" : "bijgeleerd",
+        "h3" : "Bijgeleerd",
+        "p" : "Door deze opdracht heb ik een goed inzicht gekregen in de basisconcepten van programmeren, zoals events, conditionele logica, herhalingen en variabelen. Ik heb geleerd hoe belangrijk het is om een programma stapsgewijs op te bouwen en eerst te focussen op de kernfunctionaliteit voordat je extra’s toevoegt. Daarnaast begrijp ik nu beter hoe game-logica werkt, zoals levelprogressie, scorebeheer en objectinteractie. Deze opdracht vormde een sterke basis voor latere programmeeropdrachten in andere talen zoals C#."
+      }
+    }
+  },
+  {
+    "id": "POP-reflectie",
+    "title": "POP: AIM-reflectie op scratchproject",
+    "image": "preview-aim-reflectie.png",
+    "alt": "foto van reflectie scratch",
+    "pageInfo" : {
+      "containerTitle" : {
+        "h1" : "POP: AIM-reflectie Scratch",
+        "h2" : "Werkplekleren 1 - 15/10/2025"
+      },
+      "descprition" : {
+        "id" : "beschrijving",
+        "h3" : "Beschrijving",
+        "p" : "Het Balloon Project was een opdracht binnen Werkplekleren 1 waarin ik een spel moest maken in Scratch. Het doel van het spel was dat een ballon of ander object voortdurend omhoog vloog en obstakels moest ontwijken die uit de lucht vielen. Dit project stelde mij in staat om mijn logisch denken, probleemoplossend vermogen en creativiteit met code en animaties te ontwikkelen. Hoewel het project individueel was, heb ik veel tips en ideeën gekregen van medestudenten, wat het leerproces ondersteunde. Een positief element was dat ik mijn eigen ideeën kon omzetten naar een werkend spel, en dat mijn planning goed werkte zodat ik ook tijd vond voor andere vakken en buitenschoolse activiteiten. Het oplossen van problemen en bugs verliep vaak sneller dan ik had verwacht, wat een aangename verrassing was."
+      }, 
+      "personalChallenges" :{
+        "id" : "persoonlijke-uitdagingen",
+        "h3" : "Persoonlijke uitdagingen",
+        "p" : "Tijdens dit project ervaarde ik enkele uitdagingen die verband hielden met mijn kernkwaliteiten en valkuilen. Mijn valkuil ‘te snel willen gaan’ zorgde ervoor dat ik in het begin te veel ideeën tegelijk wilde uitvoeren, waardoor mijn code soms slordig werd en ik het overzicht verloor. Daarnaast vond ik het frustrerend dat ik niet altijd direct kon achterhalen waar fouten zaten, wat tijdverlies veroorzaakte. Deze uitdagingen dwongen mij om geduld te oefenen en mijn probleemoplossend vermogen aan te scherpen. Door te reflecteren op mijn aanpak en mijn kernkwaliteiten zoals doelgerichtheid en betrouwbaarheid in te zetten, kon ik beter plannen, stap voor stap werken en mijn fouten systematisch verbeteren."
+      },
+      "bijgeleerd" : {
+        "id" : "bijgeleerd",
+        "h3" : "Bijgeleerd",
+        "p" : "Uit dit project heb ik geleerd dat een duidelijke planning essentieel is voor succes, zelfs in een visuele programmeeromgeving zoals Scratch. Door mijn werk in kleine, overzichtelijke stappen te verdelen, kon ik mijn valkuil ‘te snel willen gaan’ beter onder controle houden. Ik heb geleerd dat fouten normaal zijn en dat het belangrijk is om deze rustig te verbeteren zonder overweldigd te raken. Daarnaast heb ik mijn probleemoplossende vaardigheden versterkt en meer inzicht gekregen in mijn kernkwaliteiten, zoals creativiteit en betrouwbaarheid, en hoe deze in te zetten bij toekomstige projecten. Tot slot ben ik trots dat ik mijn spel op tijd heb kunnen afwerken en dat ik mijn andere taken goed kon combineren dankzij effectieve planning en reflectie."
+      }
+    }
+  },
+  {
+    "id": "planning",
+    "title": "POP: planning",
+    "image": "Preview-POP-planning.png",
+    "alt": "foto van pop planning",
+    "pageInfo" : {
+      "containerTitle" : {
+        "h1" : "POP planning",
+        "h2" : "Werkplekleren 1 - 22/10/2025"
+      },
+      "descprition" : {
+        "id" : "beschrijving",
+        "h3" : "Beschrijving",
+        "p" : "In deze POP-opdracht maakte ik een langetermijnplanning voor semester 1 en een gedetailleerde weekplanning voor de periode van 20 tot 26 oktober. Voor de semesterplanning bracht ik alle opleidingsonderdelen in kaart en noteerde ik wanneer PE’s gepland stonden en wanneer opdrachten moesten worden ingediend. De weekplanning bestond uit een overzicht van vaste lestijden, dagelijkse activiteiten zoals verplaatsingen en maaltijden, ontspanningsmomenten en ingeplande studietijd. Hierbij werd gewerkt met kleurcodes om de planning overzichtelijk en leesbaar te houden. Beide planningen werden digitaal uitgewerkt en ingediend als PDF-bestanden."
+      }, 
+      "personalChallenges" :{
+        "id" : "persoonlijke-uitdagingen",
+        "h3" : "Persoonlijke uitdagingen",
+        "p" : "De grootste uitdaging was het realistisch inschatten van mijn beschikbare tijd en energie. In mijn planning hield ik aanvankelijk onvoldoende rekening met vaste dagelijkse activiteiten zoals eten, verplaatsingstijd en onverwachte onderbrekingen. Daarnaast vond ik het moeilijk om schoolwerk voldoende concreet te plannen, bijvoorbeeld door exact te noteren voor welk vak, welk hoofdstuk of welke oefeningen ik zou maken. Ook het consistent toepassen van kleurcodes in de weekplanning vergde extra aandacht. Deze opdracht confronteerde mij met het feit dat plannen meer is dan tijdsblokken invullen; het vraagt een realistische kijk op je eigen dagindeling."
+      },
+      "bijgeleerd" : {
+        "id" : "bijgeleerd",
+        "h3" : "Bijgeleerd",
+        "p" : "Door deze opdracht heb ik geleerd hoe belangrijk realistische en haalbare planning is voor succesvol studeren. Ik besef nu dat buffertijd en basisactiviteiten essentieel zijn om een planning vol te houden. Daarnaast heb ik inzicht gekregen in het nut van concreet plannen, waarbij duidelijk wordt vastgelegd wat, hoe en voor welk vak er gewerkt wordt. Deze opdracht hielp mij om kritischer te kijken naar mijn eigen studieaanpak en vormt een basis om mijn planning in de toekomst efficiënter en evenwichtiger op te bouwen."
+      }
+    }
+  },
+  {
+    "id": "reflectie-PE-C1",
+    "title": "Reflectie PE: C# Console",
+    "image": "preview-relfectie-C1.png",
+    "alt": "foto van reflectie C# console",
+    "pageInfo" : {
+      "containerTitle" : {
+        "h1" : "Reflectie PE: C# Console",
+        "h2" : "Programmeren - 19/11/2025"
+      },
+      "descprition" : {
+        "id" : "beschrijving",
+        "h3" : "Beschrijving",
+        "p" : "In deze PE: C# Console werkte ik aan verschillende opdrachten, waaronder Trader-02 en Trader-03, waarbij ik mijn C# kennis moest toepassen in praktische scenario's. Het doel was om mijn programmeervaardigheden te testen, logica correct toe te passen en inzicht te krijgen in best practices door mijn oplossing te vergelijken met die van de lectoren."
+      }, 
+      "personalChallenges" :{
+        "id" : "persoonlijke-uitdagingen",
+        "h3" : "Persoonlijke uitdagingen",
+        "p" : "Een belangrijke uitdaging was dat ik sommige logische structuren te ingewikkeld schreef. Bij Trader-02 bijvoorbeeld, gebruikte ik een if-structuur die veel langer en complexer was dan nodig. Hoewel mijn code functioneel correct was, was deze minder efficiënt dan de modeloplossing van de lectoren. Bij Trader-03 bleek dat ik de random waarden voor FuelForMetalRate verkeerd had ingesteld en de 50/50-kansstructuur niet logisch klopte. Dit liet zien dat ik sommige basisconcepten nog beter moet beheersen en bewust moet nadenken over de logica van mijn code. Ook merkte ik dat ik soms output vergat of geen herhaling implementeerde bij foutieve input, waardoor mijn programma niet altijd robuust was. Het vergelijken met de modeloplossing hielp om deze fouten te herkennen."
+      },
+      "bijgeleerd" : {
+        "id" : "bijgeleerd",
+        "h3" : "Bijgeleerd",
+        "p" : "Door deze PE heb ik geleerd dat eenvoud en overzicht in code vaak beter zijn dan te complexe structuren. Ik begrijp nu beter hoe ik if-structuren kort en logisch kan opbouwen. Ook heb ik geoefend met het genereren van random waarden en het correct toepassen van voorwaarden in C#. Verder realiseerde ik mij het belang van systematisch controleren van alle invoer en het nakijken van de output om logische fouten te voorkomen. Het bekijken van de modeloplossing gaf inzicht in best practices en hoe je efficiënt en overzichtelijk code schrijft. Tot slot heb ik mijn kennis van klasse-oproepen uitgebreid, bijvoorbeeld bij het koppelen van invoer aan nieuwe TraderStations, wat mijn begrip van objectgeoriënteerd programmeren in C# versterkt. Mijn plan is om deze inzichten in toekomstige opdrachten actief toe te passen en basisconcepten verder te oefenen."
+      }
+    }
+  },
+  {
+    "id": "werkveldverkenning",
+    "title": "Werkveldverkenning",
+    "image": "preview-werkveldverkenning.png",
+    "alt": "foto van werkveldverkenning",
+    "pageInfo" : {
+      "containerTitle" : {
+        "h1" : "Werkveldverkenning",
+        "h2" : "Werkplekleren 1 - 19/11/2025"
+      },
+      "descprition" : {
+        "id" : "beschrijving",
+        "h3" : "Beschrijving",
+        "p" : "Voor deze opdracht heb ik een vacature als Full-Stack Web Developer .Net in Antwerpen gekozen. Deze vacature sprak mij aan omdat ik in een relatief klein team kan werken, meerdere programmeertalen kan leren en er nog veel ruimte is om nieuwe kennis op te doen. De ligging van het bedrijf is goed bereikbaar en de werkomgeving in een grote stad spreekt mij aan. Het bedrijf wordt omschreven als mensgericht: werken in een inspirerende, dynamische, warme en flexibele omgeving, waar elke stem telt en volop kansen zijn voor persoonlijke groei en ontwikkeling."
+      }, 
+      "personalChallenges" :{
+        "id" : "persoonlijke-uitdagingen",
+        "h3" : "Persoonlijke uitdagingen",
+        "p" : "Bij deze vacature merk ik dat ik nog niet alle gevraagde hard en soft skills volledig beheers. Zo moet ik nog ervaring opdoen met ASP.NET en UX/UI, en vind ik het soms moeilijk om efficiënt samen te werken in een team en proactief hulp te vragen. Deze uitdagingen zijn belangrijk om te overwinnen omdat ze direct aansluiten bij de competenties die gevraagd worden in de functie en in een mensgerichte organisatie. Ik moet leren mijn kennis en vaardigheden beter te structureren en effectief te communiceren binnen een team."
+      },
+      "bijgeleerd" : {
+        "id" : "bijgeleerd",
+        "h3" : "Bijgeleerd",
+        "p" : ""
+      }
+    }
+  },
+  {
+    "id": "reflectie-PE-debugging",
+    "title": "Reflectie PE: Debugging (C#)",
+    "image": "preview-reflectie-debugging.png",
+    "alt": "foto van reflectie debugging",
+    "pageInfo" : {
+      "containerTitle" : {
+        "h1" : "Reflectie PE: Debugging (C#)",
+        "h2" : "Programmeren - 05/12/2025"
+      },
+      "descprition" : {
+        "id" : "beschrijving",
+        "h3" : "Beschrijving",
+        "p" : "In deze PE: Debugging (C#) moest ik een bestaande applicatie analyseren en de aanwezige bugs opsporen en oplossen met behulp van Visual Studio. Het doel was om inzicht te krijgen in foutopsporing, logisch denken en het correct toepassen van C#-concepten in een echte codebase. Een deel van de applicatie werkte correct, terwijl het andere gedeelte voortdurend vastliep, waardoor het lastig was om het volledige programma te testen. Buiten de lessen oefende ik met het maken van eigen projecten en het systematisch opsporen van fouten om ervaring op te doen met debugging."
+      }, 
+      "personalChallenges" :{
+        "id" : "persoonlijke-uitdagingen",
+        "h3" : "Persoonlijke uitdagingen",
+        "p" : "Tijdens het debuggen merkte ik dat ik nog niet volledig zelfstandig bugs kan analyseren en oplossen. Sommige problemen waren moeilijk te vinden en te begrijpen, vooral wanneer meerdere fouten tegelijk aanwezig waren. Ik had moeite om logisch te achterhalen waarom bepaalde code vastliep en hoe ik dit efficiënt kon oplossen. Daarnaast moest ik leren omgaan met frustratie wanneer het programma niet werkte zoals verwacht, en geduld oefenen bij het doorlopen van de foutopsporingsstappen."
+      },
+      "bijgeleerd" : {
+        "id" : "bijgeleerd",
+        "h3" : "Bijgeleerd",
+        "p" : "Door deze PE heb ik mijn vaardigheden in foutopsporing in Visual Studio versterkt. Ik leerde systematisch mijn eigen code controleren, logische stappen volgen en kleinere testcases maken om fouten te isoleren. Ik maakte gebruik van hulpmiddelen zoals YouTube-tutorials en online codingwebsites om mijn C# kennis bij te schaven. Hoewel ik nog niet volledig zelfstandig bugs kan oplossen, heb ik inzicht gekregen in hoe ik stap voor stap problemen kan analyseren en aanpakken. Deze ervaring zal mij helpen bij toekomstige opdrachten en projecten, omdat ik nu beter begrijp hoe ik mijn code kan structureren en controleren om fouten sneller te identificeren."
+      }
+    }
+  },
+  {
+    "id": "reflectie-SDGs",
+    "title": "Reflectie: SDG's",
+    "image": "preview-reflectie-sdg.png",
+    "alt": "foto van reflectie SDG's",
+    "pageInfo" : {
+      "containerTitle" : {
+        "h1" : "Reflectie: SDG's",
+        "h2" : "Werkplekleren 1 - 12/12/2025"
+      },
+      "descprition" : {
+        "id" : "beschrijving",
+        "h3" : "Beschrijving",
+        "p" : "Tijdens het gastcollege van Brightest leerde ik over projecten die bijdragen aan de Sustainable Development Goals (SDG's). Een project dat me het meest aansprak was SDG 3 – Good Health and Well-Being. Door de verbeterde werking van de organisatie krijgen gezinnen sneller toegang tot basisbehoeften, wat bijdraagt aan hun welzijn. Ik vond het inspirerend dat een IT-oplossing indirect kan bijdragen aan een betere levenskwaliteit."
+      }, 
+      "personalChallenges" :{
+        "id" : "persoonlijke-uitdagingen",
+        "h3" : "Persoonlijke uitdagingen",
+        "p" : "Een uitdaging is om als toekomstige programmeur bewust bij te dragen aan maatschappelijke doelen. Bedrijven hebben een verantwoordelijkheid om bij te dragen aan de SDG's, omdat veel maatschappelijke problemen mede door bedrijfsprocessen ontstaan. Het is belangrijk om te begrijpen hoe mijn werk impact kan hebben op bredere maatschappelijke uitdagingen en hoe ik mijn kennis kan inzetten voor positieve verandering."
+      },
+      "bijgeleerd" : {
+        "id" : "bijgeleerd",
+        "h3" : "Bijgeleerd",
+        "p" : ""
+      }
+    }
+  },
+  {
+    "id": "CV",
+    "title": "Curriculum Vitae",
+    "image": "cv-foto-inleiding.png",
+    "alt": "foto van CV project",
+    "pageInfo" : {
+      "containerTitle" : {
+        "h1" : "Online curriculum vitae",
+        "h2" : "Werkplekleren 1 - 21/12/2025"
+      },
+      "descprition" : {
+        "id" : "beschrijving",
+        "h3" : "Beschrijving",
+        "p" : "In deze opdracht ontwikkelde ik een online curriculum vitae met behulp van HTML en CSS, zonder gebruik te maken van frameworks, libraries of kant-en-klare templates. Het doel was om een professioneel en responsief CV te bouwen dat aanvoelt als een echte website. De focus lag op het correct toepassen van semantische HTML, een overzichtelijke structuur van bestanden en een consistente visuele stijl. Daarnaast implementeerde ik media queries om het CV geschikt te maken voor zowel mobiele als desktopweergave. Alle code werd individueel geschreven en beheerd via een GitHub-repository met gestructureerde commits."
+      }, 
+      "personalChallenges" :{
+        "id" : "persoonlijke-uitdagingen",
+        "h3" : "Persoonlijke uitdagingen",
+        "p" : "Een belangrijke uitdaging was het ontwerpen van een professionele layout die zowel visueel aantrekkelijk als functioneel correct was. Het vinden van de juiste balans tussen sober design en voldoende interactie vergde meerdere iteraties. Daarnaast was het technisch uitdagend om de talenkennis op twee verschillende manieren weer te geven: als tabel op grotere schermen en als alternatieve layout op mobiele toestellen. Ook het correct toepassen van hover-effecten, animaties en een uniforme stijl over de volledige website vereiste aandacht voor detail. Het werken met Git en het maken van duidelijke, functionele commits per vereiste vroeg extra discipline en planning."
+      },
+      "bijgeleerd" : {
+        "id" : "bijgeleerd",
+        "h3" : "Bijgeleerd",
+        "p" : "Door deze opdracht heb ik mijn kennis van HTML-structuur en CSS-styling aanzienlijk verdiept. Ik leerde hoe belangrijk semantiek, consistentie en leesbaarheid zijn in een professionele webcontext. Daarnaast heb ik praktische ervaring opgedaan met responsive design, media queries en het aanpassen van layouts aan verschillende schermgroottes. Ook kreeg ik meer inzicht in het ontwerpen van gebruiksvriendelijke interfaces met aandacht voor typografie, kleurgebruik en witruimte. Tot slot leerde ik zelfstandig inspiratie te analyseren en om te zetten naar een eigen ontwerp, zonder code te kopiëren, wat essentieel is voor professioneel webdevelopment."
+      }
+    }
+  },
+  {
+    "id": "portfolio",
+    "title": "Portfolio",
+    "image": "preview-portfolio.png",
+    "alt": "foto van portfolio",
+    "pageInfo" : {
+      "containerTitle" : {
+        "h1" : "Portfolio - Online Portfolio",
+        "h2" : "Werkplekleren 1 - 09/01/2025"
+      },
+      "descprition" : {
+        "id" : "beschrijving",
+        "h3" : "Beschrijving",
+        "p" : "In deze opdracht werk ik een portfolio uit waarin ik mijn leerproces en projecten van Werkplekleren 1 documenteer. Het portfolio is bedoeld voor mijzelf, mijn PXL-coach en mijn werkplekcoach, als hulpmiddel om te reflecteren over mijn leerervaringen en om gerichte begeleiding mogelijk te maken. Het bevat mijn persoonlijke introductie, logboek, ontwikkeling, documentatie van opdrachten en reflecties."
+      }, 
+      "personalChallenges" :{
+        "id" : "persoonlijke-uitdagingen",
+        "h3" : "Persoonlijke uitdagingen",
+        "p" : "Mijn grootste uitdaging bij deze opdracht was om gefocust te blijven en alles overzichtelijk uit te werken, omdat het heel veel schrijven en documenteren is. Daarnaast wilde ik creatieve en technische keuzes maken bij het design en de structuur van mijn portfolio, terwijl ik tegelijkertijd moest nadenken over hoe het alle onderdelen van Werkplekleren 1 duidelijk laat zien."
+      },
+      "bijgeleerd" : {
+        "id" : "bijgeleerd",
+        "h3" : "Bijgeleerd",
+        "p" : "Ik heb geleerd om mijn werk overzichtelijk en visueel aantrekkelijk te presenteren, met aandacht voor structuur en design. Ook heb ik nieuwe manieren ontdekt om CSS toe te passen, zoals het gebruik van accentlijnen, afgeronde hoeken, en visuele scheiding van secties. Daarnaast heb ik geoefend met het documenteren van mijn leerproces en reflecties op een gestructureerde manier, zodat ze duidelijk zijn voor zowel mezelf als mijn coaches."
+      }
+    }
+  }
+],
+"pes" : [
+  {
+    "id": "LDB",
+    "title": "LockDown Browser (LDB)",
+    "image": "preview-ldb.png",
+    "alt": "foto van LockDown Browser",
+    "pageInfo" : {
+      "containerTitle" : {
+        "h1" : "PE: LockDown Browser",
+        "h2" : "Werkplekleren 1 - 02/10/2025"
+      },
+      "descprition" : {
+        "id" : "beschrijving",
+        "h3" : "Beschrijving",
+        "p" : "Deze PE was een eenvoudige toets om te testen of we correct met LockDownBrowser kunnen werken. Het doel was om vertrouwd te raken met de software en een paar basisvragen te beantwoorden. De toets verliep vlot en gaf mij de kans om het systeem zonder problemen te gebruiken."
+      }, 
+      "personalChallenges" :{
+        "id" : "persoonlijke-uitdagingen",
+        "h3" : "Persoonlijke uitdagingen",
+        "p" : "De grootste uitdaging was om de werking van LockDownBrowser volledig te begrijpen en zeker te zijn dat ik alles correct installeerde en gebruikte tijdens de toets. Omdat de toets soepel verliep, was deze uitdaging makkelijk te overwinnen."
+      },
+      "bijgeleerd" : {
+        "id" : "bijgeleerd",
+        "h3" : "Bijgeleerd",
+        "p" : "Door deze PE heb ik geleerd hoe LockDownBrowser werkt, inclusief het openen van toetsen, navigeren door de vragen en de tijdslimiet in de gaten houden. Deze ervaring zorgt ervoor dat ik in toekomstige toetsen vlot en zonder stress de software kan gebruiken."
+      }
+    }
+  },
+  {
+    "id": "GIT",
+    "title": "GIT & GitHub",
+    "image": "preview-Git.png",
+    "alt": "foto van git PE",
+    "pageInfo" : {
+      "containerTitle" : {
+        "h1" : "Git & GitHub",
+        "h2" : "Werkplekleren 1 - 16/10/2025"
+      },
+      "descprition" : {
+        "id" : "beschrijving",
+        "h3" : "Beschrijving",
+        "p" : "In deze opdracht heb ik een eenvoudige website gemaakt met HTML en CSS, verdeeld over twee pagina’s: index.html en about.html. De startpagina bevatte een overzicht van veel gemaakte fouten bij Git & GitHub en een link naar de about-pagina met mijn naam. De focus lag op het correct toepassen van Git-commando’s, commits en het pushen van het resultaat naar een GitHub repository."
+      }, 
+      "personalChallenges" :{
+        "id" : "persoonlijke-uitdagingen",
+        "h3" : "Persoonlijke uitdagingen",
+        "p" : "Technisch gezien had ik de code correct geschreven, maar mijn fout was dat ik alles in één keer committeerde in plaats van per vereiste stap. Dit maakte het moeilijker om de voortgang overzichtelijk te houden en te controleren welke wijzigingen bij welke stap hoorden. Voor volgende projecten wil ik leren om **per kleine stap een commit te maken met een duidelijke message**, zodat het overzichtelijker wordt en fouten sneller te traceren zijn."
+      },
+      "bijgeleerd" : {
+        "id" : "bijgeleerd",
+        "h3" : "Bijgeleerd",
+        "p" : "Door deze opdracht heb ik geleerd hoe belangrijk het is om Git gestructureerd te gebruiken: commits per stap maken, duidelijke messages toevoegen en regelmatig pushen. Ik heb ook praktische ervaring opgedaan met het aanmaken van meerdere HTML-pagina’s, het linken van pagina’s via hyperlinks en het correct opzetten van een repository. Dit zal me helpen bij toekomstige projecten om overzicht te behouden en fouten in versiebeheer te vermijden."
+      }
+    }
+  },
+  {
+    "id": "gastsprekers",
+    "title": "Reflectie gastsprekers",
+    "image": "preview-gastspreker (1).jpg",
+    "alt": "foto van reflectie gastsprekers",
+    "pageInfo" : {
+      "containerTitle" : {
+        "h1" : "Reflectie Gastsprekers",
+        "h2" : "Werkplekleren 1 - 23/10/2025"
+      },
+      "descprition" : {
+        "id" : "beschrijving",
+        "h3" : "Beschrijving",
+        "p" : "In deze PE heb ik een reflectie gemaakt over de gastsprekers die tijdens Werkplekleren 1 zijn langsgekomen. Het doel was om de informatie die zij deelden te verwerken en kritisch te bekijken hoe dit van toepassing kan zijn op mijn persoonlijke ontwikkeling en toekomstige loopbaan."
+      }, 
+      "personalChallenges" :{
+        "id" : "persoonlijke-uitdagingen",
+        "h3" : "Persoonlijke uitdagingen",
+        "p" : "Een belangrijke uitdaging was het onthouden van wat de gastsprekers hebben verteld, zodat ik dit goed kon verwerken in mijn reflectie. Het verwerken van alle informatie en het selecteren van de belangrijkste punten vergde concentratie en focus, vooral omdat sommige details later pas relevant werden."
+      },
+      "bijgeleerd" : {
+        "id" : "bijgeleerd",
+        "h3" : "Bijgeleerd",
+        "p" : "Door deze reflectie heb ik gemerkt dat mijn kortetermijngeheugen soms minder sterk is dan gedacht. Ik heb geleerd om informatie beter te structureren en notities te maken tijdens presentaties, zodat ik later eenvoudiger een overzichtelijke en inhoudelijk correcte reflectie kan schrijven. Daarnaast realiseerde ik me hoe waardevol de input van gastsprekers kan zijn voor inzicht in de praktijk en mijn eigen professionele ontwikkeling."
+      }
+    }
+  },
+  {
+    "id": "console-PE",
+    "title": "C# Console",
+    "image": "preview-PE-Console.png",
+    "alt": "foto van PE console",
+    "pageInfo" : {
+      "containerTitle" : {
+        "h1" : "PE: C# Console",
+        "h2" : "Werkplekleren 1 - 13/11/2025"
+      },
+      "descprition" : {
+        "id" : "beschrijving",
+        "h3" : "Beschrijving",
+        "p" : "In deze Permanente Evaluatie heb ik gewerkt aan een console-applicatie in C#. Het doel was om een bestaande repository te clonen, de applicatie verder te ontwikkelen volgens de opdracht en elke vereiste apart te committen en pushen. De nadruk lag op het correct gebruiken van Git & GitHub, het ontwikkelen van logische methodes in C# en het zelfstandig oplossen van fouten."
+      }, 
+      "personalChallenges" :{
+        "id" : "persoonlijke-uitdagingen",
+        "h3" : "Persoonlijke uitdagingen",
+        "p" : "Ik begon sterk met het implementeren van de eerste methodes en logica, maar liep vast aan het einde van de constructor en bij de Visit-methode. Het was een uitdaging om de complexe logica correct te implementeren en tegelijkertijd de Git-workflow strikt te volgen. Door de feedback-video en de vergelijking met de modeloplossing kon ik inzien waar ik vastliep en welke concepten van C# ik nog beter moest begrijpen."
+      },
+      "bijgeleerd" : {
+        "id" : "bijgeleerd",
+        "h3" : "Bijgeleerd",
+        "p" : "Door deze PE heb ik geleerd om beter te analyseren waar mijn code faalt en hoe ik logische fouten kan opsporen en oplossen. Ik heb mijn kennis van C#-constructors en methodes verdiept en inzicht gekregen in hoe een console-applicatie gestructureerd en functioneel correct kan worden opgebouwd. Daarnaast heb ik ervaren hoe belangrijk het is om opdrachten stap per stap te committen en pushen in Git, zodat je overzicht behoudt en fouten makkelijker kan traceren."
+      }
+    }
+  },
+  {
+    "id": "webdevelopment",
+    "title": "HTML & CSS",
+    "image": "preview-html&css.png",
+    "alt": "foto van PE html&css",
+    "pageInfo" : {
+      "containerTitle" : {
+        "h1" : "HTML & CSS",
+        "h2" : "Werkplekleren 1 - 27/11/2025"
+      },
+      "descprition" : {
+        "id" : "beschrijving",
+        "h3" : "Beschrijving",
+        "p" : "In deze Permanente Evaluatie heb ik gewerkt aan het nabouwen van de homepage van 'PXL Mountain Adventures' met HTML en CSS. Het doel was om een correcte layout te maken volgens de tickets: navigatiebalk, hero-banner, tours-sectie, buttons en footer. Alle elementen moesten goed gestyled en gepositioneerd worden, met flexbox voor de cards en hover-effecten op knoppen."
+      }, 
+      "personalChallenges" :{
+        "id" : "persoonlijke-uitdagingen",
+        "h3" : "Persoonlijke uitdagingen",
+        "p" : "De grootste uitdaging lag bij de positionering van de hero-banner en de tekst erover, zodat alles correct gecentreerd stond. Daarnaast was het soms lastig om de flexbox spacing tussen de tour-cards exact goed te krijgen en de hover-effecten op de buttons consistent te maken. Ook het zorgen dat de navigatiebalk sticky bovenaan bleef, vergde enkele correcties in de CSS."
+      },
+      "bijgeleerd" : {
+        "id" : "bijgeleerd",
+        "h3" : "Bijgeleerd",
+        "p" : "Door deze PE heb ik geleerd hoe belangrijk het is om CSS-systematisch op te bouwen: eerst algemene reset en body-styling, dan layout en pas daarna details zoals hover-effecten en gradients. Ik heb mijn kennis van flexbox, positionering en CSS-specifiteit verdiept. Ook heb ik geoefend met het debuggen van layoutproblemen en het iteratief verbeteren van een pagina, zodat alles visueel overeenkomt met het design."
+      }
+    }
+  },
+  {
+    "id": "debugging",
+    "title": "Debugging (C#)",
+    "image": "preview-debugging.png",
+    "alt": "foto van PE debugging",
+    "pageInfo" : {
+      "containerTitle" : {
+        "h1" : "PE - Debugging (C#)",
+        "h2" : "Werkplekleren 1 - 04/12/2025"
+      },
+      "descprition" : {
+        "id" : "beschrijving",
+        "h3" : "Beschrijving",
+        "p" : ""
+      }, 
+      "personalChallenges" :{
+        "id" : "persoonlijke-uitdagingen",
+        "h3" : "Persoonlijke uitdagingen",
+        "p" : ""
+      },
+      "bijgeleerd" : {
+        "id" : "bijgeleerd",
+        "h3" : "Bijgeleerd",
+        "p" : ""
+      }
+    }
+  },
+  {
+    "id": "WPF",
+    "title": "C# WPF",
+    "image": "preview-wpf.png",
+    "alt": "foto van PE WPF",
+    "pageInfo" : {
+      "containerTitle" : {
+        "h1" : "Reflectie WPF PE",
+        "h2" : "WPF - 08/01/2026"
+      },
+      "descprition" : {
+        "id" : "beschrijving",
+        "h3" : "Beschrijving",
+        "p" : ""
+      }, 
+      "personalChallenges" :{
+        "id" : "persoonlijke-uitdagingen",
+        "h3" : "Persoonlijke uitdagingen",
+        "p" : ""
+      },
+      "bijgeleerd" : {
+        "id" : "bijgeleerd",
+        "h3" : "Bijgeleerd",
+        "p" : ""
+      }
+    }
+  }
+]
+}
 }
