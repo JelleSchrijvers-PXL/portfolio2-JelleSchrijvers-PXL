@@ -37,88 +37,99 @@ function isEmptyWeek(week) {
   <section id="logboek" class="logboek">
     <h2 class="logboek__title">{{ $t('infoPage.nav.logboek') }}</h2>
 
-    <table class="logboek__table">
-      <thead>
-        <tr>
-          <th>{{ $t('infoPage.logboek.col.week') }}</th>
-          <th>{{ $t('infoPage.logboek.col.periode') }}</th>
-          <th>{{ $t('infoPage.logboek.col.inhoud') }}</th>
-          <th>{{ $t('infoPage.logboek.col.evaluaties') }}</th>
-          <th>{{ $t('infoPage.logboek.col.opdrachten') }}</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr
-          v-for="week in logboek.weeks"
-          :key="week.week"
-          :class="{ 'row--empty': isEmptyWeek(week) }"
-        >
-          <td class="col-week">{{week.week }}</td>
-          <td class="col-periode">{{ formatPeriode(week.periode) }}</td>
-          <td class="col-list">
-            <ul v-if="toArray(week.inhoud).length">
-              <li v-for="(item, i) in toArray(week.inhoud)" :key="i">{{ item }}</li>
-            </ul>
-          </td>
-          <td class="col-list">
-            <ul v-if="toArray(week.evaluaties).length">
-              <li v-for="(item, i) in toArray(week.evaluaties)" :key="i">{{ item }}</li>
-            </ul>
-          </td>
-          <td class="col-list">
-            <ul v-if="toArray(week.opdrachten).length">
-              <li v-for="(item, i) in toArray(week.opdrachten)" :key="i">{{ item }}</li>
-            </ul>
-          </td>
-        </tr>
-      </tbody>
-    </table>
+    <div class="logboek__table-wrap">
+      <table class="logboek__table">
+        <thead>
+          <tr>
+            <th>{{ $t('infoPage.logboek.col.week') }}</th>
+            <th>{{ $t('infoPage.logboek.col.periode') }}</th>
+            <th>{{ $t('infoPage.logboek.col.inhoud') }}</th>
+            <th>{{ $t('infoPage.logboek.col.evaluaties') }}</th>
+            <th>{{ $t('infoPage.logboek.col.opdrachten') }}</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr
+            v-for="week in logboek.weeks"
+            :key="week.week"
+            :class="{ 'row--empty': isEmptyWeek(week) }"
+          >
+            <td class="col-week">{{ week.week }}</td>
+            <td class="col-periode">{{ formatPeriode(week.periode) }}</td>
+            <td class="col-list">
+              <ul v-if="toArray(week.inhoud).length">
+                <li v-for="(item, i) in toArray(week.inhoud)" :key="i">{{ item }}</li>
+              </ul>
+            </td>
+            <td class="col-list">
+              <ul v-if="toArray(week.evaluaties).length">
+                <li v-for="(item, i) in toArray(week.evaluaties)" :key="i">{{ item }}</li>
+              </ul>
+            </td>
+            <td class="col-list">
+              <ul v-if="toArray(week.opdrachten).length">
+                <li v-for="(item, i) in toArray(week.opdrachten)" :key="i">{{ item }}</li>
+              </ul>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   </section>
 </template>
 
 <style scoped>
 .logboek {
-  font-family: 'Segoe UI', sans-serif;
-  padding: 2rem;
-  background-color: #0d1117;
-  min-height: 100vh;
-  color: #c9d1d9;
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 3rem 0;
+  color: var(--color-text);
+  scroll-margin-top: 110px;
 }
 
 .logboek__title {
   font-size: 2rem;
-  font-weight: 700;
-  color: #58a6ff;
+  font-weight: 800;
+  color: var(--color-heading);
   margin-bottom: 1.5rem;
+}
+
+.logboek__table-wrap {
+  overflow-x: auto;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  background: rgba(17, 24, 39, 0.72);
+  box-shadow: var(--shadow-soft);
 }
 
 .logboek__table {
   width: 100%;
   border-collapse: collapse;
   font-size: 0.9rem;
+  min-width: 860px;
 }
 
 .logboek__table thead tr {
-  background-color: #161b22;
-  border-bottom: 2px solid #30363d;
+  background-color: rgba(21, 31, 45, 0.95);
+  border-bottom: 1px solid var(--color-border);
 }
 
 .logboek__table th {
   text-align: left;
   padding: 0.85rem 1.25rem;
-  font-weight: 600;
+  font-weight: 800;
   font-size: 0.85rem;
-  color: #58a6ff;
+  color: var(--color-accent);
   letter-spacing: 0.03em;
 }
 
 .logboek__table tbody tr {
-  border-bottom: 1px solid #21262d;
+  border-bottom: 1px solid rgba(148, 163, 184, 0.12);
   transition: background-color 0.15s;
 }
 
 .logboek__table tbody tr:hover {
-  background-color: #161b22;
+  background-color: rgba(56, 189, 248, 0.06);
 }
 
 .logboek__table tbody tr.row--empty {
@@ -128,19 +139,19 @@ function isEmptyWeek(week) {
 .logboek__table td {
   padding: 1rem 1.25rem;
   vertical-align: top;
-  color: #c9d1d9;
+  color: var(--color-text);
 }
 
 .col-week {
-  font-weight: 600;
-  color: #58a6ff;
+  font-weight: 800;
+  color: var(--color-accent);
   width: 60px;
   text-align: center;
 }
 
 .col-periode {
   white-space: nowrap;
-  color: #8b949e;
+  color: var(--color-text-muted);
   width: 140px;
 }
 
@@ -154,16 +165,6 @@ function isEmptyWeek(week) {
 }
 
 .col-list ul li {
-  display: flex;
-  align-items: flex-start;
-  gap: 0.5rem;
   line-height: 1.5;
-}
-
-.col-list ul li::before {
-  content: '•';
-  color: #58a6ff;
-  flex-shrink: 0;
-  margin-top: 1px;
 }
 </style>

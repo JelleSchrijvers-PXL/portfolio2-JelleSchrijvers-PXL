@@ -31,44 +31,81 @@ const infoNav = computed(() => {
   ]
 })
 
+const currentItems = computed(() => {
+  if (route.name === 'info') return infoNav.value
+  if (route.name === 'work') return [...opdrachten.value, ...pes.value]
+  return []
+})
+
 const activeId = ref(null)
+let scrollFrame = null
+let activeLockUntil = 0
 
-let observer
-
-const setupSectionObserver = async () => {
+const updateActiveId = async () => {
   await nextTick()
 
-  observer?.disconnect()
-  const sections = document.querySelectorAll('#aboutme, section[id]')
+  if (Date.now() < activeLockUntil) return
 
-  observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.intersectionRatio > 0.5) {
-          activeId.value = entry.target.id
-        }
-      })
-    },
-    {
-      threshold: [0.3, 0.5, 0.7]
+  const lastItem = currentItems.value[currentItems.value.length - 1]
+  const isNearPageBottom =
+    window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 8
+
+  if (isNearPageBottom && lastItem) {
+    activeId.value = lastItem.id
+    return
+  }
+
+  const marker = window.scrollY + 150
+  let current = currentItems.value[0]?.id ?? null
+  let smallestDistance = Number.POSITIVE_INFINITY
+
+  currentItems.value.forEach((item) => {
+    const section = document.getElementById(item.id)
+
+    if (!section) return
+
+    const top = section.getBoundingClientRect().top + window.scrollY
+    const distance = Math.abs(top - marker)
+
+    if (distance < smallestDistance) {
+      smallestDistance = distance
+      current = item.id
     }
-  )
+  })
 
-  sections.forEach((section) => observer.observe(section))
+  activeId.value = current
 }
 
-onMounted(setupSectionObserver)
+const scheduleActiveUpdate = () => {
+  if (scrollFrame) return
+
+  scrollFrame = window.requestAnimationFrame(() => {
+    scrollFrame = null
+    updateActiveId()
+  })
+}
+
+onMounted(() => {
+  updateActiveId()
+  window.addEventListener('scroll', scheduleActiveUpdate, { passive: true })
+  window.addEventListener('resize', scheduleActiveUpdate)
+})
 
 watch(
-  () => route.name,
+  () => [route.name, currentItems.value.length],
   () => {
     activeId.value = null
-    setupSectionObserver()
+    updateActiveId()
   }
 )
 
 onBeforeUnmount(() => {
-  observer?.disconnect()
+  if (scrollFrame) {
+    window.cancelAnimationFrame(scrollFrame)
+  }
+
+  window.removeEventListener('scroll', scheduleActiveUpdate)
+  window.removeEventListener('resize', scheduleActiveUpdate)
 })
 
 const scrollTo = (id) => {
@@ -85,6 +122,9 @@ const scrollTo = (id) => {
       top: y,
       behavior: 'smooth'
     })
+
+    activeId.value = id
+    activeLockUntil = Date.now() + 900
   }
 }
 </script>
@@ -139,41 +179,52 @@ const scrollTo = (id) => {
 <style scoped>
 .container-nav-content {
   position: fixed;
-  margin-top: 5rem;
-  width: 220px;
-  padding: 20px;
+  top: calc(var(--header-height) + 1rem);
+  left: 0;
+  bottom: 1.5rem;
+  width: var(--sidenav-width);
+  padding: 0 1.25rem 1rem 2rem;
+  overflow-y: auto;
+  border-right: 1px solid var(--color-border);
 }
 
 .container-nav-content ul {
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .header-lijst-sections {
   text-transform: uppercase;
   font-size: 0.75rem;
   letter-spacing: 0.1em;
-  color: #6e6e6e;
+  color: var(--color-text-muted);
+  font-weight: 800;
 }
 
 .container-nav-content a {
-  color: #9c9c9c;
+  display: block;
+  padding: 0.25rem 0;
+  color: var(--color-text-muted);
   text-decoration: none;
   font-size: 0.9rem;
+  line-height: 1.35;
   transition: all 0.25s ease;
   position: relative;
   cursor: pointer;
 }
 
 .container-nav-content a:hover {
-  color: white;
+  color: var(--color-heading);
   transform: translateX(4px);
 }
 
 .container-nav-content a.active {
-  color: white;
-  font-weight: 500;
+  color: var(--color-heading);
+  font-weight: 750;
 }
 
 .container-nav-content a.active::before {
@@ -184,6 +235,13 @@ const scrollTo = (id) => {
   transform: translateY(-50%);
   width: 3px;
   height: 70%;
-  background: white;
+  background: var(--color-accent);
+  border-radius: 999px;
+}
+
+@media (max-width: 980px) {
+  aside {
+    display: none;
+  }
 }
 </style>

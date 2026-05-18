@@ -85,7 +85,7 @@ const activityCount = 3
       :key="key"
       class="rol"
     >
-      <h2>{{ t('infoPage.competenties.labels.situatie') === t('infoPage.competenties.labels.situatie') ? 'Role: ' : '' }}{{ t(`infoPage.competenties.rollen.${key}.title`) }}</h2>
+      <h2>{{ t(`infoPage.competenties.rollen.${key}.title`) }}</h2>
 
       <h3>{{ t('infoPage.competenties.labels.situatie') }}</h3>
       <p>{{ t(`infoPage.competenties.rollen.${key}.situatie`) }}</p>
@@ -128,65 +128,92 @@ const activityCount = 3
 <style scoped>
 /*  Layout  */
 section {
-  padding: 2rem 1.5rem;
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 3rem 0;
+  border-top: 1px solid rgba(148, 163, 184, 0.14);
+  scroll-margin-top: 110px;
 }
 
 /*  Typography  */
 h1 {
+  color: var(--color-heading);
   font-size: 2rem;
+  font-weight: 800;
   margin-bottom: 1.5rem;
 }
 
 h2 {
-  font-size: 1.5rem;
+  color: var(--color-heading);
+  font-size: 1.65rem;
+  font-weight: 800;
   margin-bottom: 1rem;
 }
 
 h3 {
+  color: var(--color-heading);
   font-size: 1.15rem;
+  font-weight: 750;
   margin-bottom: 0.4rem;
 }
 
 h4 {
+  color: var(--color-accent);
   font-size: 1rem;
+  font-weight: 750;
   margin-bottom: 0.4rem;
 }
 
 p {
+  color: var(--color-text);
   line-height: 1.7;
   margin-bottom: 0.75rem;
 }
 
 /*  Content blocks  */
 .content-block {
+  max-width: 860px;
   margin-bottom: 1.5rem;
 }
 
 .content-subblock {
-  margin-bottom: 1.25rem;
+  margin: 1.25rem 0;
+  padding-left: 1rem;
+  border-left: 3px solid var(--color-accent);
 }
 
 /*  Rolen  */
 .rol {
-  margin-bottom: 2rem;
-  padding-bottom: 1.5rem;
-  border-bottom: 1px solid #e2e8f0;
+  margin-bottom: 1.75rem;
+  padding: 1.5rem 0;
+  border-top: 1px solid rgba(148, 163, 184, 0.14);
 }
 
 /*  Activiteiten  */
 .activiteit {
   margin-bottom: 1.25rem;
-  padding-left: 1rem;
-  border-left: 3px solid #cbd5e1;
+  padding: 1rem 1.15rem;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  background: rgba(17, 24, 39, 0.62);
 }
 
 .motivatie {
   font-size: 0.9rem;
-  color: #64748b;
+  color: var(--color-text-muted);
 }
 
 /*  X-Factor  */
 .x-factor-item {
   margin-bottom: 1.25rem;
+  padding: 1rem 1.15rem;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  background: rgba(17, 24, 39, 0.62);
+}
+
+strong {
+  color: var(--color-heading);
+  font-weight: 800;
 }
 </style>

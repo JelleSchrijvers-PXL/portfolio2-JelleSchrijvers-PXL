@@ -9,33 +9,46 @@ const { t } = useI18n()
 <template>
 <footer>
     <p>© 2025 Jelle Schrijvers</p>
-    <a href="#aboutme" class="scroll-to-top" :aria-label="t('footer.backToTop')">
+    <a href="#app" class="scroll-to-top" :aria-label="t('footer.backToTop')">
         ↑
     </a>
 </footer>
 </template>
 
 <style scoped>
+footer {
+    margin-top: auto;
+    padding: 2rem 0 0;
+    border-top: 1px solid var(--color-border);
+    color: var(--color-text-muted);
+    font-size: 0.9rem;
+}
+
 /* Scroll to top button */
 .scroll-to-top {
     position: fixed;
     bottom: 2rem;
     right: 2rem;
-    background-color: #1f2937;
-    color: #38bdf8;
-    padding: 0.8rem 1rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.9rem;
+    height: 2.9rem;
+    border: 1px solid var(--color-border);
+    background-color: rgba(17, 24, 39, 0.92);
+    color: var(--color-accent);
     border-radius: 50%;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     text-align: center;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+    box-shadow: var(--shadow-soft);
     transition: transform 0.2s ease, background 0.2s ease, color 0.2s ease;
     z-index: 1000;
     text-decoration: none;
 }
 
 .scroll-to-top:hover {
-    background-color: #38bdf8;
-    color: #111827;
+    background-color: var(--color-accent);
+    color: #08111d;
     transform: translateY(-3px);
 }
 </style>
