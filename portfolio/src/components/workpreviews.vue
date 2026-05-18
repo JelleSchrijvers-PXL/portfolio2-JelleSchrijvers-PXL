@@ -27,7 +27,7 @@ const pesFixed = computed(() =>
     <!-- Opdrachten -->
     <div class="container-projecten">
       <h2>Opdrachten</h2>
-      <section v-for="item in opdrachtenFixed" :key="item.id">
+      <section v-for="item in opdrachtenFixed" :key="item.id" :id="item.id">
         <router-link :to="`/project/${item.id}`">
           <article class="opdracht">
             <h3>{{ item.title }}</h3>
@@ -41,7 +41,7 @@ const pesFixed = computed(() =>
      <div class="containter-PE">
       <h2>PE's</h2>
 
-      <section v-for="item in pesFixed" :key="item.id">
+      <section v-for="item in pesFixed" :key="item.id" :id="item.id">
         <router-link :to="`/project/${item.id}`">
           <article class="opdracht">
             <h3>{{ item.title }}</h3>
