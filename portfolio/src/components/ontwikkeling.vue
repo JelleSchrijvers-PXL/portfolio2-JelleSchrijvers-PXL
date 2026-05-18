@@ -1,6 +1,8 @@
 <script setup>
 import { useI18n } from 'vue-i18n'
 
+defineOptions({ name: 'OntwikkelingSection' })
+
 const { t } = useI18n()
 
 const xFactorKeys = ['leiderschap', 'creativiteit', 'samenwerking', 'professioneel']

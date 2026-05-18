@@ -1,10 +1,11 @@
 <script setup>
 import { computed } from 'vue'
-import { useRoute, useRouter } from 'vue-router'
+import { useRoute } from 'vue-router'
 import { useI18n } from 'vue-i18n'
 
+defineOptions({ name: 'ProjectDetailPage' })
+
 const route = useRoute()
-const router = useRouter()
 const { tm } = useI18n()
 
 const img = (bestand) =>
@@ -27,7 +28,7 @@ const project = computed(() => {
 
 <template>
   <div class="project-page">
-    <button @click="router.push({ name: 'work' })">← Terug</button>
+    <RouterLink :to="{ name: 'work' }" class="back-button">← Terug</RouterLink>
 
     <div v-if="project">
       <div class="project-header">
@@ -56,3 +57,22 @@ const project = computed(() => {
     </div>
   </div>
 </template>
+
+<style scoped>
+.project-page {
+  padding: 2rem;
+}
+
+.back-button {
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  color: #38bdf8;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.back-button:hover {
+  color: #7dd3fc;
+}
+</style>

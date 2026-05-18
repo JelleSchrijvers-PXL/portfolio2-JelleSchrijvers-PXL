@@ -1,9 +1,11 @@
 <script setup>
 import { useI18n } from 'vue-i18n'
 import { useRoute } from 'vue-router'
-import { computed, onMounted, ref, nextTick } from 'vue'
+import { computed, nextTick, onBeforeUnmount, onMounted, ref, watch } from 'vue'
 
-const { t } = useI18n()
+defineOptions({ name: 'SideNav' })
+
+const { tm } = useI18n()
 const route = useRoute()
 
 const navKey = computed(() => {
@@ -12,22 +14,34 @@ const navKey = computed(() => {
   return null
 })
 
-const opdrachten = computed(() =>
-  t('workPage.opdrachten', [], { returnObjects: true })
-)
+const opdrachten = computed(() => tm('workPage.opdrachten'))
 
-const pes = computed(() =>
-  t('workPage.pes', [], { returnObjects: true })
-)
+const pes = computed(() => tm('workPage.pes'))
+
+const infoNav = computed(() => {
+  const nav = tm('infoPage.nav')
+
+  return [
+    { id: 'aboutme', label: nav.aboutme },
+    { id: 'logboek', label: nav.logboek },
+    { id: 'ontwikkeling', label: nav.ontwikkeling },
+    { id: 'reflectie', label: nav.reflectie },
+    { id: 'competenties', label: nav.competenties },
+    { id: 'activiteiten', label: nav.activiteiten }
+  ]
+})
 
 const activeId = ref(null)
 
-onMounted(async () => {
+let observer
+
+const setupSectionObserver = async () => {
   await nextTick()
 
-  const sections = document.querySelectorAll('section[id]')
+  observer?.disconnect()
+  const sections = document.querySelectorAll('#aboutme, section[id]')
 
-  const observer = new IntersectionObserver(
+  observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
         if (entry.intersectionRatio > 0.5) {
@@ -41,6 +55,20 @@ onMounted(async () => {
   )
 
   sections.forEach((section) => observer.observe(section))
+}
+
+onMounted(setupSectionObserver)
+
+watch(
+  () => route.name,
+  () => {
+    activeId.value = null
+    setupSectionObserver()
+  }
+)
+
+onBeforeUnmount(() => {
+  observer?.disconnect()
 })
 
 const scrollTo = (id) => {
@@ -64,6 +92,18 @@ const scrollTo = (id) => {
 <template>
   <aside v-if="navKey">
     <div class="container-nav-content">
+      <!-- INFO PAGE -->
+      <ul v-if="route.name === 'info'">
+        <li class="header-lijst-sections">{{ tm('infoPage.nav').content }}</li>
+        <li v-for="item in infoNav" :key="item.id">
+          <a
+            :class="{ active: activeId === item.id }"
+            @click.prevent="scrollTo(item.id)"
+          >
+            {{ item.label }}
+          </a>
+        </li>
+      </ul>
 
       <!-- WORK PAGE -->
       <ul v-if="route.name === 'work'">

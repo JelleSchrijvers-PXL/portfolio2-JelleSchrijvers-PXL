@@ -2,6 +2,8 @@
 import { computed } from 'vue'
 import { useI18n } from 'vue-i18n'
 
+defineOptions({ name: 'LogboekSection' })
+
 const { tm } = useI18n()
 
 const logboek = computed(() => tm('infoPage.logboek'))

@@ -3,6 +3,8 @@ import { useI18n } from 'vue-i18n'
 import profilePicture from '../assets/foto/profile-picture.jpg'
 import linkedIn from '../assets/icoon/linkedin-svgrepo-com.svg'
 
+defineOptions({ name: 'AppNavbar' })
+
 const { locale } = useI18n()
 
 function setLang(lang) {

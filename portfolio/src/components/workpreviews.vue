@@ -2,6 +2,8 @@
 import { useI18n } from 'vue-i18n'
 import { computed } from 'vue'
 
+defineOptions({ name: 'WorkPreviews' })
+
 const { tm } = useI18n()
 
 const img = (bestand) =>

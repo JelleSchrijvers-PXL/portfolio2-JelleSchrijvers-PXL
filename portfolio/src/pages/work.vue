@@ -1,5 +1,8 @@
 <script setup>
+import { onMounted } from 'vue'
 import Workpreviews from '@/components/workpreviews.vue';
+
+defineOptions({ name: 'WorkPage' })
 
 onMounted(() => {
   const sections = document.querySelectorAll('section')
