@@ -24,6 +24,20 @@ const project = computed(() => {
     image: img(found.image)
   }
 })
+
+const projectSections = computed(() => {
+  if (!project.value) return []
+
+  if (Array.isArray(project.value.pageInfo.sections)) {
+    return project.value.pageInfo.sections
+  }
+
+  return [
+    project.value.pageInfo.descprition,
+    project.value.pageInfo.personalChallenges,
+    project.value.pageInfo.bijgeleerd
+  ].filter(Boolean)
+})
 </script>
 
 <template>
@@ -38,12 +52,8 @@ const project = computed(() => {
       </div>
 
       <section
-        v-for="(section, key) in {
-          beschrijving: project.pageInfo.descprition,
-          uitdagingen: project.pageInfo.personalChallenges,
-          bijgeleerd: project.pageInfo.bijgeleerd
-        }"
-        :key="key"
+        v-for="section in projectSections"
+        :key="section.id"
         :id="section.id"
         class="project-section"
       >

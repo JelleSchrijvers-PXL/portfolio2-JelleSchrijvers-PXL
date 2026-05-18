@@ -49,7 +49,7 @@ function setLang(lang) {
           >
             <img :src="linkedIn" alt="icoon-linkedin" />LinkedIn
           </a>
-          <a href="#">{{ $t('nav.cv') }}</a>
+          <RouterLink :to="{ name: 'cv' }">{{ $t('nav.cv') }}</RouterLink>
         </div>
 
         <div class="language-switch" aria-label="Taal kiezen">
@@ -181,6 +181,10 @@ header {
 }
 
 .container-social a:hover {
+  color: var(--color-accent);
+}
+
+.container-social .router-link-active {
   color: var(--color-accent);
 }
 

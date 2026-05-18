@@ -839,21 +839,28 @@
         "h1" : "PE - Debugging (C#)",
         "h2" : "Werkplekleren 1 - 04/12/2025"
       },
-      "descprition" : {
-        "id" : "beschrijving",
-        "h3" : "Beschrijving",
-        "p" : ""
-      }, 
-      "personalChallenges" :{
-        "id" : "persoonlijke-uitdagingen",
-        "h3" : "Persoonlijke uitdagingen",
-        "p" : ""
-      },
-      "bijgeleerd" : {
-        "id" : "bijgeleerd",
-        "h3" : "Bijgeleerd",
-        "p" : ""
-      }
+      "sections" : [
+        {
+          "id" : "gevoel-pe",
+          "h3" : "1. Heb je een goed gevoel bij het afleggen van de PE? Waarom wel of waarom niet?",
+          "p" : "Ik heb niet zo een heel goed gevoel, want de eerste helft van mijn applicatie werkt wel tegoei. Maar het andere gedeelte liep de hele tijd vast en ik kreeg het niet gemaakt, dus kon ik niet zien of de code daarna tegoei werkte."
+        },
+        {
+          "id" : "oefenen-debugging",
+          "h3" : "2. Hoe heb je geoefend met foutopsporing in Visual Studio buiten de lesmomenten?",
+          "p" : "Ik heb geoefend door zelf projecten te maken en daarna mijn eigen fouten uit die projecten te halen."
+        },
+        {
+          "id" : "hulpmiddelen",
+          "h3" : "3. Welke hulpmiddelen zijn er ter beschikking om je C# bij te schaven? Welke gebruik je? Ga je naar het monitoraat?",
+          "p" : "Ik gebruik vooral YouTube en codingwebsites om mijn C# wat bij te schaven. Deze hulpmiddelen helpen mij om extra uitleg en voorbeelden te vinden. Ik ga niet naar het monitoraat."
+        },
+        {
+          "id" : "zelfstandig-bugs",
+          "h3" : "4. In welke mate voel je jezelf in staat om zelfstandig een bug te analyseren en op te lossen?",
+          "p" : "Ik heb het gevoel dat ik dit matig kan, maar dat ik nog veel moet bijleren om beter te kunnen zien en begrijpen wat er fout gaat en waarom. Door mijn code beter te begrijpen, wil ik zelfstandiger bugs kunnen analyseren en oplossen."
+        }
+      ]
     }
   },
   {
