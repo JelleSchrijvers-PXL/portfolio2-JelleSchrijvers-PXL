@@ -37,6 +37,15 @@ npm run dev
 npm run build
 ```
 
+The production output is written to `dist/`. The build also creates `dist/404.html`
+so Vue Router routes keep working on GitHub Pages after a refresh.
+
+## Deploy
+
+This repository includes a GitHub Pages workflow in `.github/workflows/deploy.yml`.
+Push to `main` or `master`, then set GitHub Pages to deploy from GitHub Actions in
+the repository settings.
+
 ### Lint with [ESLint](https://eslint.org/)
 
 ```sh
