@@ -78,6 +78,7 @@ const languages = [
 ]
 
 const showPdf = ref(false)
+const cvPdfPreview = `${cvPdf}#toolbar=1&navpanes=0&view=FitH`
 </script>
 
 <template>
@@ -88,7 +89,7 @@ const showPdf = ref(false)
     </div>
 
     <div class="pdf-viewer pdf-viewer--full">
-      <object :data="cvPdf" type="application/pdf">
+      <object :data="cvPdfPreview" type="application/pdf">
         <p>
           Je browser kan de PDF-preview niet tonen.
           <a :href="cvPdf" target="_blank" rel="noreferrer">Open de PDF hier</a>.
@@ -528,11 +529,12 @@ const showPdf = ref(false)
 
 .cv-pdf-mode {
   display: grid;
+  grid-template-rows: auto minmax(0, 1fr);
   gap: 1rem;
-  max-width: 1180px;
-  min-height: calc(100vh - var(--header-height));
+  width: min(100%, 980px);
+  min-height: calc(100vh - var(--header-height) - 2.5rem);
   margin: 0 auto;
-  padding: 2rem 0 3rem;
+  padding: 1.25rem 0 1.75rem;
 }
 
 .pdf-toolbar {
@@ -565,7 +567,14 @@ const showPdf = ref(false)
 }
 
 .pdf-viewer--full object {
-  min-height: calc(100vh - var(--header-height) - 8rem);
+  height: 100%;
+  min-height: 0;
+}
+
+.pdf-viewer--full {
+  height: calc(100vh - var(--header-height) - 7rem);
+  min-height: 520px;
+  max-height: 860px;
 }
 
 @media (max-width: 920px) {
@@ -584,6 +593,15 @@ const showPdf = ref(false)
 
   .cv-pdf-mode {
     padding: 1rem 0 2rem;
+  }
+
+  .pdf-viewer--full {
+    height: 72vh;
+    min-height: 420px;
+  }
+
+  .pdf-viewer--full object {
+    min-height: 0;
   }
 }
 </style>
