@@ -580,7 +580,26 @@
       "bijgeleerd" : {
         "id" : "bijgeleerd",
         "h3" : "Bijgeleerd",
-        "p" : ""
+        "p" : "Om deze hard en soft skills te ontwikkelen, ga ik de volgende acties ondernemen:",
+        "items" : [
+          {
+            "label" : "Hard skill ASP.NET:",
+            "text" : "cursussen volgen en online video’s bekijken, en zelf kleine projecten bouwen om de kennis praktisch toe te passen."
+          },
+          {
+            "label" : "Hard skill UX/UI:",
+            "text" : "projecten maken met focus op gebruikerservaring en interface, feedback vragen aan anderen en verbeteringen doorvoeren."
+          },
+          {
+            "label" : "Soft skill samenwerken in team:",
+            "text" : "bij groepsopdrachten in Werkplekleren actief bijdragen en leren effectief te communiceren en taken te verdelen."
+          },
+          {
+            "label" : "Soft skill proactiviteit:",
+            "text" : "meer durven vragen om hulp wanneer nodig, zowel in groepsprojecten als bij individuele opdrachten."
+          }
+        ],
+        "outro" : "Door deze acties te ondernemen hoop ik zowel mijn technische vaardigheden als mijn persoonlijke competenties te versterken en zo beter voorbereid te zijn voor een professionele werkomgeving."
       }
     }
   },
@@ -634,7 +653,22 @@
       "bijgeleerd" : {
         "id" : "bijgeleerd",
         "h3" : "Bijgeleerd",
-        "p" : ""
+        "p" : "Ik heb geleerd dat sommige SDG's direct relevant zijn voor mijn toekomstige werk als programmeur:",
+        "items" : [
+          {
+            "label" : "SDG 3 – Good Health and Well-Being:",
+            "text" : "Als programmeur breng ik veel uren achter een computerscherm door, waardoor fysieke en mentale gezondheid belangrijk is. Het leren omgaan met stress en het behouden van welzijn is cruciaal."
+          },
+          {
+            "label" : "SDG 4 – Quality Education:",
+            "text" : "Programmeertalen en technologie evolueren voortdurend. Door bij te leren en up-to-date te blijven kan ik mijn werk efficiënt en kwalitatief hoogstaand uitvoeren."
+          },
+          {
+            "label" : "SDG 9 – Industry, Innovation and Infrastructure:",
+            "text" : "Softwareontwikkeling speelt een grote rol in automatisatie en technologische innovatie. Goede IT-oplossingen kunnen processen verbeteren en hebben een aanzienlijke impact op industrie en infrastructuur."
+          }
+        ],
+        "outro" : "Door deze inzichten besef ik dat mijn toekomstige rol als programmeur niet alleen technisch is, maar ook maatschappelijk relevant. Het helpt mij om bewuster te werken en na te denken over de impact van mijn projecten."
       }
     }
   },
@@ -873,21 +907,28 @@
         "h1" : "Reflectie WPF PE",
         "h2" : "WPF - 08/01/2026"
       },
-      "descprition" : {
-        "id" : "beschrijving",
-        "h3" : "Beschrijving",
-        "p" : ""
-      }, 
-      "personalChallenges" :{
-        "id" : "persoonlijke-uitdagingen",
-        "h3" : "Persoonlijke uitdagingen",
-        "p" : ""
-      },
-      "bijgeleerd" : {
-        "id" : "bijgeleerd",
-        "h3" : "Bijgeleerd",
-        "p" : ""
-      }
+      "sections" : [
+        {
+          "id" : "gevoel",
+          "h3" : "Gevoel bij de PE",
+          "p" : "Ik heb het gevoel dat deze PE beter is gegaan dan de vorige PE bij C# Essentials. In het begin van de PE had ik de XAML al snel af, maar toen ik met de C# code moest beginnen liep ik even vast. Na even mijn ogen te sluiten en de cursus opnieuw door te nemen, verliep het weer vlot. Omdat ik eerst vastliep, heb ik niet alles kunnen afmaken."
+        },
+        {
+          "id" : "uitdagingen",
+          "h3" : "Persoonlijke uitdagingen",
+          "p" : "Ik vind het altijd wat uitdagend om de klassen correct te gebruiken in mijn code. Het goed koppelen van de Team- en Match-klassen aan de user interface vergt aandacht en zorgvuldigheid."
+        },
+        {
+          "id" : "bijgeleerd",
+          "h3" : "Wat heb ik bijgeleerd",
+          "p" : "Ik heb geleerd om even tot rust te komen wanneer ik vastloop, zodat ik daarna efficiënter verder kan werken. Daarnaast heb ik meer ervaring opgedaan in het koppelen van klassen aan de interface en het logisch opbouwen van event handlers."
+        },
+        {
+          "id" : "debugging",
+          "h3" : "Zelfstandig problemen oplossen",
+          "p" : "Ik voelde me goed in staat om zelfstandig fouten te vinden en op te lossen. Tijdens het debuggingproces kon ik snel mijn fouten identificeren en corrigeren, waardoor het werken aan de PE vlot verliep."
+        }
+      ]
     }
   }
 ]

@@ -38,6 +38,9 @@ const projectSections = computed(() => {
     project.value.pageInfo.bijgeleerd
   ].filter(Boolean)
 })
+
+const itemKey = (item) =>
+  typeof item === 'string' ? item : `${item.label}-${item.text}`
 </script>
 
 <template>
@@ -59,6 +62,21 @@ const projectSections = computed(() => {
       >
         <h3>{{ section.h3 }}</h3>
         <p v-if="section.p">{{ section.p }}</p>
+        <ul v-if="section.items?.length" class="section-list">
+          <li
+            v-for="item in section.items"
+            :key="itemKey(item)"
+          >
+            <template v-if="typeof item === 'string'">
+              {{ item }}
+            </template>
+            <template v-else>
+              <strong v-if="item.label">{{ item.label }}</strong>
+              {{ item.text }}
+            </template>
+          </li>
+        </ul>
+        <p v-if="section.outro">{{ section.outro }}</p>
       </section>
     </div>
 
@@ -148,6 +166,21 @@ const projectSections = computed(() => {
   max-width: 820px;
   color: var(--color-text);
   line-height: 1.8;
+}
+
+.section-list {
+  display: grid;
+  gap: 0.65rem;
+  max-width: 820px;
+  margin: 0.75rem 0 1rem;
+  padding-left: 1.25rem;
+  color: var(--color-text);
+  line-height: 1.75;
+}
+
+.section-list strong {
+  color: var(--color-heading);
+  font-weight: 800;
 }
 
 @media (max-width: 760px) {
