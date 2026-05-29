@@ -8,450 +8,1205 @@
   "footer": {
     "backToTop": "Back to top"
   },
-  "infoPage" :{ 
-    "nav" :{
-    "content": "Content",
-    "aboutme": "About me",
-    "logboek": "Logbook",
-    "ontwikkeling": "Development",
-    "reflectie": "Reflection",
-    "competenties": "Competencies",
-    "activiteiten": "Activities"
+  "infoPage": {
+    "nav": {
+      "content": "Content",
+      "aboutme": "About me",
+      "logboek": "Logbook",
+      "ontwikkeling": "Development",
+      "reflectie": "Reflection",
+      "competenties": "Competencies",
+      "activiteiten": "Activities"
     },
     "about": {
-    "text": "My name is Jelle Schrijvers and I am a student in the Associate Degree Programming at Hogeschool PXL. This online portfolio was created as part of the Workplace Learning 1 course and serves as a reflection of my learning process throughout this trajectory. In this portfolio, I document my experiences, assignments, and projects that I have carried out both at school and in the workplace. The focus here is on developing my technical skills, my problem-solving thinking, and my professional attitude. Additionally, this portfolio contains reflections on my growth as a beginning programmer and the feedback I received from my lecturers. Each section is structured to provide a clear and organized overview of my progress. The portfolio is intended as a tool for evaluation, guidance, and self-reflection. In this way, it forms not only an overview of my achieved results but also of the learning objectives I have actively worked on."
-  },
- "ontwikkeling": {
-    "title": "Development",
-    "opleiding": {
-      "title": "Choice of Study",
-      "why_programming_title": "Why did I choose programming?",
-      "why_programming_p1":"My interest in programming started at a young age, during talent labs in my first year of secondary school. That was where I first encountered logical thinking and problem-solving through small programming assignments. Solving those assignments gave me an immediate sense of satisfaction.",
-      "why_programming_p2":"In the following years this interest deepened through STEM science courses. Projects with Minecraft Education, robotics, and automation strengthened my enthusiasm for combining creativity with technology.",
-      "why_programming_p3":"What appeals to me most about programming is solving problems and building creative solutions. Programming is both a passion and a future-oriented career choice for me.",
-      "why_job_title": "Why does this profession suit me?",
-      "why_job_p1":"The profession of developer fits well with the way I work. I enjoy working independently, experimenting with solutions, and learning from mistakes.",
-      "why_job_p2":"When a problem becomes complex, I consciously step back so I can return to it with a fresh perspective. This helps me to persist even with challenging assignments.",
-      "why_job_p3":"In addition, I possess qualities such as problem-solving thinking, creativity, and perseverance — all of which are essential in this profession."
-    }
-  },
-  "reflectie": {
-    "title": "5.1 AIM Reflection on WPL1",
-    "introductie_label": "Introduction",
-    "introductie":"My work-based learning period (WPL1) had its ups and downs, but I learned a great deal about myself and my skills.",
-    "positief_label": "Positive elements",
-    "positief": "Through practical assignments I made noticeable progress in programming, especially in C#.",
-    "minder_label": "Less enjoyable elements",
-    "minder":"The time pressure during practical exams was challenging, but gave me a realistic picture of the professional field.",
-    "inzichten_label": "Insights",
-    "inzichten":"I work well independently and in a structured way, but I can still grow in managing stress and deadlines.",
-    "succes_label": "Personal success",
-    "succes":"My greatest success is that I have come to know myself better and know where I can improve."
-  },
-  "volgendewpl": {
-    "title": "5.2 What I take into the next WPL",
-    "p1": "My independence, creativity, and boldness are strong points I want to keep using. At the same time I want to work more consciously on collaboration and communication.",
-    "p2": "Concretely, I want to ask for feedback more often, consult with others, and share my ideas better within a team context."
-  },
-  "xfactor": {
-    "title": "5.3 X-Factor",
-    "items": {
-      "leiderschap": {
-        "title": "Leadership / Initiative",
-        "tekst": "I take responsibility for my own learning process and start assignments proactively."
-      },
-      "creativiteit": {
-        "title": "Creativity / Innovation",
-        "tekst": "I always work out a design first before I start programming."
-      },
-      "samenwerking": {
-        "title": "Collaboration / Communication",
-        "tekst": "I actively ask for feedback from lecturers and classmates."
-      },
-      "professioneel": {
-        "title": "Professional Development",
-        "tekst": "I keep learning and applying new techniques in my projects."
-      }
-    }
-  },
-  "competenties": {
-    "title": "Programmer Competencies",
-    "labels": {
-      "situatie": "Where do you currently stand?",
-      "goed": "What are you already good at?",
-      "niet": "What are you not yet good at?"
+      "text": "My name is Jelle Schrijvers and I am a student in the Associate Degree Programming at Hogeschool PXL. This online portfolio was created as part of the Workplace Learning 1 course and serves as a reflection of my learning process throughout this trajectory. In this portfolio, I document my experiences, assignments, and projects that I have carried out both at school and in the workplace. The focus here is on developing my technical skills, my problem-solving thinking, and my professional attitude. Additionally, this portfolio contains reflections on my growth as a beginning programmer and the feedback I received from my lecturers. Each section is structured to provide a clear and organized overview of my progress. The portfolio is intended as a tool for evaluation, guidance, and self-reflection. In this way, it forms not only an overview of my achieved results but also of the learning objectives I have actively worked on."
     },
-    "rollen": {
-      "ontwerper": {
-        "title": "Designer",
-        "situatie":"I can create my own design and reproduce it within a few days. Given enough time I can work out many ideas well.",
-        "goed": "Building a basic idea for a project works well. I can work out an initial structure or concept.",
-        "niet": "It is harder to produce a fully worked-out project in a short time, including the right functions and choice of programming languages."
-      },
-      "programmeur": {
-        "title": "Programmer",
-        "situatie":"I can build projects independently and usually work on my assignments without problems at a relaxed pace.",
-        "goed": "I am strong at building websites. In C# almost everything works, except working with classes.",
-        "niet": "Correctly using classes in C# remains a challenge. I can create them, but applying them in projects is still difficult."
-      },
-      "tester": {
-        "title": "Tester",
-        "situatie":"I can find and fix errors fairly well, but I am less good at spotting typos.",
-        "goed": "I am good at debugging both practical and logical errors in code.",
-        "niet": "Recognising typos in code is something I am not yet so good at."
-      },
-      "communicator": {
-        "title": "Communicator / Team Player",
-        "situatie":"I find working in a team difficult, but I am good at asking for feedback.",
-        "goed": "I can ask for feedback, process it, and improve my work based on it.",
-        "niet": "I prefer working independently and find it difficult to constantly consult within a team."
-      },
-      "levenslang": {
-        "title": "Lifelong Learning IT Professional",
-        "situatie":"I follow new technologies to a limited extent, but I am very strict with myself about personal development.",
-        "goed": "I continually try to improve myself and work as independently as possible without constant external help.",
-        "niet": "I sometimes go too far by constantly adding new features, causing other important parts to be neglected."
+    "ontwikkeling": {
+      "title": "Development",
+      "opleiding": {
+        "title": "Choice of Study",
+        "why_programming_title": "Why did I choose programming?",
+        "why_programming_p1": "My interest in programming started at a young age, during talent labs in my first year of secondary school. That was where I first encountered logical thinking and problem-solving through small programming assignments. Solving those assignments gave me an immediate sense of satisfaction.",
+        "why_programming_p2": "In the following years this interest deepened through STEM science courses. Projects with Minecraft Education, robotics, and automation strengthened my enthusiasm for combining creativity with technology.",
+        "why_programming_p3": "What appeals to me most about programming is solving problems and building creative solutions. Programming is both a passion and a future-oriented career choice for me.",
+        "why_job_title": "Why does this profession suit me?",
+        "why_job_p1": "The profession of developer fits well with the way I work. I enjoy working independently, experimenting with solutions, and learning from mistakes.",
+        "why_job_p2": "When a problem becomes complex, I consciously step back so I can return to it with a fresh perspective. This helps me to persist even with challenging assignments.",
+        "why_job_p3": "In addition, I possess qualities such as problem-solving thinking, creativity, and perseverance — all of which are essential in this profession."
       }
-    }
-  },
-  "activiteiten": {
-    "title": "Examples of Activities per Role",
-    "motivatie_label": "Motivation",
-    "rollen": {
-      "ontwerper": {
-        "title": "Designer",
-        "items": [
-          {
-            "title": "Designing my CV website",
-            "beschrijving":"For my CV I first created a design with layout, structure, colours, and navigation before I started programming.",
-            "motivatie":"This activity belongs to the Designer role because it prepares the realisation of a software project."
-          },
-          {
-            "title": "Choice of programming languages",
-            "beschrijving":"For web projects I deliberately chose HTML, CSS, and JavaScript.",
-            "motivatie": "Justifying language choices is part of the design process."
-          },
-          {
-            "title": "Determining functionalities",
-            "beschrijving":"I decided in advance which functionalities my website needed to contain.",
-            "motivatie": "Planning functionalities is a design task."
-          }
-        ]
-      },
-      "programmeur": {
-        "title": "Programmer",
-        "items": [
-          {
-            "title": "Building websites",
-            "beschrijving":"I developed websites with HTML and CSS, including responsive design.",
-            "motivatie": "This is the effective realisation of software."
-          },
-          {
-            "title": "C# console applications",
-            "beschrijving":"I worked on C# assignments involving logic, methods, and variables.",
-           "motivatie": "This is at the core of programming."
-          },
-          {
-            "title": "Using GitHub",
-            "beschrijving": "I used GitHub to manage my projects.",
-            "motivatie": "This demonstrates responsibility for the work environment."
-          }
-        ]
-      },
-      "tester": {
-        "title": "Tester",
-        "items": [
-          {
-            "title": "Responsive testing",
-            "beschrijving": "I tested websites on desktop, tablet, and mobile.",
-            "motivatie": "This is testing functionality and layout."
-          },
-          {
-            "title": "Debugging errors",
-            "beschrijving": "I analysed and fixed logical errors in code.",
-            "motivatie": "Debugging is a testing activity."
-          },
-          {
-            "title": "Re-testing after feedback",
-            "beschrijving": "I retested my code after making changes.",
-            "motivatie": "Improving based on feedback is part of testing."
-          }
-        ]
-      },
-      "communicator": {
-        "title": "Communicator / Team Player",
-        "items": [
-          {
-            "title": "Asking for feedback",
-            "beschrijving": "I asked lecturers for feedback on my projects.",
-            "motivatie": "This demonstrates professional communication."
-          },
-          {
-            "title": "Processing feedback",
-            "beschrijving": "I adjusted my projects based on feedback received.",
-            "motivatie": "This demonstrates collaboration and consultation."
-          },
-          {
-            "title": "Explaining my work",
-            "beschrijving": "I explained my code to others.",
-            "motivatie": "Clarifying your work is part of communication."
-          }
-        ]
-      },
-      "levenslang": {
-        "title": "Lifelong Learning IT Professional",
-        "items": [
-          {
-            "title": "Learning new techniques",
-            "beschrijving": "I independently learned new CSS and JavaScript techniques.",
-            "motivatie": "This demonstrates ongoing professional development."
-          },
-          {
-            "title": "Self-reflection",
-            "beschrijving": "I critically evaluated my projects.",
-            "motivatie": "Self-criticism promotes growth."
-          },
-          {
-            "title": "Future improvement",
-            "beschrijving": "I want to learn to plan better in order to maintain focus.",
-            "motivatie": "This demonstrates awareness of areas for growth."
-          }
-        ]
-      }
-    }
-  },
-  "logboek": {
-    "col": {
-      "week": "Week",
-      "periode": "Period",
-      "inhoud": "Content",
-      "evaluaties": "Evaluations",
-      "opdrachten": "Assignments"
     },
-    "weeks": [
-      {
-        "week": 1,
-        "periode": {
-          "van": "22/09",
-          "tot": "26/09"
+    "reflectie": {
+      "title": "5.1 AIM Reflection on WPL1",
+      "introductie_label": "Introduction",
+      "introductie": "My work-based learning period (WPL1) had its ups and downs, but I learned a great deal about myself and my skills.",
+      "positief_label": "Positive elements",
+      "positief": "Through practical assignments I made noticeable progress in programming, especially in C#.",
+      "minder_label": "Less enjoyable elements",
+      "minder": "The time pressure during practical exams was challenging, but gave me a realistic picture of the professional field.",
+      "inzichten_label": "Insights",
+      "inzichten": "I work well independently and in a structured way, but I can still grow in managing stress and deadlines.",
+      "succes_label": "Personal success",
+      "succes": "My greatest success is that I have come to know myself better and know where I can improve."
+    },
+    "volgendewpl": {
+      "title": "5.2 What I take into the next WPL",
+      "p1": "My independence, creativity, and boldness are strong points I want to keep using. At the same time I want to work more consciously on collaboration and communication.",
+      "p2": "Concretely, I want to ask for feedback more often, consult with others, and share my ideas better within a team context."
+    },
+    "xfactor": {
+      "title": "5.3 X-Factor",
+      "items": {
+        "leiderschap": {
+          "title": "Leadership / Initiative",
+          "tekst": "I take responsibility for my own learning process and start assignments proactively."
         },
-        "inhoud": [
-          "Introduction to workplace learning",
-          "What is programming",
-          "Introduction POP, X-Factor & SDGs",
-          "Introduction Scratch"
-        ],
-        "evaluaties": [],
-        "opdrachten": []
+        "creativiteit": {
+          "title": "Creativity / Innovation",
+          "tekst": "I always work out a design first before I start programming."
+        },
+        "samenwerking": {
+          "title": "Collaboration / Communication",
+          "tekst": "I actively ask for feedback from lecturers and classmates."
+        },
+        "professioneel": {
+          "title": "Professional Development",
+          "tekst": "I keep learning and applying new techniques in my projects."
+        }
+      }
+    },
+    "competenties": {
+      "title": "Programmer Competencies",
+      "labels": {
+        "situatie": "Where do you currently stand?",
+        "goed": "What are you already good at?",
+        "niet": "What are you not yet good at?"
+      },
+      "rollen": {
+        "ontwerper": {
+          "title": "Designer",
+          "situatie": "I can create my own design and reproduce it within a few days. Given enough time I can work out many ideas well.",
+          "goed": "Building a basic idea for a project works well. I can work out an initial structure or concept.",
+          "niet": "It is harder to produce a fully worked-out project in a short time, including the right functions and choice of programming languages."
+        },
+        "programmeur": {
+          "title": "Programmer",
+          "situatie": "I can build projects independently and usually work on my assignments without problems at a relaxed pace.",
+          "goed": "I am strong at building websites. In C# almost everything works, except working with classes.",
+          "niet": "Correctly using classes in C# remains a challenge. I can create them, but applying them in projects is still difficult."
+        },
+        "tester": {
+          "title": "Tester",
+          "situatie": "I can find and fix errors fairly well, but I am less good at spotting typos.",
+          "goed": "I am good at debugging both practical and logical errors in code.",
+          "niet": "Recognising typos in code is something I am not yet so good at."
+        },
+        "communicator": {
+          "title": "Communicator / Team Player",
+          "situatie": "I find working in a team difficult, but I am good at asking for feedback.",
+          "goed": "I can ask for feedback, process it, and improve my work based on it.",
+          "niet": "I prefer working independently and find it difficult to constantly consult within a team."
+        },
+        "levenslang": {
+          "title": "Lifelong Learning IT Professional",
+          "situatie": "I follow new technologies to a limited extent, but I am very strict with myself about personal development.",
+          "goed": "I continually try to improve myself and work as independently as possible without constant external help.",
+          "niet": "I sometimes go too far by constantly adding new features, causing other important parts to be neglected."
+        }
+      }
+    },
+    "activiteiten": {
+      "title": "Examples of Activities per Role",
+      "motivatie_label": "Motivation",
+      "rollen": {
+        "ontwerper": {
+          "title": "Designer",
+          "items": [
+            {
+              "title": "Designing my CV website",
+              "beschrijving": "For my CV I first created a design with layout, structure, colours, and navigation before I started programming.",
+              "motivatie": "This activity belongs to the Designer role because it prepares the realisation of a software project."
+            },
+            {
+              "title": "Choice of programming languages",
+              "beschrijving": "For web projects I deliberately chose HTML, CSS, and JavaScript.",
+              "motivatie": "Justifying language choices is part of the design process."
+            },
+            {
+              "title": "Determining functionalities",
+              "beschrijving": "I decided in advance which functionalities my website needed to contain.",
+              "motivatie": "Planning functionalities is a design task."
+            }
+          ]
+        },
+        "programmeur": {
+          "title": "Programmer",
+          "items": [
+            {
+              "title": "Building websites",
+              "beschrijving": "I developed websites with HTML and CSS, including responsive design.",
+              "motivatie": "This is the effective realisation of software."
+            },
+            {
+              "title": "C# console applications",
+              "beschrijving": "I worked on C# assignments involving logic, methods, and variables.",
+              "motivatie": "This is at the core of programming."
+            },
+            {
+              "title": "Using GitHub",
+              "beschrijving": "I used GitHub to manage my projects.",
+              "motivatie": "This demonstrates responsibility for the work environment."
+            }
+          ]
+        },
+        "tester": {
+          "title": "Tester",
+          "items": [
+            {
+              "title": "Responsive testing",
+              "beschrijving": "I tested websites on desktop, tablet, and mobile.",
+              "motivatie": "This is testing functionality and layout."
+            },
+            {
+              "title": "Debugging errors",
+              "beschrijving": "I analysed and fixed logical errors in code.",
+              "motivatie": "Debugging is a testing activity."
+            },
+            {
+              "title": "Re-testing after feedback",
+              "beschrijving": "I retested my code after making changes.",
+              "motivatie": "Improving based on feedback is part of testing."
+            }
+          ]
+        },
+        "communicator": {
+          "title": "Communicator / Team Player",
+          "items": [
+            {
+              "title": "Asking for feedback",
+              "beschrijving": "I asked lecturers for feedback on my projects.",
+              "motivatie": "This demonstrates professional communication."
+            },
+            {
+              "title": "Processing feedback",
+              "beschrijving": "I adjusted my projects based on feedback received.",
+              "motivatie": "This demonstrates collaboration and consultation."
+            },
+            {
+              "title": "Explaining my work",
+              "beschrijving": "I explained my code to others.",
+              "motivatie": "Clarifying your work is part of communication."
+            }
+          ]
+        },
+        "levenslang": {
+          "title": "Lifelong Learning IT Professional",
+          "items": [
+            {
+              "title": "Learning new techniques",
+              "beschrijving": "I independently learned new CSS and JavaScript techniques.",
+              "motivatie": "This demonstrates ongoing professional development."
+            },
+            {
+              "title": "Self-reflection",
+              "beschrijving": "I critically evaluated my projects.",
+              "motivatie": "Self-criticism promotes growth."
+            },
+            {
+              "title": "Future improvement",
+              "beschrijving": "I want to learn to plan better in order to maintain focus.",
+              "motivatie": "This demonstrates awareness of areas for growth."
+            }
+          ]
+        }
+      }
+    },
+    "logboek": {
+      "col": {
+        "week": "Week",
+        "periode": "Period",
+        "inhoud": "Content",
+        "evaluaties": "Evaluations",
+        "opdrachten": "Assignments"
+      },
+      "semesters": {
+        "semester1": {
+          "title": "Semester 1 - Workplace Learning 1",
+          "weeks": [
+            {
+              "week": 1,
+              "periode": {
+                "van": "22/09",
+                "tot": "26/09"
+              },
+              "inhoud": [
+                "Introduction to workplace learning",
+                "What is programming",
+                "Introduction to POP, X-Factor & SDGs",
+                "Introduction to Scratch"
+              ],
+              "evaluaties": [],
+              "opdrachten": []
+            },
+            {
+              "week": 2,
+              "periode": {
+                "van": "29/09",
+                "tot": "03/10"
+              },
+              "inhoud": [
+                "Orientation track",
+                "Installation of Git & GitHub",
+                "Introduction to Git & GitHub"
+              ],
+              "evaluaties": [
+                "LockDownBrowser"
+              ],
+              "opdrachten": []
+            },
+            {
+              "week": 3,
+              "periode": {
+                "van": "06/10",
+                "tot": "10/10"
+              },
+              "inhoud": [
+                "POP motivation, core quadrants and reflection",
+                "Lab: Git & GitHub"
+              ],
+              "evaluaties": [],
+              "opdrachten": [
+                "Scratch"
+              ]
+            },
+            {
+              "week": 4,
+              "periode": {
+                "van": "13/10 ",
+                "tot": "17/10"
+              },
+              "inhoud": [
+                "POP planning & study approach"
+              ],
+              "evaluaties": [
+                "Git & GitHub"
+              ],
+              "opdrachten": [
+                "Reflection"
+              ]
+            },
+            {
+              "week": 5,
+              "periode": {
+                "van": "20/10",
+                "tot": "24/10"
+              },
+              "inhoud": [
+                "Guest speakers",
+                "EPOS reflection on the orientation track"
+              ],
+              "evaluaties": [
+                "Guest speakers"
+              ],
+              "opdrachten": [
+                "Planning"
+              ]
+            },
+            {
+              "week": 6,
+              "periode": {
+                "van": "03/11",
+                "tot": "07/11"
+              },
+              "inhoud": [
+                "POP learning to analyze"
+              ],
+              "evaluaties": [],
+              "opdrachten": []
+            },
+            {
+              "week": 7,
+              "periode": {
+                "van": "10/11",
+                "tot": "14/11"
+              },
+              "inhoud": [
+                "POP career compass",
+                "C# Console"
+              ],
+              "evaluaties": [
+                "Feedback evaluation"
+              ],
+              "opdrachten": [
+                "POP career compass"
+              ]
+            },
+            {
+              "week": 8,
+              "periode": {
+                "van": "17/11",
+                "tot": "21/11"
+              },
+              "inhoud": [
+                "POP personal branding",
+                "Introduction to curriculum vitae",
+                "Introduction to portfolio"
+              ],
+              "evaluaties": [
+                "Feedback evaluation C# Console"
+              ],
+              "opdrachten": []
+            },
+            {
+              "week": 9,
+              "periode": {
+                "van": "24/11",
+                "tot": "28/11"
+              },
+              "inhoud": [
+                "Intake survey",
+                "HTML & CSS"
+              ],
+              "evaluaties": [
+                "Feedback evaluation"
+              ],
+              "opdrachten": []
+            },
+            {
+              "week": 10,
+              "periode": {
+                "van": "01/12",
+                "tot": "05/12"
+              },
+              "inhoud": [
+                "Documenting and debugging in C#",
+                "Lab: Debugging (C#)"
+              ],
+              "evaluaties": [
+                "Debugging (same as the lab)",
+                "Feedback evaluation debugging"
+              ],
+              "opdrachten": []
+            },
+            {
+              "week": 11,
+              "periode": {
+                "van": "08/12",
+                "tot": "12/12"
+              },
+              "inhoud": [
+                "Lab: WPF",
+                "Guest speakers",
+                "SDGs"
+              ],
+              "evaluaties": [],
+              "opdrachten": []
+            },
+            {
+              "week": 12,
+              "periode": {
+                "van": "15/12",
+                "tot": "19/12"
+              },
+              "inhoud": [
+                "Finishing curriculum vitae",
+                "Thalento information session"
+              ],
+              "evaluaties": [],
+              "opdrachten": [
+                "Curriculum Vitae"
+              ]
+            },
+            {
+              "week": 13,
+              "periode": {
+                "van": "05/01",
+                "tot": "09/01"
+              },
+              "inhoud": [
+                "Introduction to Corda",
+                "POP core quadrants",
+                "C# WPF"
+              ],
+              "evaluaties": [],
+              "opdrachten": [
+                "Portfolio"
+              ]
+            },
+            {
+              "week": 14,
+              "periode": {
+                "van": "12/01",
+                "tot": "16/01"
+              },
+              "inhoud": [
+                "Feedback evaluation C# WPF"
+              ],
+              "evaluaties": [
+                "Catch-up moment"
+              ],
+              "opdrachten": []
+            }
+          ]
+        },
+        "semester2": {
+          "title": "Semester 2 - Workplace Learning 2",
+          "weeks": [
+            {
+              "week": 1,
+              "periode": {
+                "van": "12/02",
+                "tot": "13/02"
+              },
+              "inhoud": [
+                "Attended information session",
+                "Attended consultation moments",
+                "Introduction to the team",
+                "Introduction to the project and how it works"
+              ],
+              "evaluaties": [],
+              "opdrachten": []
+            },
+            {
+              "week": 2,
+              "periode": {
+                "van": "19/02",
+                "tot": "20/02"
+              },
+              "inhoud": [
+                "Created the sprint backlog for sprint 1",
+                "Received technical explanation about the project",
+                "Further split the project into tasks",
+                "Started on the frontend of the contact page",
+                "Continued working on colleague templates"
+              ],
+              "evaluaties": [],
+              "opdrachten": []
+            },
+            {
+              "week": 3,
+              "periode": {
+                "van": "26/02",
+                "tot": "27/02"
+              },
+              "inhoud": [
+                "Followed technical explanation",
+                "Start of the daily stand-ups",
+                "Worked out the design of the colleague page",
+                "Developed the colleague page",
+                "Programmed backend functionality for the contact page",
+                "Applied branding within the application",
+                "Developed a responsive layout",
+                "Worked out navigation within the application"
+              ],
+              "evaluaties": [],
+              "opdrachten": [
+                "N-Unit Frontend Assignment - Individual assignment"
+              ]
+            },
+            {
+              "week": 4,
+              "periode": {
+                "van": "05/03",
+                "tot": "06/03"
+              },
+              "inhoud": [
+                "Continued working on ongoing sprint tasks",
+                "Performed debugging and optimizations",
+                "Team meeting and progress check"
+              ],
+              "evaluaties": [],
+              "opdrachten": []
+            },
+            {
+              "week": 5,
+              "periode": {
+                "van": "12/03",
+                "tot": "13/03"
+              },
+              "inhoud": [
+                "Received explanation about sprint reviews",
+                "Attended daily stand-ups",
+                "Created documentation in Confluence",
+                "Held a retrospective",
+                "Created the first sketch of the database"
+              ],
+              "evaluaties": [],
+              "opdrachten": []
+            },
+            {
+              "week": 6,
+              "periode": {
+                "van": "19/03",
+                "tot": "20/03"
+              },
+              "inhoud": [
+                "Attended daily stand-ups",
+                "Further completed the database sketch",
+                "Started creating the ERD diagram",
+                "Created the sprint backlog for sprint 2",
+                "Split user stories into tasks",
+                "Displayed the user profile on the web page",
+                "Implemented data transfer",
+                "Adjusted hardcoded test data in the frontend",
+                "Performed debugging",
+                "Started processing roles within the application"
+              ],
+              "evaluaties": [],
+              "opdrachten": []
+            },
+            {
+              "week": 7,
+              "periode": {
+                "van": "26/03",
+                "tot": "27/03"
+              },
+              "inhoud": [
+                "Attended daily stand-ups",
+                "Assigned roles within the application",
+                "Developed functionality for editing user data",
+                "Performed debugging",
+                "Implemented password reset with confirmation email",
+                "Received explanation about the handshake event"
+              ],
+              "evaluaties": [],
+              "opdrachten": [
+                "Graphs/Charts Assignment - Individual assignment"
+              ]
+            },
+            {
+              "week": 8,
+              "periode": {
+                "van": "02/04",
+                "tot": "03/04"
+              },
+              "inhoud": [
+                "Attended daily stand-ups",
+                "Performed debugging",
+                "Further completed password reset and confirmation email",
+                "Attended sprint review",
+                "Split user stories into tasks",
+                "Updated documentation",
+                "Prepared email content",
+                "Held the retrospective for sprint 2",
+                "Tested email service"
+              ],
+              "evaluaties": [],
+              "opdrachten": [
+                "Graphs Assignment (Continued) - Individual assignment"
+              ]
+            },
+            {
+              "week": "Easter",
+              "periode": {
+                "van": "09/04",
+                "tot": "13/04"
+              },
+              "inhoud": [
+                "Further prepared email content",
+                "Developed application logic for retrieving order data via email"
+              ],
+              "evaluaties": [],
+              "opdrachten": [
+                "Mobile Assignment - Individual assignment"
+              ]
+            },
+            {
+              "week": 9,
+              "periode": {
+                "van": "23/04",
+                "tot": "24/04"
+              },
+              "inhoud": [
+                "Attended daily stand-ups",
+                "Updated documentation",
+                "Developed functionality for sending emails after an order",
+                "Retrieved and processed order data",
+                "Created new `AbonnementPolicies` table",
+                "Connected policies to the frontend",
+                "Performed debugging"
+              ],
+              "evaluaties": [],
+              "opdrachten": []
+            },
+            {
+              "week": 10,
+              "periode": {
+                "van": "30/04",
+                "tot": "30/04"
+              },
+              "inhoud": [
+                "Attended daily stand-up",
+                "Updated documentation",
+                "Performed debugging"
+              ],
+              "evaluaties": [],
+              "opdrachten": []
+            },
+            {
+              "week": 11,
+              "periode": {
+                "van": "07/05",
+                "tot": "08/05"
+              },
+              "inhoud": [
+                "Attended daily stand-ups",
+                "Updated documentation",
+                "Performed debugging",
+                "Processed feedback on the interface",
+                "Developed backend functionality for subscription policies",
+                "Connected the backend to the frontend of subscription policies",
+                "Attended information session about startups"
+              ],
+              "evaluaties": [],
+              "opdrachten": []
+            },
+            {
+              "week": 12,
+              "periode": {
+                "van": "14/05",
+                "tot": "15/05"
+              },
+              "inhoud": [
+                "Continued working on tests"
+              ],
+              "evaluaties": [],
+              "opdrachten": [
+                "Mobile Assignment - Individual assignment",
+                "Maui Assignments 01-06 - Individual assignment"
+              ]
+            },
+            {
+              "week": 13,
+              "periode": {
+                "van": "21/05",
+                "tot": "22/05"
+              },
+              "inhoud": [
+                "Attended daily stand-ups",
+                "Performed debugging",
+                "Updated documentation",
+                "Attended information session about the final presentation"
+              ],
+              "evaluaties": [],
+              "opdrachten": [
+                "Maui-09 Assignment (Extended) - Individual assignment"
+              ]
+            },
+            {
+              "week": 14,
+              "periode": {
+                "van": "28/05",
+                "tot": "29/05"
+              },
+              "inhoud": [
+                "Updated documentation",
+                "Attended sprint technical review PRO"
+              ],
+              "evaluaties": [
+                "Final presentation - Pitch & Demo"
+              ],
+              "opdrachten": [
+                "Portfolio Extension - Individual assignment"
+              ]
+            }
+          ]
+        }
+      }
+    }
+  },
+  "workPage": {
+    "nav": {
+      "content": "Content",
+      "aboutme": "About me",
+      "logboek": "Logbook",
+      "ontwikkeling": "Development",
+      "reflectie": "Reflection",
+      "competenties": "Competencies",
+      "activiteiten": "Activities"
+    },
+    "opdrachten": [
+      {
+        "id": "scratch",
+        "title": "Scratch",
+        "image": "scratch-foto-inleinding.png",
+        "alt": "photo of the Scratch project",
+        "pageInfo": {
+          "containerTitle": {
+            "h1": "Scratch game",
+            "h2": "Workplace Learning 1 - 8/10/2025"
+          },
+          "descprition": {
+            "id": "beschrijving",
+            "h3": "Description",
+            "p": "In this assignment, I developed a simple game in Scratch where the player controls a balloon that slowly rises upward. The player can move the balloon horizontally with the arrow keys to avoid airplanes that appear at random times and positions. The game includes a start screen with a New Game button, levels that increase automatically, balloon color changes per level, and a Game Over screen after a collision. By using events, variables, loops, conditions, randomization, and clones, I became familiar with the basic principles of programming without using a traditional programming language."
+          },
+          "personalChallenges": {
+            "id": "persoonlijke-uitdagingen",
+            "h3": "Personal challenges",
+            "p": "My biggest challenge was structuring the logic inside Scratch. Especially making multiple sprites work together correctly through events and variables required some thought. It was also not easy to make sure the game could fully restart without bugs, such as variables not resetting correctly or sprites staying visible. Correctly setting up collision detection and dynamically increasing the level also required several tests and adjustments."
+          },
+          "bijgeleerd": {
+            "id": "bijgeleerd",
+            "h3": "What I learned",
+            "p": "Through this assignment, I gained a clear understanding of basic programming concepts such as events, conditional logic, loops, and variables. I learned how important it is to build a program step by step and first focus on the core functionality before adding extras. I also now understand better how game logic works, such as level progression, score management, and object interaction. This assignment formed a strong foundation for later programming assignments in other languages such as C#."
+          }
+        }
       },
       {
-        "week": 2,
-        "periode": {
-          "van": "29/09",
-          "tot": "03/10"
-        },
-        "inhoud": [
-          "Orientation track",
-          "Installation Git & GitHub",
-          "Introduction Git & GitHub"
-        ],
-        "evaluaties": [
-          "LockDownBrowser"
-        ],
-        "opdrachten": []
+        "id": "POP-reflectie",
+        "title": "POP: AIM reflection on the Scratch project",
+        "image": "preview-aim-reflectie.png",
+        "alt": "photo of Scratch reflection",
+        "pageInfo": {
+          "containerTitle": {
+            "h1": "POP: AIM Reflection Scratch",
+            "h2": "Workplace Learning 1 - 15/10/2025"
+          },
+          "descprition": {
+            "id": "beschrijving",
+            "h3": "Description",
+            "p": "The Balloon Project was an assignment within Workplace Learning 1 in which I had to create a game in Scratch. The goal of the game was for a balloon or another object to continuously fly upward and avoid obstacles falling from the sky. This project allowed me to develop my logical thinking, problem-solving ability, and creativity with code and animations. Although the project was individual, I received many tips and ideas from fellow students, which supported the learning process. A positive element was that I could turn my own ideas into a working game, and that my planning worked well enough for me to also find time for other courses and extracurricular activities. Solving problems and bugs often went faster than I expected, which was a pleasant surprise."
+          },
+          "personalChallenges": {
+            "id": "persoonlijke-uitdagingen",
+            "h3": "Personal challenges",
+            "p": "During this project, I experienced several challenges related to my core qualities and pitfalls. My pitfall of wanting to go too fast meant that at the beginning I wanted to implement too many ideas at once, which sometimes made my code messy and caused me to lose overview. I also found it frustrating that I could not always immediately figure out where errors were, which caused me to lose time. These challenges forced me to practice patience and sharpen my problem-solving ability. By reflecting on my approach and using core qualities such as goal orientation and reliability, I was able to plan better, work step by step, and improve my mistakes systematically."
+          },
+          "bijgeleerd": {
+            "id": "bijgeleerd",
+            "h3": "What I learned",
+            "p": "From this project, I learned that clear planning is essential for success, even in a visual programming environment such as Scratch. By dividing my work into small, manageable steps, I was able to keep my pitfall of wanting to go too fast under better control. I learned that mistakes are normal and that it is important to fix them calmly without becoming overwhelmed. I also strengthened my problem-solving skills and gained more insight into my core qualities, such as creativity and reliability, and how to use them in future projects. Finally, I am proud that I was able to finish my game on time and combine my other tasks well thanks to effective planning and reflection."
+          }
+        }
       },
       {
-        "week": 3,
-        "periode": {
-          "van": "06/10",
-          "tot": "10/10"
-        },
-        "inhoud": [
-          "POP motivation, core quadrants and reflection",
-          "Lab: Git & GitHub"
-        ],
-        "evaluaties": [],
-        "opdrachten": [
-          "Scratch"
-        ]
+        "id": "planning",
+        "title": "POP: planning",
+        "image": "Preview-POP-planning.png",
+        "alt": "photo of POP planning",
+        "pageInfo": {
+          "containerTitle": {
+            "h1": "POP planning",
+            "h2": "Workplace Learning 1 - 22/10/2025"
+          },
+          "descprition": {
+            "id": "beschrijving",
+            "h3": "Description",
+            "p": "In this POP assignment, I created a long-term plan for semester 1 and a detailed weekly plan for the period from October 20 to 26. For the semester plan, I mapped out all course units and noted when PEs were scheduled and when assignments had to be submitted. The weekly plan consisted of an overview of fixed class times, daily activities such as travel and meals, relaxation moments, and scheduled study time. Color coding was used to keep the planning clear and readable. Both plans were created digitally and submitted as PDF files."
+          },
+          "personalChallenges": {
+            "id": "persoonlijke-uitdagingen",
+            "h3": "Personal challenges",
+            "p": "The biggest challenge was realistically estimating my available time and energy. In my planning, I initially did not take enough account of fixed daily activities such as eating, travel time, and unexpected interruptions. I also found it difficult to plan schoolwork concretely enough, for example by noting exactly for which course, which chapter, or which exercises I would work on. Consistently applying color codes in the weekly plan also required extra attention. This assignment confronted me with the fact that planning is more than filling in time blocks; it requires a realistic view of your own daily schedule."
+          },
+          "bijgeleerd": {
+            "id": "bijgeleerd",
+            "h3": "What I learned",
+            "p": "Through this assignment, I learned how important realistic and achievable planning is for successful studying. I now realize that buffer time and basic activities are essential for sticking to a plan. I also gained insight into the usefulness of concrete planning, where it is clearly recorded what will be worked on, how, and for which course. This assignment helped me look more critically at my own study approach and forms a basis for building my planning more efficiently and in a more balanced way in the future."
+          }
+        }
       },
       {
-        "week": 4,
-        "periode": {
-          "van": "13/10",
-          "tot": "17/10"
-        },
-        "inhoud": [
-          "POP planning & study approach"
-        ],
-        "evaluaties": [
-          "Git & GitHub"
-        ],
-        "opdrachten": [
-          "Reflection"
-        ]
+        "id": "reflectie-PE-C1",
+        "title": "Reflection PE: C# Console",
+        "image": "preview-relfectie-C1.png",
+        "alt": "photo of C# Console reflection",
+        "pageInfo": {
+          "containerTitle": {
+            "h1": "Reflection PE: C# Console",
+            "h2": "Programming - 19/11/2025"
+          },
+          "descprition": {
+            "id": "beschrijving",
+            "h3": "Description",
+            "p": "In this PE: C# Console, I worked on several assignments, including Trader-02 and Trader-03, where I had to apply my C# knowledge in practical scenarios. The goal was to test my programming skills, apply logic correctly, and gain insight into best practices by comparing my solution with those of the lecturers."
+          },
+          "personalChallenges": {
+            "id": "persoonlijke-uitdagingen",
+            "h3": "Personal challenges",
+            "p": "An important challenge was that I wrote some logical structures in a way that was too complicated. In Trader-02, for example, I used an if structure that was much longer and more complex than necessary. Although my code was functionally correct, it was less efficient than the model solution from the lecturers. In Trader-03, it became clear that I had set the random values for FuelForMetalRate incorrectly and that the 50/50 chance structure was not logically correct. This showed that I still need to master some basic concepts better and think consciously about the logic of my code. I also noticed that I sometimes forgot output or did not implement repetition for incorrect input, which meant my program was not always robust. Comparing with the model solution helped me recognize these mistakes."
+          },
+          "bijgeleerd": {
+            "id": "bijgeleerd",
+            "h3": "What I learned",
+            "p": "Through this PE, I learned that simplicity and clarity in code are often better than overly complex structures. I now understand better how to build if structures in a short and logical way. I also practiced generating random values and correctly applying conditions in C#. Furthermore, I realized the importance of systematically checking all input and reviewing the output to prevent logical errors. Looking at the model solution gave me insight into best practices and how to write efficient and clear code. Finally, I expanded my knowledge of class calls, for example when linking input to new TraderStations, which strengthens my understanding of object-oriented programming in C#. My plan is to actively apply these insights in future assignments and continue practicing basic concepts."
+          }
+        }
       },
       {
-        "week": 5,
-        "periode": {
-          "van": "20/10",
-          "tot": "24/10"
-        },
-        "inhoud": [
-          "Guest speakers",
-          "EPOS reflection of orientation track"
-        ],
-        "evaluaties": [
-          "Guest speakers"
-        ],
-        "opdrachten": [
-          "Planning"
-        ]
+        "id": "werkveldverkenning",
+        "title": "Exploration of the Professional Field",
+        "image": "preview-werkveldverkenning.png",
+        "alt": "photo of professional field exploration",
+        "pageInfo": {
+          "containerTitle": {
+            "h1": "Exploration of the Professional Field",
+            "h2": "Workplace Learning 1 - 19/11/2025"
+          },
+          "descprition": {
+            "id": "beschrijving",
+            "h3": "Description",
+            "p": "For this assignment, I chose a vacancy for a Full-Stack Web Developer .Net in Antwerp. This vacancy appealed to me because I could work in a relatively small team, learn multiple programming languages, and still have plenty of room to gain new knowledge. The location of the company is easily accessible, and the work environment in a large city appeals to me. The company is described as people-oriented: working in an inspiring, dynamic, warm, and flexible environment where every voice counts and there are many opportunities for personal growth and development."
+          },
+          "personalChallenges": {
+            "id": "persoonlijke-uitdagingen",
+            "h3": "Personal challenges",
+            "p": "With this vacancy, I notice that I do not yet fully master all the required hard and soft skills. For example, I still need to gain experience with ASP.NET and UX/UI, and I sometimes find it difficult to collaborate efficiently in a team and proactively ask for help. These challenges are important to overcome because they directly connect to the competencies required for the role and within a people-oriented organization. I need to learn to structure my knowledge and skills better and communicate effectively within a team."
+          },
+          "bijgeleerd": {
+            "id": "bijgeleerd",
+            "h3": "What I learned",
+            "p": "To develop these hard and soft skills, I will take the following actions:",
+            "items": [
+              {
+                "label": "Hard skill ASP.NET:",
+                "text": "follow courses and watch online videos, and build small projects myself to apply the knowledge in practice."
+              },
+              {
+                "label": "Hard skill UX/UI:",
+                "text": "create projects with a focus on user experience and interface, ask others for feedback, and make improvements."
+              },
+              {
+                "label": "Soft skill teamwork:",
+                "text": "actively contribute during group assignments in Workplace Learning and learn to communicate effectively and divide tasks."
+              },
+              {
+                "label": "Soft skill proactivity:",
+                "text": "dare to ask for help more often when needed, both in group projects and individual assignments."
+              }
+            ],
+            "outro": "By taking these actions, I hope to strengthen both my technical skills and my personal competencies, so I am better prepared for a professional work environment."
+          }
+        }
       },
       {
-        "week": 6,
-        "periode": {
-          "van": "03/11",
-          "tot": "07/11"
-        },
-        "inhoud": [
-          "POP learning to analyze"
-        ],
-        "evaluaties": [],
-        "opdrachten": []
+        "id": "reflectie-PE-debugging",
+        "title": "Reflection PE: Debugging (C#)",
+        "image": "preview-reflectie-debugging.png",
+        "alt": "photo of debugging reflection",
+        "pageInfo": {
+          "containerTitle": {
+            "h1": "Reflection PE: Debugging (C#)",
+            "h2": "Programming - 05/12/2025"
+          },
+          "descprition": {
+            "id": "beschrijving",
+            "h3": "Description",
+            "p": "In this PE: Debugging (C#), I had to analyze an existing application and find and fix the bugs using Visual Studio. The goal was to gain insight into debugging, logical thinking, and correctly applying C# concepts in a real codebase. Part of the application worked correctly, while the other part kept crashing, which made it difficult to test the full program. Outside class, I practiced by creating my own projects and systematically finding errors to gain experience with debugging."
+          },
+          "personalChallenges": {
+            "id": "persoonlijke-uitdagingen",
+            "h3": "Personal challenges",
+            "p": "During debugging, I noticed that I cannot yet fully analyze and solve bugs independently. Some problems were difficult to find and understand, especially when several errors were present at the same time. I struggled to logically determine why certain code crashed and how to solve it efficiently. I also had to learn to deal with frustration when the program did not work as expected and to practice patience while going through the debugging steps."
+          },
+          "bijgeleerd": {
+            "id": "bijgeleerd",
+            "h3": "What I learned",
+            "p": "Through this PE, I strengthened my debugging skills in Visual Studio. I learned to check my own code systematically, follow logical steps, and create smaller test cases to isolate errors. I used resources such as YouTube tutorials and online coding websites to improve my C# knowledge. Although I cannot yet fully solve bugs independently, I gained insight into how to analyze and approach problems step by step. This experience will help me with future assignments and projects, because I now better understand how to structure and check my code to identify errors faster."
+          }
+        }
       },
       {
-        "week": 7,
-        "periode": {
-          "van": "10/11",
-          "tot": "14/11"
-        },
-        "inhoud": [
-          "POP career compass",
-          "C# Console"
-        ],
-        "evaluaties": [
-          "Feedback evaluation"
-        ],
-        "opdrachten": [
-          "POP career compass"
-        ]
+        "id": "reflectie-SDGs",
+        "title": "Reflection: SDGs",
+        "image": "preview-reflectie-sdg.png",
+        "alt": "photo of SDG reflection",
+        "pageInfo": {
+          "containerTitle": {
+            "h1": "Reflection: SDGs",
+            "h2": "Workplace Learning 1 - 12/12/2025"
+          },
+          "descprition": {
+            "id": "beschrijving",
+            "h3": "Description",
+            "p": "During the guest lecture by Brightest, I learned about projects that contribute to the Sustainable Development Goals (SDGs). The project that appealed to me most was SDG 3 - Good Health and Well-Being. Through the improved functioning of the organization, families gain faster access to basic needs, which contributes to their well-being. I found it inspiring that an IT solution can indirectly contribute to a better quality of life."
+          },
+          "personalChallenges": {
+            "id": "persoonlijke-uitdagingen",
+            "h3": "Personal challenges",
+            "p": "One challenge is to consciously contribute to social goals as a future programmer. Companies have a responsibility to contribute to the SDGs, because many social problems are partly caused by business processes. It is important to understand how my work can have an impact on broader social challenges and how I can use my knowledge for positive change."
+          },
+          "bijgeleerd": {
+            "id": "bijgeleerd",
+            "h3": "What I learned",
+            "p": "I learned that some SDGs are directly relevant to my future work as a programmer:",
+            "items": [
+              {
+                "label": "SDG 3 - Good Health and Well-Being:",
+                "text": "As a programmer, I spend many hours behind a computer screen, which makes physical and mental health important. Learning to deal with stress and maintaining well-being is crucial."
+              },
+              {
+                "label": "SDG 4 - Quality Education:",
+                "text": "Programming languages and technology are constantly evolving. By continuing to learn and staying up to date, I can perform my work efficiently and at a high quality level."
+              },
+              {
+                "label": "SDG 9 - Industry, Innovation and Infrastructure:",
+                "text": "Software development plays a major role in automation and technological innovation. Good IT solutions can improve processes and have a significant impact on industry and infrastructure."
+              }
+            ],
+            "outro": "Through these insights, I realize that my future role as a programmer is not only technical but also socially relevant. It helps me work more consciously and think about the impact of my projects."
+          }
+        }
       },
       {
-        "week": 8,
-        "periode": {
-          "van": "17/11",
-          "tot": "21/11"
-        },
-        "inhoud": [
-          "POP personal branding",
-          "Introduction curriculum vitae",
-          "Introduction portfolio"
-        ],
-        "evaluaties": [
-          "Feedback evaluation C# Console"
-        ],
-        "opdrachten": []
+        "id": "CV",
+        "title": "Curriculum Vitae",
+        "image": "cv-foto-inleiding.png",
+        "alt": "photo of CV project",
+        "pageInfo": {
+          "containerTitle": {
+            "h1": "Online curriculum vitae",
+            "h2": "Workplace Learning 1 - 21/12/2025"
+          },
+          "descprition": {
+            "id": "beschrijving",
+            "h3": "Description",
+            "p": "In this assignment, I developed an online curriculum vitae using HTML and CSS, without using frameworks, libraries, or ready-made templates. The goal was to build a professional and responsive CV that feels like a real website. The focus was on correctly applying semantic HTML, a clear file structure, and a consistent visual style. I also implemented media queries to make the CV suitable for both mobile and desktop views. All code was written individually and managed through a GitHub repository with structured commits."
+          },
+          "personalChallenges": {
+            "id": "persoonlijke-uitdagingen",
+            "h3": "Personal challenges",
+            "p": "An important challenge was designing a professional layout that was both visually attractive and functionally correct. Finding the right balance between a clean design and enough interaction required several iterations. It was also technically challenging to display language skills in two different ways: as a table on larger screens and as an alternative layout on mobile devices. Correctly applying hover effects, animations, and a uniform style across the entire website also required attention to detail. Working with Git and making clear, functional commits for each requirement required extra discipline and planning."
+          },
+          "bijgeleerd": {
+            "id": "bijgeleerd",
+            "h3": "What I learned",
+            "p": "Through this assignment, I significantly deepened my knowledge of HTML structure and CSS styling. I learned how important semantics, consistency, and readability are in a professional web context. I also gained practical experience with responsive design, media queries, and adapting layouts to different screen sizes. I gained more insight into designing user-friendly interfaces with attention to typography, color use, and whitespace. Finally, I learned to independently analyze inspiration and convert it into my own design without copying code, which is essential for professional web development."
+          }
+        }
       },
       {
-        "week": 9,
-        "periode": {
-          "van": "24/11",
-          "tot": "28/11"
-        },
-        "inhoud": [
-          "Intake survey",
-          "HTML & CSS"
-        ],
-        "evaluaties": [
-          "Feedback evaluation"
-        ],
-        "opdrachten": []
+        "id": "portfolio",
+        "title": "Portfolio",
+        "image": "preview-portfolio.png",
+        "alt": "photo of portfolio",
+        "pageInfo": {
+          "containerTitle": {
+            "h1": "Portfolio - Online Portfolio",
+            "h2": "Workplace Learning 1 - 09/01/2025"
+          },
+          "descprition": {
+            "id": "beschrijving",
+            "h3": "Description",
+            "p": "In this assignment, I am developing a portfolio in which I document my learning process and projects from Workplace Learning 1. The portfolio is intended for myself, my PXL coach, and my workplace coach as a tool to reflect on my learning experiences and enable targeted guidance. It contains my personal introduction, logbook, development, documentation of assignments, and reflections."
+          },
+          "personalChallenges": {
+            "id": "persoonlijke-uitdagingen",
+            "h3": "Personal challenges",
+            "p": "My biggest challenge in this assignment was staying focused and working everything out clearly, because it involves a lot of writing and documentation. I also wanted to make creative and technical choices in the design and structure of my portfolio, while also thinking about how it clearly shows all parts of Workplace Learning 1."
+          },
+          "bijgeleerd": {
+            "id": "bijgeleerd",
+            "h3": "What I learned",
+            "p": "I learned to present my work clearly and visually attractively, with attention to structure and design. I also discovered new ways to apply CSS, such as using accent lines, rounded corners, and visual separation between sections. In addition, I practiced documenting my learning process and reflections in a structured way, so they are clear both for myself and for my coaches."
+          }
+        }
+      }
+    ],
+    "pes": [
+      {
+        "id": "LDB",
+        "title": "LockDown Browser (LDB)",
+        "image": "preview-ldb.png",
+        "alt": "photo of LockDown Browser",
+        "pageInfo": {
+          "containerTitle": {
+            "h1": "PE: LockDown Browser",
+            "h2": "Workplace Learning 1 - 02/10/2025"
+          },
+          "descprition": {
+            "id": "beschrijving",
+            "h3": "Description",
+            "p": "This PE was a simple test to check whether we could work correctly with LockDownBrowser. The goal was to become familiar with the software and answer a few basic questions. The test went smoothly and gave me the chance to use the system without problems."
+          },
+          "personalChallenges": {
+            "id": "persoonlijke-uitdagingen",
+            "h3": "Personal challenges",
+            "p": "The biggest challenge was fully understanding how LockDownBrowser works and being sure that I installed and used everything correctly during the test. Because the test went smoothly, this challenge was easy to overcome."
+          },
+          "bijgeleerd": {
+            "id": "bijgeleerd",
+            "h3": "What I learned",
+            "p": "Through this PE, I learned how LockDownBrowser works, including opening tests, navigating through questions, and keeping an eye on the time limit. This experience ensures that I can use the software smoothly and without stress in future tests."
+          }
+        }
       },
       {
-        "week": 10,
-        "periode": {
-          "van": "01/12",
-          "tot": "05/12"
-        },
-        "inhoud": [
-          "Documenting and debugging in C#",
-          "Lab: Debugging (C#)"
-        ],
-        "evaluaties": [
-          "Debugging (same as lab)",
-          "Feedback evaluation debugging"
-        ],
-        "opdrachten": []
+        "id": "GIT",
+        "title": "GIT & GitHub",
+        "image": "preview-Git.png",
+        "alt": "photo of Git PE",
+        "pageInfo": {
+          "containerTitle": {
+            "h1": "Git & GitHub",
+            "h2": "Workplace Learning 1 - 16/10/2025"
+          },
+          "descprition": {
+            "id": "beschrijving",
+            "h3": "Description",
+            "p": "In this assignment, I created a simple website with HTML and CSS, divided over two pages: index.html and about.html. The home page contained an overview of common mistakes with Git & GitHub and a link to the about page with my name. The focus was on correctly applying Git commands, commits, and pushing the result to a GitHub repository."
+          },
+          "personalChallenges": {
+            "id": "persoonlijke-uitdagingen",
+            "h3": "Personal challenges",
+            "p": "Technically, I had written the code correctly, but my mistake was that I committed everything at once instead of per required step. This made it more difficult to keep progress clear and check which changes belonged to which step. For future projects, I want to learn to **make a commit for each small step with a clear message**, so it becomes more organized and errors are easier to trace."
+          },
+          "bijgeleerd": {
+            "id": "bijgeleerd",
+            "h3": "What I learned",
+            "p": "Through this assignment, I learned how important it is to use Git in a structured way: making commits per step, adding clear messages, and pushing regularly. I also gained practical experience creating multiple HTML pages, linking pages via hyperlinks, and correctly setting up a repository. This will help me keep overview and avoid version-control mistakes in future projects."
+          }
+        }
       },
       {
-        "week": 11,
-        "periode": {
-          "van": "08/12",
-          "tot": "12/12"
-        },
-        "inhoud": [],
-        "evaluaties": [],
-        "opdrachten": []
+        "id": "gastsprekers",
+        "title": "Guest Speaker Reflection",
+        "image": "preview-gastspreker (1).jpg",
+        "alt": "photo of guest speaker reflection",
+        "pageInfo": {
+          "containerTitle": {
+            "h1": "Guest Speaker Reflection",
+            "h2": "Workplace Learning 1 - 23/10/2025"
+          },
+          "descprition": {
+            "id": "beschrijving",
+            "h3": "Description",
+            "p": "In this PE, I wrote a reflection about the guest speakers who visited during Workplace Learning 1. The goal was to process the information they shared and critically consider how it could apply to my personal development and future career."
+          },
+          "personalChallenges": {
+            "id": "persoonlijke-uitdagingen",
+            "h3": "Personal challenges",
+            "p": "An important challenge was remembering what the guest speakers had said, so I could process it properly in my reflection. Processing all the information and selecting the most important points required concentration and focus, especially because some details only became relevant later."
+          },
+          "bijgeleerd": {
+            "id": "bijgeleerd",
+            "h3": "What I learned",
+            "p": "Through this reflection, I noticed that my short-term memory is sometimes less strong than I thought. I learned to structure information better and take notes during presentations, so I can later write a clearer and more accurate reflection more easily. I also realized how valuable guest speaker input can be for insight into practice and my own professional development."
+          }
+        }
       },
       {
-        "week": 12,
-        "periode": {
-          "van": "15/12",
-          "tot": "19/12"
-        },
-        "inhoud": [
-          "Lab: WPF",
-          "Guest speakers",
-          "SDGs"
-        ],
-        "evaluaties": [],
-        "opdrachten": [
-          "Curriculum Vitae"
-        ]
+        "id": "console-PE",
+        "title": "C# Console",
+        "image": "preview-PE-Console.png",
+        "alt": "photo of Console PE",
+        "pageInfo": {
+          "containerTitle": {
+            "h1": "PE: C# Console",
+            "h2": "Workplace Learning 1 - 13/11/2025"
+          },
+          "descprition": {
+            "id": "beschrijving",
+            "h3": "Description",
+            "p": "In this Permanent Evaluation, I worked on a console application in C#. The goal was to clone an existing repository, further develop the application according to the assignment, and commit and push each requirement separately. The emphasis was on correctly using Git & GitHub, developing logical methods in C#, and independently solving errors."
+          },
+          "personalChallenges": {
+            "id": "persoonlijke-uitdagingen",
+            "h3": "Personal challenges",
+            "p": "I started strongly by implementing the first methods and logic, but got stuck at the end of the constructor and with the Visit method. It was a challenge to implement the complex logic correctly while strictly following the Git workflow. Through the feedback video and the comparison with the model solution, I could see where I got stuck and which C# concepts I still needed to understand better."
+          },
+          "bijgeleerd": {
+            "id": "bijgeleerd",
+            "h3": "What I learned",
+            "p": "Through this PE, I learned to better analyze where my code fails and how to find and solve logical errors. I deepened my knowledge of C# constructors and methods and gained insight into how a console application can be built in a structured and functionally correct way. I also experienced how important it is to commit and push assignments step by step in Git, so you keep overview and can trace errors more easily."
+          }
+        }
       },
       {
-        "week": 13,
-        "periode": {
-          "van": "05/01",
-          "tot": "09/01"
-        },
-        "inhoud": [
-          "Introduction Corda",
-          "POP core quadrants",
-          "C# WPF"
-        ],
-        "evaluaties": [],
-        "opdrachten": [
-          "Portfolio"
-        ]
+        "id": "webdevelopment",
+        "title": "HTML & CSS",
+        "image": "preview-html&css.png",
+        "alt": "photo of HTML & CSS PE",
+        "pageInfo": {
+          "containerTitle": {
+            "h1": "HTML & CSS",
+            "h2": "Workplace Learning 1 - 27/11/2025"
+          },
+          "descprition": {
+            "id": "beschrijving",
+            "h3": "Description",
+            "p": "In this Permanent Evaluation, I worked on recreating the homepage of 'PXL Mountain Adventures' with HTML and CSS. The goal was to create a correct layout according to the tickets: navigation bar, hero banner, tours section, buttons, and footer. All elements had to be styled and positioned properly, using flexbox for the cards and hover effects on buttons."
+          },
+          "personalChallenges": {
+            "id": "persoonlijke-uitdagingen",
+            "h3": "Personal challenges",
+            "p": "The biggest challenge was positioning the hero banner and the text on top of it so that everything was correctly centered. It was also sometimes difficult to get the flexbox spacing between the tour cards exactly right and to make the hover effects on the buttons consistent. Making sure the navigation bar stayed sticky at the top also required several CSS corrections."
+          },
+          "bijgeleerd": {
+            "id": "bijgeleerd",
+            "h3": "What I learned",
+            "p": "Through this PE, I learned how important it is to build CSS systematically: first the general reset and body styling, then layout, and only then details such as hover effects and gradients. I deepened my knowledge of flexbox, positioning, and CSS specificity. I also practiced debugging layout problems and iteratively improving a page so that everything visually matched the design."
+          }
+        }
       },
       {
-        "week": 14,
-        "periode": {
-          "van": "12/01",
-          "tot": "16/01"
-        },
-        "inhoud": [
-          "Feedback evaluation C# WPF"
-        ],
-        "evaluaties": [
-          "Catch-up moment"
-        ],
-        "opdrachten": []
-       }
+        "id": "debugging",
+        "title": "Debugging (C#)",
+        "image": "preview-debugging.png",
+        "alt": "photo of Debugging PE",
+        "pageInfo": {
+          "containerTitle": {
+            "h1": "PE - Debugging (C#)",
+            "h2": "Workplace Learning 1 - 04/12/2025"
+          },
+          "sections": [
+            {
+              "id": "gevoel-pe",
+              "h3": "1. Do you feel good about taking the PE? Why or why not?",
+              "p": "I do not have a very good feeling about it, because the first half of my application works properly. But the other part kept crashing and I could not fix it, so I could not see whether the code after that worked properly."
+            },
+            {
+              "id": "oefenen-debugging",
+              "h3": "2. How did you practice debugging in Visual Studio outside class sessions?",
+              "p": "I practiced by making my own projects and then removing my own errors from those projects."
+            },
+            {
+              "id": "hulpmiddelen",
+              "h3": "3. What resources are available to improve your C#? Which do you use? Do you go to tutoring?",
+              "p": "I mainly use YouTube and coding websites to improve my C# a bit. These resources help me find extra explanation and examples. I do not go to tutoring."
+            },
+            {
+              "id": "zelfstandig-bugs",
+              "h3": "4. To what extent do you feel able to analyze and solve a bug independently?",
+              "p": "I feel that I can do this moderately well, but that I still need to learn a lot more to better see and understand what goes wrong and why. By understanding my code better, I want to become more independent in analyzing and solving bugs."
+            }
+          ]
+        }
+      },
+      {
+        "id": "WPF",
+        "title": "C# WPF",
+        "image": "preview-wpf.png",
+        "alt": "photo of WPF PE",
+        "pageInfo": {
+          "containerTitle": {
+            "h1": "WPF PE Reflection",
+            "h2": "WPF - 08/01/2026"
+          },
+          "sections": [
+            {
+              "id": "gevoel",
+              "h3": "Feeling about the PE",
+              "p": "I feel that this PE went better than the previous PE for C# Essentials. At the beginning of the PE, I finished the XAML quickly, but when I had to start with the C# code, I got stuck for a moment. After closing my eyes briefly and reviewing the course material again, things went smoothly again. Because I got stuck at first, I was not able to finish everything."
+            },
+            {
+              "id": "uitdagingen",
+              "h3": "Personal challenges",
+              "p": "I always find it somewhat challenging to use classes correctly in my code. Properly connecting the Team and Match classes to the user interface requires attention and care."
+            },
+            {
+              "id": "bijgeleerd",
+              "h3": "What I learned",
+              "p": "I learned to take a moment to calm down when I get stuck, so I can continue more efficiently afterwards. I also gained more experience connecting classes to the interface and logically building event handlers."
+            },
+            {
+              "id": "debugging",
+              "h3": "Solving problems independently",
+              "p": "I felt capable of independently finding and solving errors. During the debugging process, I was able to identify and correct my mistakes quickly, which made working on the PE go smoothly."
+            }
+          ]
+        }
+      }
     ]
   }
-},
-"workPage" : {
-  "nav" : {
-    "content": "Content",
-    "aboutme": "About me",
-    "logboek": "Logbook",
-    "ontwikkeling": "Development",
-    "reflectie": "Reflection",
-    "competenties": "Competencies",
-    "activiteiten": "Activities"
-  }
-}
 }
