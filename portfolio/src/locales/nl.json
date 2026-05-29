@@ -221,223 +221,499 @@
     }
   },
   "logboek": {
-    "col": {
-      "week": "Week",
-      "periode": "Periode",
-      "inhoud": "Inhoud",
-      "evaluaties": "Evaluaties",
-      "opdrachten": "Opdrachten"
-    },
-    "weeks": [
-      {
-        "week": 1,
-        "periode": {
-          "van": "22/09",
-          "tot": "26/09"
-        },
-        "inhoud": [
-          "Introductie werkplekleren",
-          "Wat is programmeren",
-          "Introductie POP, X-Factor & SDG's",
-          "Introductie Scratch"
-        ],
-        "evaluaties": [],
-        "opdrachten": []
+      "col": {
+        "week": "Week",
+        "periode": "Periode",
+        "inhoud": "Inhoud",
+        "evaluaties": "Evaluaties",
+        "opdrachten": "Opdrachten"
       },
-      {
-        "week": 2,
-        "periode": {
-          "van": "29/09",
-          "tot": "03/10"
+      "semesters": {
+        "semester1": {
+          "title": "Semester 1 - Werkplekleren 1",
+          "weeks": [
+            {
+              "week": 1,
+              "periode": {
+                "van": "22/09",
+                "tot": "26/09"
+              },
+              "inhoud": [
+                "Introductie werkplekleren",
+                "Wat is programmeren",
+                "Introductie POP, X-Factor & SDG's",
+                "Introductie Scratch"
+              ],
+              "evaluaties": [],
+              "opdrachten": []
+            },
+            {
+              "week": 2,
+              "periode": {
+                "van": "29/09",
+                "tot": "03/10"
+              },
+              "inhoud": [
+                "Oriënteringstraject",
+                "Installatie Git & GitHub",
+                "Introductie Git & GitHub"
+              ],
+              "evaluaties": [
+                "LockDownBrowser"
+              ],
+              "opdrachten": []
+            },
+            {
+              "week": 3,
+              "periode": {
+                "van": "06/10",
+                "tot": "10/10"
+              },
+              "inhoud": [
+                "POP motivatie, kernwadranten en reflecteren",
+                "Labo: Git & GitHub"
+              ],
+              "evaluaties": [],
+              "opdrachten": [
+                "Scratch"
+              ]
+            },
+            {
+              "week": 4,
+              "periode": {
+                "van": "13/10 ",
+                "tot": "17/10"
+              },
+              "inhoud": [
+                "POP planning & studieaanpak"
+              ],
+              "evaluaties": [
+                "Git & GitHub"
+              ],
+              "opdrachten": [
+                "Reflecteren"
+              ]
+            },
+            {
+              "week": 5,
+              "periode": {
+                "van": "20/10",
+                "tot": "24/10"
+              },
+              "inhoud": [
+                "Gastsprekers",
+                "EPOS reflectie van oriënteringstraject"
+              ],
+              "evaluaties": [
+                "Gastsprekers"
+              ],
+              "opdrachten": [
+                "Planning"
+              ]
+            },
+            {
+              "week": 6,
+              "periode": {
+                "van": "03/11",
+                "tot": "07/11"
+              },
+              "inhoud": [
+                "POP leren analyseren"
+              ],
+              "evaluaties": [],
+              "opdrachten": []
+            },
+            {
+              "week": 7,
+              "periode": {
+                "van": "10/11",
+                "tot": "14/11"
+              },
+              "inhoud": [
+                "POP carrièrekompas",
+                "C# Console"
+              ],
+              "evaluaties": [
+                "Feedback evaluatie"
+              ],
+              "opdrachten": [
+                "POP carrièrekompas"
+              ]
+            },
+            {
+              "week": 8,
+              "periode": {
+                "van": "17/11",
+                "tot": "21/11"
+              },
+              "inhoud": [
+                "POP personal branding",
+                "Introductie curriculum vitae",
+                "Introductie portfolio"
+              ],
+              "evaluaties": [
+                "Feedback evaluatie C# Console"
+              ],
+              "opdrachten": []
+            },
+            {
+              "week": 9,
+              "periode": {
+                "van": "24/11",
+                "tot": "28/11"
+              },
+              "inhoud": [
+                "Instroombevraging",
+                "HTML & CSS"
+              ],
+              "evaluaties": [
+                "Feedback evaluatie"
+              ],
+              "opdrachten": []
+            },
+            {
+              "week": 10,
+              "periode": {
+                "van": "01/12",
+                "tot": "05/12"
+              },
+              "inhoud": [
+                "Documenteren en debuggen in C#",
+                "Labo: Debugging (C#)"
+              ],
+              "evaluaties": [
+                "Debugging (idem aan labo)",
+                "Feedback evaluatie debugging"
+              ],
+              "opdrachten": []
+            },
+            {
+              "week": 11,
+              "periode": {
+                "van": "08/12",
+                "tot": "12/12"
+              },
+              "inhoud": [
+                "Labo: WPF",
+                "Gastsprekers",
+                "SDG's"
+              ],
+              "evaluaties": [],
+              "opdrachten": []
+            },
+            {
+              "week": 12,
+              "periode": {
+                "van": "15/12",
+                "tot": "19/12"
+              },
+              "inhoud": [
+                "Afwerken curriculum vitae",
+                "Infosessie Thalento"
+              ],
+              "evaluaties": [],
+              "opdrachten": [
+                "Curriculum Vitae"
+              ]
+            },
+            {
+              "week": 13,
+              "periode": {
+                "van": "05/01",
+                "tot": "09/01"
+              },
+              "inhoud": [
+                "Introductie Corda",
+                "POP kernkwadranten",
+                "C# WPF"
+              ],
+              "evaluaties": [],
+              "opdrachten": [
+                "Portfolio"
+              ]
+            },
+            {
+              "week": 14,
+              "periode": {
+                "van": "12/01",
+                "tot": "16/01"
+              },
+              "inhoud": [
+                "Feedback evaluatie C# WPF"
+              ],
+              "evaluaties": [
+                "Inhaalmoment"
+              ],
+              "opdrachten": []
+            }
+          ]
         },
-        "inhoud": [
-          "Oriënteringstraject",
-          "Installatie Git & GitHub",
-          "Introductie Git & GitHub"
-        ],
-        "evaluaties": [
-          "LockDownBrowser"
-        ],
-        "opdrachten": []
-      },
-      {
-        "week": 3,
-        "periode": {
-          "van": "06/10",
-          "tot": "10/10"
-        },
-        "inhoud": [
-          "POP motivatie, kernwadranten en reflecteren",
-          "Labo: Git & GitHub"
-        ],
-        "evaluaties": [],
-        "opdrachten": [
-          "Scratch"
-        ]
-      },
-      {
-        "week": 4,
-        "periode": {
-          "van": "13/10 ",
-          "tot": "17/10"
-        },
-        "inhoud": [
-          "POP planning & studieaanpak"
-        ],
-        "evaluaties": [
-          "Git & GitHub"
-        ],
-        "opdrachten": [
-          "Reflecteren"
-        ]
-      },
-      {
-        "week": 5,
-        "periode": {
-          "van": "20/10",
-          "tot": "24/10"
-        },
-        "inhoud": [
-          "Gastsprekers",
-          "EPOS reflectie van oriënteringstraject"
-        ],
-        "evaluaties": [
-          "Gastsprekers"
-        ],
-        "opdrachten": [
-          "Planning"
-        ]
-      },
-      {
-        "week": 6,
-        "periode":{
-          "van": "03/11",
-          "tot": "07/11"
-        },
-        "inhoud": [
-          "POP leren analyseren"
-        ],
-        "evaluaties": [],
-        "opdrachten": []
-      },
-      {
-        "week": 7,
-        "periode": {
-          "van": "10/11",
-          "tot": "14/11"
-        },
-        "inhoud": [
-          "POP carrièrekompas",
-          "C# Console"
-        ],
-        "evaluaties": [
-          "Feedback evaluatie"
-        ],
-        "opdrachten": [
-          "POP carrièrekompas"
-        ]
-      },
-      {
-        "week": 8,
-        "periode": {
-          "van": "17/11",
-          "tot": "21/11"
-        },
-        "inhoud": [
-          "POP personal branding",
-          "Introductie curriculum vitae",
-          "Introductie portfolio"
-        ],
-        "evaluaties": [
-          "Feedback evaluatie C# Console"
-        ],
-        "opdrachten": []
-      },
-      {
-        "week": 9,
-        "periode": {
-          "van": "24/11",
-          "tot": "28/11"
-        },
-        "inhoud": [
-          "Instroombevraging",
-          "HTML & CSS"
-        ],
-        "evaluaties": [
-          "Feedback evaluatie"
-        ],
-        "opdrachten": []
-      },
-      {
-        "week": 10,
-        "periode":{
-          "van": "01/12",
-          "tot": "05/12"
-        },
-        "inhoud": [
-          "Documenteren en debuggen in C#",
-          "Labo: Debugging (C#)"
-        ],
-        "evaluaties": [
-          "Debugging (idem aan labo)",
-          "Feedback evaluatie debugging"
-        ],
-        "opdrachten": []
-      },
-      {
-        "week": 11,
-        "periode": {
-          "van": "08/12",
-          "tot": "12/12"
-        },
-         "inhoud": [
-          "Labo: WPF",
-          "Gastsprekers",
-          "SDG’s"
-        ],
-        "evaluaties": [],
-        "opdrachten": []
-      },
-      {
-        "week": 12,
-        "periode": {
-          "van": "15/12",
-          "tot": "19/12"
-        },
-        "inhoud": [
-          "Afwerken curriculum vitae",
-          "Infosessie Thalento"
-        ],
-        "evaluaties": [],
-        "opdrachten": ["Curriculum Vitae"]
-      },
-      {
-        "week": 13,
-        "periode": {
-          "van": "05/01",
-          "tot": "09/01"
-        },
-        "inhoud": [
-          "Introductie Corda",
-          "POP kernkwadranten",
-          "C# WPF"
-        ],
-        "evaluaties": [],
-        "opdrachten": ["Portfolio"]
-      },
-      {
-        "week": 14,
-        "periode": {
-          "van": "12/01",
-          "tot": "16/01"
-        },
-        "inhoud": ["Feedback evaluatie C# WPF"],
-        "evaluaties": ["Inhaalmoment"],
-        "opdrachten": []
+        "semester2": {
+          "title": "Semester 2 - Werkplekleren 2",
+          "weeks": [
+            {
+              "week": 1,
+              "periode": {
+                "van": "12/02",
+                "tot": "13/02"
+              },
+              "inhoud": [
+                "Infosessie gevolgd",
+                "Overlegmomenten bijgewoond",
+                "Kennismaking met het team",
+                "Introductie van het project en de werking ervan"
+              ],
+              "evaluaties": [],
+              "opdrachten": []
+            },
+            {
+              "week": 2,
+              "periode": {
+                "van": "19/02",
+                "tot": "20/02"
+              },
+              "inhoud": [
+                "Sprint backlog voor sprint 1 opgesteld",
+                "Technische uitleg gekregen over het project",
+                "Project verder opgesplitst in taken",
+                "Gestart met de frontend van de contactpagina",
+                "Verder gewerkt aan collega-templates"
+              ],
+              "evaluaties": [],
+              "opdrachten": []
+            },
+            {
+              "week": 3,
+              "periode": {
+                "van": "26/02",
+                "tot": "27/02"
+              },
+              "inhoud": [
+                "Technische uitleg gevolgd",
+                "Start van de daily stand-ups",
+                "Design van de collega-pagina uitgewerkt",
+                "Collega-pagina ontwikkeld",
+                "Backendfunctionaliteiten voor de contactpagina geprogrammeerd",
+                "Branding toegepast binnen de applicatie",
+                "Responsive layout ontwikkeld",
+                "Navigatie binnen de applicatie uitgewerkt"
+              ],
+              "evaluaties": [],
+              "opdrachten": [
+                "N-Unit Frontend Opdracht - Individuele opdracht"
+              ]
+            },
+            {
+              "week": 4,
+              "periode": {
+                "van": "05/03",
+                "tot": "06/03"
+              },
+              "inhoud": [
+                "Verder gewerkt aan lopende sprinttaken",
+                "Debugging en optimalisaties uitgevoerd",
+                "Teamoverleg en voortgangscontrole"
+              ],
+              "evaluaties": [],
+              "opdrachten": []
+            },
+            {
+              "week": 5,
+              "periode": {
+                "van": "12/03",
+                "tot": "13/03"
+              },
+              "inhoud": [
+                "Uitleg gekregen over sprint reviews",
+                "Daily stand-ups bijgewoond",
+                "Documentatie opgesteld in Confluence",
+                "Retrospective gehouden",
+                "Eerste schets van de database gemaakt"
+              ],
+              "evaluaties": [],
+              "opdrachten": []
+            },
+            {
+              "week": 6,
+              "periode": {
+                "van": "19/03",
+                "tot": "20/03"
+              },
+              "inhoud": [
+                "Daily stand-ups bijgewoond",
+                "Databaseschets verder afgewerkt",
+                "Gestart met het opstellen van het ERD-schema",
+                "Sprint backlog voor sprint 2 opgesteld",
+                "User stories opgesplitst in taken",
+                "Gebruikersprofiel weergegeven op de webpagina",
+                "Datadoorgave geïmplementeerd",
+                "Hardcoded testdata aangepast in de frontend",
+                "Debugging uitgevoerd",
+                "Verwerking van rollen binnen de applicatie gestart"
+              ],
+              "evaluaties": [],
+              "opdrachten": []
+            },
+            {
+              "week": 7,
+              "periode": {
+                "van": "26/03",
+                "tot": "27/03"
+              },
+              "inhoud": [
+                "Daily stand-ups bijgewoond",
+                "Rollen toegewezen binnen de applicatie",
+                "Functionaliteit voor aanpassen van gebruikersgegevens ontwikkeld",
+                "Debugging uitgevoerd",
+                "Password reset met bevestigingsmail geïmplementeerd",
+                "Uitleg gekregen over het handshake-event"
+              ],
+              "evaluaties": [],
+              "opdrachten": [
+                "Grafieken/Charts Opdracht - Individuele opdracht"
+              ]
+            },
+            {
+              "week": 8,
+              "periode": {
+                "van": "02/04",
+                "tot": "03/04"
+              },
+              "inhoud": [
+                "Daily stand-ups bijgewoond",
+                "Debugging uitgevoerd",
+                "Password reset en bevestigingsmail verder afgewerkt",
+                "Sprint review bijgewoond",
+                "User stories opgesplitst in taken",
+                "Documentatie bijgewerkt",
+                "Mailinhoud opgesteld",
+                "Retrospective van sprint 2 gehouden",
+                "Emailservice getest"
+              ],
+              "evaluaties": [],
+              "opdrachten": [
+                "Grafieken Opdracht (Voortgezet) - Individuele opdracht"
+              ]
+            },
+            {
+              "week": "Paas",
+              "periode": {
+                "van": "09/04",
+                "tot": "13/04"
+              },
+              "inhoud": [
+                "Mailinhoud verder opgesteld",
+                "Applicatielogica ontwikkeld voor het ophalen van ordergegevens via mail"
+              ],
+              "evaluaties": [],
+              "opdrachten": [
+                "Mobiele Opdracht - Individuele opdracht"
+              ]
+            },
+            {
+              "week": 9,
+              "periode": {
+                "van": "23/04",
+                "tot": "24/04"
+              },
+              "inhoud": [
+                "Daily stand-ups bijgewoond",
+                "Documentatie bijgewerkt",
+                "Functionaliteit ontwikkeld voor het versturen van mails na een bestelling",
+                "Ordergegevens opgehaald en verwerkt",
+                "Nieuwe tabel `AbonnementPolicies` aangemaakt",
+                "Policies gekoppeld aan de frontend",
+                "Debugging uitgevoerd"
+              ],
+              "evaluaties": [],
+              "opdrachten": []
+            },
+            {
+              "week": 10,
+              "periode": {
+                "van": "30/04",
+                "tot": "30/04"
+              },
+              "inhoud": [
+                "Daily stand-up bijgewoond",
+                "Documentatie bijgewerkt",
+                "Debugging uitgevoerd"
+              ],
+              "evaluaties": [],
+              "opdrachten": []
+            },
+            {
+              "week": 11,
+              "periode": {
+                "van": "07/05",
+                "tot": "08/05"
+              },
+              "inhoud": [
+                "Daily stand-ups bijgewoond",
+                "Documentatie bijgewerkt",
+                "Debugging uitgevoerd",
+                "Feedback op de interface verwerkt",
+                "Backendfunctionaliteiten voor abonnement policies ontwikkeld",
+                "Backend gekoppeld aan frontend van abonnement policies",
+                "Infosessie over startups bijgewoond"
+              ],
+              "evaluaties": [],
+              "opdrachten": []
+            },
+            {
+              "week": 12,
+              "periode": {
+                "van": "14/05",
+                "tot": "15/05"
+              },
+              "inhoud": [
+                "Verder gewerkt aan testen"
+              ],
+              "evaluaties": [],
+              "opdrachten": [
+                "Mobiele Opdracht - Individuele opdracht",
+                "Maui Opdrachten 01-06 - Individuele opdracht"
+              ]
+            },
+            {
+              "week": 13,
+              "periode": {
+                "van": "21/05",
+                "tot": "22/05"
+              },
+              "inhoud": [
+                "Daily stand-ups bijgewoond",
+                "Debugging uitgevoerd",
+                "Documentatie bijgewerkt",
+                "Infosessie over de eindpresentatie bijgewoond"
+              ],
+              "evaluaties": [],
+              "opdrachten": [
+                "Maui-09 Opdracht (Extended) - Individuele opdracht"
+              ]
+            },
+            {
+              "week": 14,
+              "periode": {
+                "van": "28/05",
+                "tot": "29/05"
+              },
+              "inhoud": [
+                "Documentatie bijgewerkt",
+                "Sprint technical review PRO bijgewoond"
+              ],
+              "evaluaties": [
+                "Eindpresentatie - Pitch & Demo"
+              ],
+              "opdrachten": [
+                "Portfolio Uitbereiding - Individuele opdracht"
+              ]
+            }
+          ]
+        }
       }
-    ]
-  }
-},
+    }
+  },
 "workPage":{
   "nav" : {
     "content": "Inhoud",
