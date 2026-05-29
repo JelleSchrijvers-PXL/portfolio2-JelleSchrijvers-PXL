@@ -9,21 +9,36 @@ const route = useRoute()
 const { tm } = useI18n()
 
 const img = (bestand) =>
-  new URL(`../assets/foto/${bestand}`, import.meta.url).href
+  bestand ? new URL(`../assets/foto/${bestand}`, import.meta.url).href : null
+
+const video = (bestand) =>
+  bestand ? new URL(`../assets/videos/${bestand}`, import.meta.url).href : null
+
+const labels = computed(() => tm('workPage.labels'))
 
 const project = computed(() => {
   const id = route.params.id
   const all = [
-    ...tm('workPage.opdrachten'),
-    ...tm('workPage.pes')
+    ...tm('workPage.opdrachten').map((item) => ({ ...item, wpl: 'wpl1' })),
+    ...tm('workPage.pes').map((item) => ({ ...item, wpl: 'wpl1' })),
+    { ...tm('workPage.wpl2Project'), wpl: 'wpl2' },
+    ...tm('workPage.wpl2Opdrachten').map((item) => ({ ...item, wpl: 'wpl2' }))
   ]
   const found = all.find(item => item.id === id)
   if (!found) return null
   return {
     ...found,
-    image: img(found.image)
+    image: img(found.image),
+    video: video(found.video)
   }
 })
+
+const backToWork = computed(() => ({
+  name: 'work',
+  query: {
+    wpl: project.value?.wpl || (route.query.wpl === 'wpl2' ? 'wpl2' : 'wpl1')
+  }
+}))
 
 const projectSections = computed(() => {
   if (!project.value) return []
@@ -40,19 +55,52 @@ const projectSections = computed(() => {
 })
 
 const itemKey = (item) =>
-  typeof item === 'string' ? item : `${item.label}-${item.text}`
+  typeof item === 'string' ? item : `${item.label || item.title}-${item.text || item.href || ''}`
 </script>
 
 <template>
   <div class="project-page">
-    <RouterLink :to="{ name: 'work' }" class="back-button">← Terug</RouterLink>
+    <RouterLink :to="backToWork" class="back-button">← {{ labels.back }}</RouterLink>
 
     <div v-if="project">
       <div class="project-header">
+        <div v-if="project.badges?.length" class="badges">
+          <span
+            v-for="badge in project.badges"
+            :key="badge"
+            class="badge"
+          >
+            {{ badge }}
+          </span>
+        </div>
         <h1>{{ project.pageInfo.containerTitle.h1 }}</h1>
         <h2>{{ project.pageInfo.containerTitle.h2 }}</h2>
-        <img :src="project.image" :alt="project.alt" />
+        <p v-if="project.summary" class="project-summary">{{ project.summary }}</p>
+        <div v-if="project.links?.length" class="project-links">
+          <a
+            v-for="link in project.links"
+            :key="link.href"
+            :href="link.href"
+            target="_blank"
+            rel="noreferrer"
+          >
+            {{ link.label }}
+          </a>
+        </div>
+        <img v-if="project.image" :src="project.image" :alt="project.alt" />
       </div>
+
+      <section
+        v-if="project.video"
+        id="demo"
+        class="project-section media-section"
+      >
+        <h3>{{ project.videoTitle || labels.demoVideo }}</h3>
+        <p v-if="project.videoDescription">{{ project.videoDescription }}</p>
+        <video controls preload="metadata">
+          <source :src="project.video" type="video/mp4">
+        </video>
+      </section>
 
       <section
         v-for="section in projectSections"
@@ -78,10 +126,62 @@ const itemKey = (item) =>
         </ul>
         <p v-if="section.outro">{{ section.outro }}</p>
       </section>
+
+      <section
+        v-if="project.technologies?.length"
+        id="technologieen"
+        class="project-section"
+      >
+        <h3>{{ labels.technologies }}</h3>
+        <div class="tech-list">
+          <span
+            v-for="tech in project.technologies"
+            :key="tech"
+          >
+            {{ tech }}
+          </span>
+        </div>
+      </section>
+
+      <section
+        v-if="project.installation"
+        id="installatie"
+        class="project-section install-section"
+      >
+        <h3>{{ project.installation.h3 || labels.installation }}</h3>
+        <p v-if="project.installation.note" class="install-note">
+          {{ project.installation.note }}
+        </p>
+        <div
+          v-if="project.installation.commands?.length"
+          class="command-list"
+        >
+          <code
+            v-for="command in project.installation.commands"
+            :key="command"
+          >
+            {{ command }}
+          </code>
+        </div>
+        <h4 v-if="project.installation.requirements?.length">
+          {{ project.installation.requirementsTitle || labels.requirements }}
+        </h4>
+        <ul
+          v-if="project.installation.requirements?.length"
+          class="section-list"
+        >
+          <li
+            v-for="requirement in project.installation.requirements"
+            :key="requirement"
+          >
+            {{ requirement }}
+          </li>
+        </ul>
+      </section>
     </div>
 
     <div v-else>
-      <p>Project niet gevonden.</p>
+      <p>{{ labels.notFound }}</p>
     </div>
   </div>
 </template>
@@ -139,6 +239,13 @@ const itemKey = (item) =>
   font-weight: 700;
 }
 
+.project-summary {
+  max-width: 820px;
+  color: var(--color-text);
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
 .project-header img {
   width: 100%;
   max-height: 460px;
@@ -147,6 +254,52 @@ const itemKey = (item) =>
   border-radius: 8px;
   object-fit: cover;
   box-shadow: var(--shadow-soft);
+}
+
+.media-section video {
+  width: 100%;
+  max-width: 920px;
+  margin-top: 1rem;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  background: rgba(2, 6, 23, 0.82);
+  box-shadow: var(--shadow-soft);
+}
+
+.badges,
+.project-links,
+.tech-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.badge,
+.tech-list span,
+.project-links a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 32px;
+  padding: 0.35rem 0.6rem;
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+  font-size: 0.8rem;
+  font-weight: 800;
+}
+
+.badge {
+  color: var(--color-accent);
+}
+
+.project-links a {
+  background: var(--color-accent-soft);
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+.project-links a:hover {
+  border-color: var(--color-border-hover);
+  color: var(--color-heading);
 }
 
 .project-section {
@@ -180,6 +333,41 @@ const itemKey = (item) =>
 
 .section-list strong {
   color: var(--color-heading);
+  font-weight: 800;
+}
+
+.tech-list span {
+  color: var(--color-heading);
+}
+
+.install-note {
+  padding: 1rem;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  background: rgba(56, 189, 248, 0.08);
+}
+
+.command-list {
+  display: grid;
+  gap: 0.6rem;
+  max-width: 820px;
+  margin: 1rem 0;
+}
+
+.command-list code {
+  display: block;
+  padding: 0.75rem 0.9rem;
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  border-radius: 8px;
+  background: rgba(2, 6, 23, 0.82);
+  color: var(--color-heading);
+  white-space: pre-wrap;
+}
+
+.install-section h4 {
+  margin-top: 1.25rem;
+  color: var(--color-heading);
+  font-size: 1rem;
   font-weight: 800;
 }
 

@@ -23,6 +23,7 @@
   },
   "ontwikkeling": {
     "title": "Ontwikkeling",
+    "sprint1Label": "WPL1",
     "opleiding": {
       "title": "Keuze opleiding",
       "why_programming_title": "Waarom kies ik voor programmeren?",
@@ -33,6 +34,40 @@
       "why_job_p1": "Het beroep van programmeur sluit goed aan bij mijn manier van werken. Ik werk graag zelfstandig, experimenteer met oplossingen en leer uit fouten.",
       "why_job_p2": "Wanneer een probleem complex wordt, neem ik bewust even afstand om daarna met een frisse blik verder te werken. Dit helpt mij om ook bij uitdagende opdrachten vol te houden.",
       "why_job_p3": "Daarnaast beschik ik over eigenschappen zoals probleemoplossend denken, creativiteit en doorzettingsvermogen, die essentieel zijn binnen dit beroep."
+    },
+    "sprint2": {
+      "label": "WPL2",
+      "title": "Werkplekleren 2 - Clockwise",
+      "sections": [
+        {
+          "title": "Project en rol",
+          "paragraphs": [
+            "Tijdens Werkplekleren 2 werkte ik samen met studenten van DVO en PRO op de Corda Campus in Hasselt aan Clockwise, een tijdregistratie-applicatie voor bedrijven in België.",
+            "Binnen het project hield ik mij vooral bezig met de backend en een deel van de frontend, vooral het admin- en superadmin-paneel. Ik werkte onder andere aan de e-mailservice, abonnementsbevestigingen, wachtwoordresets, abonnementsfunctionaliteiten en technische documentatie."
+          ]
+        },
+        {
+          "title": "Technische groei",
+          "paragraphs": [
+            "Het leren werken met Vue.js was voor mij een belangrijk groeipunt. In het begin had ik hier nog geen ervaring mee, maar door te proberen, fouten te maken en oplossingen op te zoeken ging ik sneller vooruit dan verwacht.",
+            "Die praktijkervaring hielp mij ook bij Web Advanced, omdat ik de basis van Vue.js al vanuit het project kende. Daardoor begreep ik de leerstof sneller en bleef ze beter hangen."
+          ]
+        },
+        {
+          "title": "Uitdagingen",
+          "paragraphs": [
+            "Een minder leuk onderdeel was het schrijven van technische documentatie. Ik werk liever aan functionaliteiten, maar doordat ik aan meerdere onderdelen had gewerkt, moest de documentatie duidelijk en uitgebreid zijn.",
+            "Ik heb daardoor geleerd dat documentatie veel tijd vraagt, maar wel noodzakelijk is wanneer andere mensen verder moeten werken op jouw code."
+          ]
+        },
+        {
+          "title": "Wat ik meeneem",
+          "paragraphs": [
+            "Ik merkte dat probleemoplossend denken en leergierigheid sterke punten van mij zijn. Bij problemen rond de e-mailservice, abonnement policies en toegangsrechten bleef ik zoeken tot ik een werkende oplossing vond.",
+            "Voor een volgende WPL wil ik sneller hulp vragen wanneer ik vastzit en mijn documentatie beter verspreid bijhouden tijdens het project, in plaats van alles op het einde te doen."
+          ]
+        }
+      ]
     }
   },
   "reflectie": {
@@ -46,12 +81,44 @@
     "inzichten_label": "Inzichten",
     "inzichten": "Ik werk sterk zelfstandig en gestructureerd, maar kan nog groeien in omgaan met stress en deadlines.",
     "succes_label": "Persoonlijk succes",
-    "succes": "Mijn grootste succes is dat ik mezelf beter heb leren kennen en weet waar ik kan verbeteren."
+    "succes": "Mijn grootste succes is dat ik mezelf beter heb leren kennen en weet waar ik kan verbeteren.",
+    "sprint2": {
+      "title": "5.1 AIM-reflectie op WPL2",
+      "items": [
+        {
+          "label": "Introductie",
+          "text": "Tijdens Werkplekleren 2 werkte ik aan Clockwise, een tijdregistratie-applicatie voor bedrijven. Ik werkte samen met DVO- en PRO-studenten op de Corda Campus en nam vooral backendtaken en delen van het admin- en superadmin-paneel op."
+        },
+        {
+          "label": "Positieve elementen",
+          "text": "Het leukste en meest leerrijke was het werken met Vue.js. Ik had hier vooraf nog geen ervaring mee, maar door te experimenteren, fouten te maken en oplossingen op te zoeken, merkte ik duidelijke vooruitgang."
+        },
+        {
+          "label": "Minder leuke elementen",
+          "text": "Het schrijven van technische documentatie vond ik minder leuk dan programmeren. Toch heb ik geleerd dat duidelijke documentatie belangrijk is wanneer andere mensen verder moeten werken op jouw code."
+        },
+        {
+          "label": "Inzichten",
+          "text": "Ik heb gemerkt dat praktijkervaring ervoor zorgt dat kennis beter blijft hangen. Daarnaast leerde ik dat probleemoplossend denken, communicatie en documentatie even belangrijk zijn als technische code."
+        },
+        {
+          "label": "Persoonlijk succes",
+          "text": "Mijn grootste succes is dat mijn bijdrage zichtbaar was in het eindresultaat: de e-mailservice werkte, de abonnementsfunctionaliteiten waren uitgewerkt en het adminpaneel functioneerde zoals bedoeld."
+        }
+      ]
+    }
   },
   "volgendewpl": {
     "title": "5.2 Wat neem ik mee naar volgende WPL",
     "p1": "Mijn zelfstandigheid, creativiteit en durf zijn sterke punten die ik wil blijven inzetten. Tegelijk wil ik bewuster werken aan samenwerking en communicatie.",
-    "p2": "Concreet wil ik vaker feedback vragen, overleggen met anderen en mijn ideeën beter delen binnen een teamcontext."
+    "p2": "Concreet wil ik vaker feedback vragen, overleggen met anderen en mijn ideeën beter delen binnen een teamcontext.",
+    "sprint2": {
+      "title": "5.2 Wat neem ik mee naar volgende WPL",
+      "paragraphs": [
+        "Ik neem vooral mijn leergierigheid en doorzettingsvermogen mee. Tijdens Clockwise merkte ik dat ik nieuwe technologieën zoals Vue.js zelfstandig kan leren en technische problemen stap voor stap kan oplossen.",
+        "Voor een volgende WPL wil ik sneller hulp vragen wanneer ik vastzit. Ook wil ik mijn documentatie beter verspreid bijhouden tijdens het project, zodat ik niet alles op het einde moet uitschrijven."
+      ]
+    }
   },
   "xfactor": {
     "title": "5.3 X-Factor",
@@ -72,6 +139,27 @@
         "title": "Professionele ontwikkeling",
         "tekst": "Ik blijf nieuwe technieken leren en toepassen in mijn projecten."
       }
+    },
+    "sprint2": {
+      "title": "5.3 X-Factor",
+      "items": [
+        {
+          "title": "Vakkennis / Technische vaardigheden",
+          "text": "Tijdens Werkplekleren 2 heb ik mijn technische kennis sterk uitgebreid door Vue.js te leren en toe te passen in de admin- en superadmin-interface van Clockwise."
+        },
+        {
+          "title": "Probleemoplossend denken",
+          "text": "Bij problemen rond de e-mailservice, abonnementen en toegangsrechten zocht ik systematisch naar oplossingen via documentatie, voorbeelden en experimenteren."
+        },
+        {
+          "title": "Samenwerking",
+          "text": "Clockwise was een groepsproject met DVO- en PRO-studenten. Ik moest mijn backend-keuzes afstemmen met anderen en rekening houden met hoe teamleden werkten."
+        },
+        {
+          "title": "Communicatie / Professioneel gedrag",
+          "text": "Door technische documentatie te schrijven en mijn voortgang te bespreken, leerde ik technische informatie duidelijker over te brengen aan mensen met een andere achtergrond."
+        }
+      ]
     }
   },
   "competenties": {
@@ -112,6 +200,46 @@
         "goed": "Ik probeer mezelf continu te verbeteren en zo veel mogelijk zelfstandig te werken zonder constante externe hulp.",
         "niet": "Ik ga soms te ver door steeds nieuwe functies toe te voegen, waardoor andere belangrijke onderdelen verwaarloosd worden."
       }
+    },
+    "sprint2": {
+      "title": "Competenties Programmeur - WPL2",
+      "labels": {
+        "situatie": "Waar sta je momenteel?",
+        "goed": "Wat doe je al goed?",
+        "niet": "Wat doe je nog niet goed?"
+      },
+      "roles": [
+        {
+          "title": "Ontwerper",
+          "situatie": "Ik kan meedenken over de structuur van schermen, rollen en gebruikersflows binnen een grotere applicatie zoals Clockwise.",
+          "goed": "Ik kan technische functies mee vertalen naar een bruikbare structuur, zoals het adminpaneel en de rechten per abonnementsniveau.",
+          "niet": "Ik kan nog groeien in het vroeger aftoetsen van ontwerpkeuzes met teamleden, zodat aanpassingen sneller duidelijk worden."
+        },
+        {
+          "title": "Programmeur",
+          "situatie": "Ik heb ervaring opgedaan met Vue.js, backendfunctionaliteiten, e-mailservices, wachtwoordresets en abonnement policies.",
+          "goed": "Ik ben sterk in zelfstandig oplossingen zoeken en kan nieuwe technologieën toepassen in een echt project.",
+          "niet": "Ik blijf soms te lang in detail zoeken voordat ik verder ga of hulp vraag, waardoor ik tijd verlies."
+        },
+        {
+          "title": "Tester",
+          "situatie": "Ik testte en debugde onderdelen zoals de e-mailservice, toegangsrechten en abonnementsfunctionaliteiten.",
+          "goed": "Ik kan bugs analyseren door stap voor stap te controleren waar een probleem ontstaat.",
+          "niet": "Ik kan mijn testaanpak nog systematischer maken, zodat ik sneller zeker ben dat alle scenario's gecontroleerd zijn."
+        },
+        {
+          "title": "Communicator / Teamspeler",
+          "situatie": "Ik werkte samen met DVO- en PRO-studenten en moest technische keuzes duidelijk maken voor anderen.",
+          "goed": "Ik kan technische documentatie schrijven en mijn werk afstemmen met andere teamleden.",
+          "niet": "Ik wil sneller aangeven wanneer ik vastzit en proactiever communiceren over obstakels."
+        },
+        {
+          "title": "Levenslang lerende IT-professional",
+          "situatie": "Ik heb gemerkt dat ik nieuwe technologieën zoals Vue.js zelfstandig kan leren wanneer het project dit vraagt.",
+          "goed": "Ik ben leergierig en zoek actief naar documentatie, tutorials en voorbeelden om problemen op te lossen.",
+          "niet": "Ik moet beter leren prioriteiten stellen en bepalen wanneer iets goed genoeg is om verder te gaan."
+        }
+      ]
     }
   },
   "activiteiten": {
@@ -218,6 +346,112 @@
           }
         ]
       }
+    },
+    "sprint2": {
+      "title": "Voorbeelden van activiteiten per rol - WPL2",
+      "motivatieLabel": "Motivatie",
+      "roles": [
+        {
+          "title": "Ontwerper",
+          "items": [
+            {
+              "title": "Structuur van admin- en superadmin-paneel",
+              "beschrijving": "Ik dacht mee na over hoe het admin- en superadmin-paneel logisch opgebouwd moest worden binnen Clockwise.",
+              "motivatie": "Dit hoort bij de rol Ontwerper omdat het de structuur en bruikbaarheid van de applicatie voorbereidt."
+            },
+            {
+              "title": "Rechten per abonnementsniveau",
+              "beschrijving": "Ik werkte mee aan de opbouw van verschillende rechten per abonnementsniveau.",
+              "motivatie": "Het bepalen van rechten en gebruikersflows is een ontwerpkeuze binnen een softwareproject."
+            },
+            {
+              "title": "Gebruikersflow voor wachtwoordreset",
+              "beschrijving": "Ik werkte aan de logica rond wachtwoordreset en bevestigingsmail.",
+              "motivatie": "Een duidelijke flow helpt gebruikers om de applicatie correct en veilig te gebruiken."
+            }
+          ]
+        },
+        {
+          "title": "Programmeur",
+          "items": [
+            {
+              "title": "Vue.js toepassen",
+              "beschrijving": "Ik leerde Vue.js en paste het toe binnen de frontend van Clockwise.",
+              "motivatie": "Dit is het effectief realiseren van software met een nieuwe technologie."
+            },
+            {
+              "title": "E-mailservice ontwikkelen",
+              "beschrijving": "Ik ontwikkelde functionaliteit voor abonnementsbevestigingen en wachtwoordresets.",
+              "motivatie": "Dit toont het programmeren van echte backendfunctionaliteit binnen het project."
+            },
+            {
+              "title": "Abonnement policies uitwerken",
+              "beschrijving": "Ik werkte aan logica voor abonnementen, policies en toegangsrechten.",
+              "motivatie": "Dit hoort bij de kern van programmeren omdat het bedrijfslogica omzet naar werkende code."
+            }
+          ]
+        },
+        {
+          "title": "Tester",
+          "items": [
+            {
+              "title": "E-mailservice testen",
+              "beschrijving": "Ik controleerde of mails correct verstuurd werden bij bestellingen en wachtwoordresets.",
+              "motivatie": "Dit is testen van functionaliteit die belangrijk is voor de gebruiker."
+            },
+            {
+              "title": "Toegangsrechten controleren",
+              "beschrijving": "Ik testte of rollen en abonnementsrechten correct werkten binnen de applicatie.",
+              "motivatie": "Het controleren van rechten voorkomt fouten in toegang en beveiliging."
+            },
+            {
+              "title": "Debugging tijdens sprinttaken",
+              "beschrijving": "Ik spoorde fouten op tijdens het werken aan backend- en frontendtaken.",
+              "motivatie": "Debugging is een belangrijk onderdeel van testen en kwaliteitscontrole."
+            }
+          ]
+        },
+        {
+          "title": "Communicator / Teamspeler",
+          "items": [
+            {
+              "title": "Technische documentatie schrijven",
+              "beschrijving": "Ik schreef documentatie zodat PRO-studenten en teamleden mijn onderdelen konden begrijpen.",
+              "motivatie": "Dit toont professionele communicatie binnen een teamproject."
+            },
+            {
+              "title": "Daily stand-ups bijwonen",
+              "beschrijving": "Ik besprak mijn voortgang en obstakels tijdens de daily stand-ups.",
+              "motivatie": "Regelmatig overleggen hoort bij samenwerken in een projectteam."
+            },
+            {
+              "title": "Afstemmen met DVO- en PRO-studenten",
+              "beschrijving": "Ik stemde backend-keuzes af met studenten die aan andere onderdelen werkten.",
+              "motivatie": "Dit toont samenwerking en communicatie over technische keuzes."
+            }
+          ]
+        },
+        {
+          "title": "Levenslang lerende IT-professional",
+          "items": [
+            {
+              "title": "Vue.js zelfstandig leren",
+              "beschrijving": "Ik leerde Vue.js door te experimenteren, documentatie te lezen en oplossingen op te zoeken.",
+              "motivatie": "Dit toont dat ik nieuwe technologieën zelfstandig kan aanleren."
+            },
+            {
+              "title": "Problemen onderzoeken",
+              "beschrijving": "Bij technische problemen zocht ik actief naar documentatie, tutorials en voorbeelden.",
+              "motivatie": "Blijven zoeken naar oplossingen is belangrijk voor professionele groei."
+            },
+            {
+              "title": "Reflecteren op werkmethode",
+              "beschrijving": "Ik merkte dat ik sneller hulp moet vragen en documentatie beter moet spreiden.",
+              "motivatie": "Dit toont bewustzijn van groeipunten en bereidheid om mijn aanpak te verbeteren."
+            }
+          ]
+        }
+      ]
     }
   },
   "logboek": {
@@ -706,7 +940,13 @@
                 "Eindpresentatie - Pitch & Demo"
               ],
               "opdrachten": [
-                "Portfolio Uitbereiding - Individuele opdracht"
+                "Portfolio Uitbereiding - Individuele opdracht",
+                {
+                  "label": "Opdracht eindreflectie 2 - Individuele opdracht",
+                  "file": "Opdracht eindreflectie WPL2_Schrijvers_Jelle.pdf",
+                  "downloadLabel": "Download PDF",
+                  "downloadName": "Opdracht eindreflectie WPL2_Schrijvers_Jelle.pdf"
+                }
               ]
             }
           ]
@@ -723,6 +963,29 @@
     "reflectie": "Reflectie",
     "competenties": "Competenties",
     "activiteiten": "Activiteiten"
+  },
+  "labels": {
+    "wpl1": "WPL1",
+    "wpl2": "WPL2",
+    "wpl1Subtitle": "Opdrachten en permanente evaluaties uit Werkplekleren 1.",
+    "wpl2Subtitle": "Projectwerk, individuele opdrachten en downloads uit Werkplekleren 2.",
+    "opdrachten": "Opdrachten",
+    "pes": "PE's",
+    "evaluations": "Evaluaties",
+    "projects": "Projecten",
+    "clockwise": "Project Clockwise",
+    "wpl2Assignments": "Individuele opdrachten",
+    "downloads": "Reflectie & downloads",
+    "viewProject": "Bekijk project",
+    "download": "Download PDF",
+    "github": "GitHub",
+    "technologies": "Gebruikte technologieën",
+    "installation": "Installatie / gebruik",
+    "requirements": "Backend vereisten",
+    "workNavigation": "Werkplekleren navigatie",
+    "back": "Terug",
+    "notFound": "Project niet gevonden.",
+    "demoVideo": "Demo filmpje"
   },
   "opdrachten" : [
   {
@@ -1206,6 +1469,210 @@
         }
       ]
     }
+  }
+],
+"wpl2Project": {
+  "id": "clockwise",
+  "title": "Clockwise",
+  "alt": "Clockwise tijdregistratie project",
+  "badges": ["WPL2", "Project", "Teamproject"],
+  "summary": "Tijdregistratie-applicatie voor bedrijven, gebouwd met DVO- en PRO-studenten op de Corda Campus.",
+  "technologies": ["Vue.js", "C#/.NET backend", "REST API", "E-mailservice", "Abonnement policies", "Technische documentatie"],
+  "pageInfo": {
+    "containerTitle": {
+      "h1": "Clockwise",
+      "h2": "Werkplekleren 2 - Project op Corda Campus"
+    },
+    "sections": [
+      {
+        "id": "beschrijving",
+        "h3": "Beschrijving",
+        "p": "Tijdens Werkplekleren 2 werkte ik samen met DVO- en PRO-studenten op de Corda Campus aan Clockwise, een tijdregistratie-applicatie voor bedrijven in België. Het project speelde in op de nieuwe verplichting rond tijdsregistratie en moest bruikbaar zijn voor zowel grotere bedrijven als kleinere kmo's."
+      },
+      {
+        "id": "bijdrage",
+        "h3": "Mijn bijdrage",
+        "p": "Ik werkte vooral aan backendfunctionaliteiten en delen van het admin- en superadmin-paneel.",
+        "items": [
+          "E-mailservice voor abonnementsbevestigingen",
+          "Wachtwoordreset met bevestigingsmail",
+          "Abonnement policies en toegangsrechten",
+          "Admin- en superadminfunctionaliteit",
+          "Technische documentatie voor PRO-studenten",
+          "Afstemming met DVO- en PRO-teamleden"
+        ]
+      },
+      {
+        "id": "persoonlijke-uitdagingen",
+        "h3": "Persoonlijke uitdagingen",
+        "p": "De grootste uitdaging was dat ik tegelijk nieuwe technologie moest leren en echte projecttaken moest opleveren. Vooral Vue.js was nieuw voor mij. Daarnaast vroeg het schrijven van technische documentatie meer tijd dan verwacht."
+      },
+      {
+        "id": "bijgeleerd",
+        "h3": "Wat heb ik bijgeleerd",
+        "p": "Ik heb geleerd hoe waardevol praktijkervaring is. Door Vue.js, backendlogica, rechtenstructuren en documentatie in een echt project toe te passen, bleef de leerstof veel beter hangen en kreeg ik meer vertrouwen in mijn eigen kunnen als ontwikkelaar."
+      }
+    ]
+  }
+},
+"wpl2Opdrachten": [
+  {
+    "id": "wpl2-nunit-testing",
+    "title": "n-Unit Testing",
+    "image": "preview-nunit-testing-wpl2.png",
+    "alt": "n-Unit testing opdracht",
+    "badges": ["WPL2", "Individuele opdracht", "Testing"],
+    "summary": "Testcases uitwerken met NUnit, SetUp en assertions voor Student-objecten.",
+    "technologies": ["C#", "NUnit", "Unit testing", "Assert.That"],
+    "pageInfo": {
+      "containerTitle": {
+        "h1": "n-Unit Testing",
+        "h2": "Werkplekleren 2 - Individuele opdracht"
+      },
+      "sections": [
+        {
+          "id": "beschrijving",
+          "h3": "Beschrijving",
+          "p": "In deze opdracht werkte ik testcases verder uit met NUnit. Ik gebruikte een SetUp-methode om testdata klaar te zetten en schreef assertions voor Student-objecten, zoals de default voornaam, default achternaam, correcte naam en unieke ID's."
+        },
+        {
+          "id": "persoonlijke-uitdagingen",
+          "h3": "Persoonlijke uitdagingen",
+          "p": "De uitdaging was om niet alleen te kijken of code werkt, maar ook duidelijk te bepalen welk gedrag verwacht wordt. Daardoor moest ik bewuster nadenken over testdata, randgevallen en correcte assertions."
+        },
+        {
+          "id": "bijgeleerd",
+          "h3": "Wat heb ik bijgeleerd",
+          "p": "Ik leerde hoe unit tests helpen om code betrouwbaarder te maken.",
+          "items": [
+            "Testdata voorbereiden met SetUp",
+            "Assert.That correct gebruiken",
+            "Verwacht gedrag concreet maken",
+            "Verschillende objecten met elkaar vergelijken"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "wpl2-data-visualisatie",
+    "title": "Grafieken / Data Visualisatie",
+    "alt": "data visualisatie dashboard opdracht",
+    "badges": ["WPL2", "Individuele opdracht", "GitHub"],
+    "summary": "Proof-of-concept dashboard in Vue.js met Chart.js, API-data en fallback dummy data.",
+    "technologies": ["Vue.js", "Chart.js", "vue-chartjs", "Composable", "Promise.allSettled", "C#/.NET API"],
+    "links": [
+      {
+        "label": "GitHub frontend branch",
+        "href": "https://github.com/PXL-WPL2-2526/wpl2-pro-frontend-team10/tree/data-visualisatie-jelle-schrijvers"
+      },
+      {
+        "label": "GitHub backend branch",
+        "href": "https://github.com/PXL-WPL2-2526/wpl2-pro-backend-team10/tree/data-visualisatie-jelle-schrijvers"
+      }
+    ],
+    "installation": {
+      "h3": "Installatie / gebruik",
+      "note": "Let op: deze dependencies moeten geïnstalleerd worden in het WPL2 frontend project, niet in dit portfolio-project.",
+      "commands": [
+        "npm install chart.js vue-chartjs",
+        "npm run dev"
+      ],
+      "requirementsTitle": "Backend vereisten",
+      "requirements": [
+        "Backend draait op https://localhost:7069",
+        "CORS is correct ingesteld",
+        "Alle chart-endpoints zijn bereikbaar",
+        "Data wordt teruggegeven in een formaat dat bruikbaar is voor Chart.js"
+      ]
+    },
+    "pageInfo": {
+      "containerTitle": {
+        "h1": "Grafieken / Data Visualisatie",
+        "h2": "Werkplekleren 2 - Individuele opdracht"
+      },
+      "sections": [
+        {
+          "id": "beschrijving",
+          "h3": "Beschrijving",
+          "p": "Ik maakte een proof-of-concept dashboard in Vue.js met Chart.js en vue-chartjs. Het dashboard bevat herbruikbare chart components en kan werken met API-data of fallback dummy data."
+        },
+        {
+          "id": "functionaliteit",
+          "h3": "Functionaliteit",
+          "p": "De frontend haalt data op via useDashboardData.js. API-calls gebeuren parallel met Promise.allSettled, zodat één falende request niet het volledige dashboard breekt.",
+          "items": [
+            "8 herbruikbare chart components",
+            "Employee charts en superadmin charts",
+            "Fallback naar dummy data bij API-fouten",
+            "Data kan via props overschreven worden",
+            "Backend API: https://localhost:7069/api/charts",
+            "Aparte backend branch met chart-endpoints voor de dashboarddata"
+          ]
+        },
+        {
+          "id": "persoonlijke-uitdagingen",
+          "h3": "Persoonlijke uitdagingen",
+          "p": "De grootste uitdaging was om grafieken herbruikbaar te maken en tegelijk voorbereid te zijn op echte backenddata. Ik moest nadenken over foutafhandeling, fallback data en een duidelijke projectstructuur."
+        },
+        {
+          "id": "bijgeleerd",
+          "h3": "Wat heb ik bijgeleerd",
+          "p": "Ik leerde hoe je data visualisatie professioneel opbouwt in Vue.js en hoe je een dashboard robuuster maakt door API-fouten op te vangen zonder de gebruikerservaring te breken."
+        }
+      ]
+    }
+  },
+  {
+    "id": "wpl2-maui-app",
+    "title": "MAUI-app",
+    "image": "preview-maui-app-wpl2.png",
+    "alt": "MAUI app opdracht",
+    "badges": ["WPL2", "Individuele opdracht", "GitHub", "Demo"],
+    "summary": "MAUI-opdracht met GitHub-link, opgenomen als aparte WPL2-projectkaart.",
+    "technologies": [".NET MAUI", "GitHub"],
+    "video": "demo-maui-schrijvers-jelle-1proc.mp4",
+    "videoTitle": "Demo filmpje",
+    "videoDescription": "Voor deze MAUI-opdracht maakte ik een demo filmpje. Zo is de werking van de app direct zichtbaar op de detailpagina.",
+    "links": [
+      {
+        "label": "GitHub repository",
+        "href": "https://github.com/JelleSchrijvers-PXL/JELSCH-MAUIapp-Opdracht"
+      }
+    ],
+    "pageInfo": {
+      "containerTitle": {
+        "h1": "MAUI-app",
+        "h2": "Werkplekleren 2 - Individuele opdracht"
+      },
+      "sections": [
+        {
+          "id": "beschrijving",
+          "h3": "Beschrijving",
+          "p": "Deze opdracht hoort bij de WPL2 MAUI-opdrachten. De repository is toegevoegd zodat de opdracht apart zichtbaar is binnen mijn portfolio."
+        },
+        {
+          "id": "persoonlijke-uitdagingen",
+          "h3": "Persoonlijke uitdagingen",
+          "p": "De repository kon niet betrouwbaar geïnspecteerd worden vanuit deze omgeving. Daarom voeg ik geen verzonnen projectdetails toe en blijft deze pagina klaar om later verder aan te vullen met concrete uitleg, screenshots en reflectie."
+        },
+        {
+          "id": "bijgeleerd",
+          "h3": "Wat heb ik bijgeleerd",
+          "p": "Deze sectie kan later aangevuld worden met concrete leerpunten uit de opdracht zodra de inhoud van de repository of eigen notities beschikbaar zijn."
+        }
+      ]
+    }
+  }
+],
+"wpl2Downloads": [
+  {
+    "id": "wpl2-eindreflectie",
+    "title": "Eindreflectie WPL2",
+    "badges": ["WPL2", "Download"],
+    "summary": "Downloadbare eindreflectie voor Werkplekleren 2.",
+    "file": "Opdracht eindreflectie WPL2_Schrijvers_Jelle.pdf",
+    "downloadName": "Opdracht eindreflectie WPL2_Schrijvers_Jelle.pdf"
   }
 ]
 }

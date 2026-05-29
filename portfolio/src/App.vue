@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed } from 'vue';
+import { computed, nextTick, watch } from 'vue';
 import { useRoute } from 'vue-router';
 import Footer from './components/footer.vue';
 import Navbar from './components/navbar.vue';
@@ -8,12 +8,21 @@ import Sidenav from './components/sidenav.vue';
 const route = useRoute();
 
 const hasSideNav = computed(() => route.name === 'info' || route.name === 'work');
+const activeWpl = computed(() => (route.query.wpl === 'wpl2' ? 'wpl2' : 'wpl1'));
+
+watch(
+  () => route.fullPath,
+  async () => {
+    await nextTick();
+    window.scrollTo({ top: 0, left: 0, behavior: 'auto' });
+  }
+);
 </script>
 
 <template>
   <Navbar />
   <div class="layout" :class="{ 'layout--with-sidenav': hasSideNav }">
-    <Sidenav />
+    <Sidenav :active-wpl="activeWpl" />
     <div class="main-wrapper">
       <router-view />
       <Footer />

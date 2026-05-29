@@ -4,9 +4,26 @@ import { useI18n } from 'vue-i18n'
 
 defineOptions({ name: 'LogboekSection' })
 
+const props = defineProps({
+  modelValue: {
+    type: String,
+    default: 'semester1'
+  }
+})
+
+const emit = defineEmits(['update:modelValue'])
+
 const { tm } = useI18n()
 
-const activeSemester = ref('semester1')
+const fallbackSemester = ref(props.modelValue || 'semester1')
+
+const activeSemester = computed({
+  get: () => props.modelValue || fallbackSemester.value,
+  set: (value) => {
+    fallbackSemester.value = value
+    emit('update:modelValue', value)
+  }
+})
 
 const logboekData = computed(() => tm('infoPage.logboek'))
 
@@ -24,6 +41,25 @@ function toArray(val) {
   if (Array.isArray(val)) return val.filter(Boolean)
   if (typeof val === 'string' && val.trim()) return [val]
   return []
+}
+
+function listItemKey(item, index) {
+  if (typeof item === 'string') return `${item}-${index}`
+  return `${item.label || item.text || item.file || 'item'}-${index}`
+}
+
+function itemLabel(item) {
+  if (typeof item === 'string') return item
+  return item.label || item.text || ''
+}
+
+function itemDownloadLabel(item) {
+  if (typeof item === 'string') return item
+  return item.downloadLabel || itemLabel(item)
+}
+
+function fileHref(file) {
+  return new URL(`../assets/files/${file}`, import.meta.url).href
 }
 
 function isEmptyWeek(week) {
@@ -99,17 +135,43 @@ const weeks = computed(() => {
             <td class="col-periode">{{ formatPeriode(week.periode) }}</td>
             <td class="col-list">
               <ul v-if="toArray(week.inhoud).length">
-                <li v-for="(item, i) in toArray(week.inhoud)" :key="i">{{ item }}</li>
+                <li
+                  v-for="(item, i) in toArray(week.inhoud)"
+                  :key="listItemKey(item, i)"
+                >
+                  {{ itemLabel(item) }}
+                </li>
               </ul>
             </td>
             <td class="col-list">
               <ul v-if="toArray(week.evaluaties).length">
-                <li v-for="(item, i) in toArray(week.evaluaties)" :key="i">{{ item }}</li>
+                <li
+                  v-for="(item, i) in toArray(week.evaluaties)"
+                  :key="listItemKey(item, i)"
+                >
+                  {{ itemLabel(item) }}
+                </li>
               </ul>
             </td>
             <td class="col-list">
               <ul v-if="toArray(week.opdrachten).length">
-                <li v-for="(item, i) in toArray(week.opdrachten)" :key="i">{{ item }}</li>
+                <li
+                  v-for="(item, i) in toArray(week.opdrachten)"
+                  :key="listItemKey(item, i)"
+                >
+                  <a
+                    v-if="item.file"
+                    class="download-link"
+                    :href="fileHref(item.file)"
+                    :download="item.downloadName || item.file"
+                  >
+                    <span class="download-link__text">{{ itemLabel(item) }}</span>
+                    <span class="download-link__action">{{ itemDownloadLabel(item) }}</span>
+                  </a>
+                  <template v-else>
+                    {{ itemLabel(item) }}
+                  </template>
+                </li>
               </ul>
             </td>
           </tr>
@@ -339,6 +401,43 @@ const weeks = computed(() => {
   left: 0;
   color: var(--color-accent);
   font-weight: bold;
+}
+
+.download-link {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.35rem;
+  color: var(--color-accent);
+  font-weight: 750;
+  text-decoration: none;
+}
+
+.download-link:hover {
+  color: var(--color-heading);
+}
+
+.download-link__text {
+  color: var(--color-text);
+  font-weight: 650;
+}
+
+.download-link__action {
+  display: inline-flex;
+  align-items: center;
+  min-height: 28px;
+  padding: 0.25rem 0.55rem;
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+  background: var(--color-accent-soft);
+  color: var(--color-accent);
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+
+.download-link:hover .download-link__action {
+  border-color: var(--color-border-hover);
+  color: var(--color-heading);
 }
 
 /* Responsive Design */

@@ -1,9 +1,52 @@
 <script setup>
+import { computed } from 'vue'
 import { useI18n } from 'vue-i18n'
 
 defineOptions({ name: 'OntwikkelingSection' })
 
-const { t } = useI18n()
+const props = defineProps({
+  activeSemester: {
+    type: String,
+    default: 'semester1'
+  }
+})
+
+const { t, tm } = useI18n()
+
+const sprint1Development = computed(() => ({
+  label: t('infoPage.ontwikkeling.sprint1Label'),
+  title: t('infoPage.ontwikkeling.opleiding.title'),
+  sections: [
+    {
+      title: t('infoPage.ontwikkeling.opleiding.why_programming_title'),
+      paragraphs: [
+        t('infoPage.ontwikkeling.opleiding.why_programming_p1'),
+        t('infoPage.ontwikkeling.opleiding.why_programming_p2'),
+        t('infoPage.ontwikkeling.opleiding.why_programming_p3')
+      ]
+    },
+    {
+      title: t('infoPage.ontwikkeling.opleiding.why_job_title'),
+      paragraphs: [
+        t('infoPage.ontwikkeling.opleiding.why_job_p1'),
+        t('infoPage.ontwikkeling.opleiding.why_job_p2'),
+        t('infoPage.ontwikkeling.opleiding.why_job_p3')
+      ]
+    }
+  ]
+}))
+
+const sprint2Development = computed(() => tm('infoPage.ontwikkeling.sprint2'))
+
+const currentDevelopment = computed(() => {
+  if (props.activeSemester === 'semester2' && sprint2Development.value?.sections) {
+    return sprint2Development.value
+  }
+
+  return sprint1Development.value
+})
+
+const sectionKey = (section, index) => `${section.title}-${index}`
 
 const xFactorKeys = ['leiderschap', 'creativiteit', 'samenwerking', 'professioneel']
 
@@ -11,8 +54,110 @@ const competentieKeys = ['ontwerper', 'programmeur', 'tester', 'communicator', '
 
 const activiteitKeys = ['ontwerper', 'programmeur', 'tester', 'communicator', 'levenslang']
 
-// Elke rol heeft 3 rollen
-const activityCount = 3 
+const sprint1Reflection = computed(() => ({
+  title: t('infoPage.reflectie.title'),
+  items: [
+    {
+      label: t('infoPage.reflectie.introductie_label'),
+      text: t('infoPage.reflectie.introductie')
+    },
+    {
+      label: t('infoPage.reflectie.positief_label'),
+      text: t('infoPage.reflectie.positief')
+    },
+    {
+      label: t('infoPage.reflectie.minder_label'),
+      text: t('infoPage.reflectie.minder')
+    },
+    {
+      label: t('infoPage.reflectie.inzichten_label'),
+      text: t('infoPage.reflectie.inzichten')
+    },
+    {
+      label: t('infoPage.reflectie.succes_label'),
+      text: t('infoPage.reflectie.succes')
+    }
+  ]
+}))
+
+const sprint1NextWpl = computed(() => ({
+  title: t('infoPage.volgendewpl.title'),
+  paragraphs: [
+    t('infoPage.volgendewpl.p1'),
+    t('infoPage.volgendewpl.p2')
+  ]
+}))
+
+const sprint1XFactor = computed(() => ({
+  title: t('infoPage.xfactor.title'),
+  items: xFactorKeys.map((key) => ({
+    title: t(`infoPage.xfactor.items.${key}.title`),
+    text: t(`infoPage.xfactor.items.${key}.tekst`)
+  }))
+}))
+
+const sprint1Competencies = computed(() => ({
+  title: t('infoPage.competenties.title'),
+  labels: {
+    situatie: t('infoPage.competenties.labels.situatie'),
+    goed: t('infoPage.competenties.labels.goed'),
+    niet: t('infoPage.competenties.labels.niet')
+  },
+  roles: competentieKeys.map((key) => ({
+    title: t(`infoPage.competenties.rollen.${key}.title`),
+    situatie: t(`infoPage.competenties.rollen.${key}.situatie`),
+    goed: t(`infoPage.competenties.rollen.${key}.goed`),
+    niet: t(`infoPage.competenties.rollen.${key}.niet`)
+  }))
+}))
+
+const sprint1Activities = computed(() => ({
+  title: t('infoPage.activiteiten.title'),
+  motivatieLabel: t('infoPage.activiteiten.motivatie_label'),
+  roles: activiteitKeys.map((roleKey) => {
+    const role = tm(`infoPage.activiteiten.rollen.${roleKey}`)
+
+    return {
+      title: t(`infoPage.activiteiten.rollen.${roleKey}.title`),
+      items: role.items || []
+    }
+  })
+}))
+
+const currentReflection = computed(() => {
+  const sprint2 = tm('infoPage.reflectie.sprint2')
+  return props.activeSemester === 'semester2' && sprint2?.items
+    ? sprint2
+    : sprint1Reflection.value
+})
+
+const currentNextWpl = computed(() => {
+  const sprint2 = tm('infoPage.volgendewpl.sprint2')
+  return props.activeSemester === 'semester2' && sprint2?.paragraphs
+    ? sprint2
+    : sprint1NextWpl.value
+})
+
+const currentXFactor = computed(() => {
+  const sprint2 = tm('infoPage.xfactor.sprint2')
+  return props.activeSemester === 'semester2' && sprint2?.items
+    ? sprint2
+    : sprint1XFactor.value
+})
+
+const currentCompetencies = computed(() => {
+  const sprint2 = tm('infoPage.competenties.sprint2')
+  return props.activeSemester === 'semester2' && sprint2?.roles
+    ? sprint2
+    : sprint1Competencies.value
+})
+
+const currentActivities = computed(() => {
+  const sprint2 = tm('infoPage.activiteiten.sprint2')
+  return props.activeSemester === 'semester2' && sprint2?.roles
+    ? sprint2
+    : sprint1Activities.value
+})
 </script>
 
 <template>
@@ -21,104 +166,110 @@ const activityCount = 3
     <h2>{{ t('infoPage.ontwikkeling.title') }}</h2>
 
     <article class="content-block">
-      <h3>{{ t('infoPage.ontwikkeling.opleiding.title') }}</h3>
+      <p class="sprint-label">{{ currentDevelopment.label }}</p>
+      <h3>{{ currentDevelopment.title }}</h3>
 
-      <div class="content-subblock">
-        <h4>{{ t('infoPage.ontwikkeling.opleiding.why_programming_title') }}</h4>
-        <p>{{ t('infoPage.ontwikkeling.opleiding.why_programming_p1') }}</p>
-        <p>{{ t('infoPage.ontwikkeling.opleiding.why_programming_p2') }}</p>
-        <p>{{ t('infoPage.ontwikkeling.opleiding.why_programming_p3') }}</p>
-      </div>
-
-      <div class="content-subblock">
-        <h4>{{ t('infoPage.ontwikkeling.opleiding.why_job_title') }}</h4>
-        <p>{{ t('infoPage.ontwikkeling.opleiding.why_job_p1') }}</p>
-        <p>{{ t('infoPage.ontwikkeling.opleiding.why_job_p2') }}</p>
-        <p>{{ t('infoPage.ontwikkeling.opleiding.why_job_p3') }}</p>
+      <div
+        v-for="(section, sectionIndex) in currentDevelopment.sections"
+        :key="sectionKey(section, sectionIndex)"
+        class="content-subblock"
+      >
+        <h4>{{ section.title }}</h4>
+        <p
+          v-for="(paragraph, paragraphIndex) in section.paragraphs"
+          :key="`${sectionKey(section, sectionIndex)}-${paragraphIndex}`"
+        >
+          {{ paragraph }}
+        </p>
       </div>
     </article>
   </section>
 
   <!-- 2. REFLECTION WPL1 -->
   <section id="reflectie" class="container-reflectie">
-    <h2>{{ t('infoPage.reflectie.title') }}</h2>
+    <h2>{{ currentReflection.title }}</h2>
 
     <article class="content-block">
-      <p><strong>{{ t('infoPage.reflectie.introductie_label') }}:</strong> {{ t('infoPage.reflectie.introductie') }}</p>
-      <p><strong>{{ t('infoPage.reflectie.positief_label') }}:</strong> {{ t('infoPage.reflectie.positief') }}</p>
-      <p><strong>{{ t('infoPage.reflectie.minder_label') }}:</strong> {{ t('infoPage.reflectie.minder') }}</p>
-      <p><strong>{{ t('infoPage.reflectie.inzichten_label') }}:</strong> {{ t('infoPage.reflectie.inzichten') }}</p>
-      <p><strong>{{ t('infoPage.reflectie.succes_label') }}:</strong> {{ t('infoPage.reflectie.succes') }}</p>
+      <p
+        v-for="item in currentReflection.items"
+        :key="item.label"
+      >
+        <strong>{{ item.label }}:</strong> {{ item.text }}
+      </p>
     </article>
   </section>
 
   <!-- 3. NEXT WPL -->
   <section class="volgende-WPL">
-    <h2>{{ t('infoPage.volgendewpl.title') }}</h2>
+    <h2>{{ currentNextWpl.title }}</h2>
 
     <article class="content-block">
-      <p>{{ t('infoPage.volgendewpl.p1') }}</p>
-      <p>{{ t('infoPage.volgendewpl.p2') }}</p>
+      <p
+        v-for="paragraph in currentNextWpl.paragraphs"
+        :key="paragraph"
+      >
+        {{ paragraph }}
+      </p>
     </article>
   </section>
 
   <!-- 4. X-FACTOR -->
   <section class="x-factor">
-    <h2>{{ t('infoPage.xfactor.title') }}</h2>
+    <h2>{{ currentXFactor.title }}</h2>
 
     <div
-      v-for="key in xFactorKeys"
-      :key="key"
+      v-for="item in currentXFactor.items"
+      :key="item.title"
       class="x-factor-item"
     >
-      <h3>{{ t(`infoPage.xfactor.items.${key}.title`) }}</h3>
-      <p>{{ t(`infoPage.xfactor.items.${key}.tekst`) }}</p>
+      <h3>{{ item.title }}</h3>
+      <p>{{ item.text }}</p>
     </div>
   </section>
 
   <!--  5. COMPETENCIES -->
   <section id="competenties">
-    <h1>{{ t('infoPage.competenties.title') }}</h1>
+    <h1>{{ currentCompetencies.title }}</h1>
 
     <article
-      v-for="key in competentieKeys"
-      :key="key"
+      v-for="role in currentCompetencies.roles"
+      :key="role.title"
       class="rol"
     >
-      <h2>{{ t(`infoPage.competenties.rollen.${key}.title`) }}</h2>
+      <h2>{{ role.title }}</h2>
 
-      <h3>{{ t('infoPage.competenties.labels.situatie') }}</h3>
-      <p>{{ t(`infoPage.competenties.rollen.${key}.situatie`) }}</p>
+      <h3>{{ currentCompetencies.labels.situatie }}</h3>
+      <p>{{ role.situatie }}</p>
 
-      <h3>{{ t('infoPage.competenties.labels.goed') }}</h3>
-      <p>{{ t(`infoPage.competenties.rollen.${key}.goed`) }}</p>
+      <h3>{{ currentCompetencies.labels.goed }}</h3>
+      <p>{{ role.goed }}</p>
 
-      <h3>{{ t('infoPage.competenties.labels.niet') }}</h3>
-      <p>{{ t(`infoPage.competenties.rollen.${key}.niet`) }}</p>
+      <h3>{{ currentCompetencies.labels.niet }}</h3>
+      <p>{{ role.niet }}</p>
     </article>
   </section>
 
   <!-- 6. ACTIVITIES -->
   <section id="activiteiten">
-    <h1>{{ t('infoPage.activiteiten.title') }}</h1>
+    <h1>{{ currentActivities.title }}</h1>
 
     <article
-      v-for="rolKey in activiteitKeys"
-      :key="rolKey"
+      v-for="role in currentActivities.roles"
+      :key="role.title"
       class="rol"
     >
-      <h2>{{ t(`infoPage.activiteiten.rollen.${rolKey}.title`) }}</h2>
+      <h2>{{ role.title }}</h2>
 
       <div
-        v-for="index in activityCount"
-        :key="index"
+        v-for="item in role.items"
+        :key="item.title"
         class="activiteit"
       >
-        <h3>{{ t(`infoPage.activiteiten.rollen.${rolKey}.items[${index - 1}].title`) }}</h3>
-        <p>{{ t(`infoPage.activiteiten.rollen.${rolKey}.items[${index - 1}].beschrijving`) }}</p>
+        <h3>{{ item.title }}</h3>
+        <p>{{ item.beschrijving }}</p>
         <p class="motivatie">
-          <strong>{{ t('infoPage.activiteiten.motivatie_label') }}:</strong>
-          {{ t(`infoPage.activiteiten.rollen.${rolKey}.items[${index - 1}].motivatie`) }}
+          <strong>{{ currentActivities.motivatieLabel }}:</strong>
+          {{ item.motivatie }}
         </p>
       </div>
     </article>
@@ -174,6 +325,20 @@ p {
 .content-block {
   max-width: 860px;
   margin-bottom: 1.5rem;
+}
+
+.sprint-label {
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 0.85rem;
+  padding: 0.35rem 0.65rem;
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+  background: var(--color-accent-soft);
+  color: var(--color-accent);
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-transform: uppercase;
 }
 
 .content-subblock {

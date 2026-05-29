@@ -5,6 +5,13 @@ import { computed, nextTick, onBeforeUnmount, onMounted, ref, watch } from 'vue'
 
 defineOptions({ name: 'SideNav' })
 
+const props = defineProps({
+  activeWpl: {
+    type: String,
+    default: 'wpl1'
+  }
+})
+
 const { tm } = useI18n()
 const route = useRoute()
 
@@ -17,6 +24,60 @@ const navKey = computed(() => {
 const opdrachten = computed(() => tm('workPage.opdrachten'))
 
 const pes = computed(() => tm('workPage.pes'))
+
+const workLabels = computed(() => tm('workPage.labels'))
+
+const wpl1ProjectIds = new Set(['scratch', 'CV', 'portfolio'])
+
+const wpl1Opdrachten = computed(() =>
+  opdrachten.value.filter((item) => !wpl1ProjectIds.has(item.id))
+)
+
+const wpl1Projecten = computed(() =>
+  opdrachten.value.filter((item) => wpl1ProjectIds.has(item.id))
+)
+
+const wpl2Project = computed(() => tm('workPage.wpl2Project'))
+
+const wpl2Opdrachten = computed(() => tm('workPage.wpl2Opdrachten'))
+
+const wpl2Downloads = computed(() => tm('workPage.wpl2Downloads'))
+
+const groupTitle = (label, wplLabel) => `${label} ${wplLabel}`
+
+const workNavGroups = computed(() => {
+  if (props.activeWpl === 'wpl2') {
+    return [
+      {
+        title: groupTitle(workLabels.value.opdrachten, workLabels.value.wpl2),
+        items: wpl2Opdrachten.value
+      },
+      {
+        title: groupTitle(workLabels.value.evaluations, workLabels.value.wpl2),
+        items: wpl2Downloads.value
+      },
+      {
+        title: groupTitle(workLabels.value.projects, workLabels.value.wpl2),
+        items: [wpl2Project.value].filter(Boolean)
+      }
+    ]
+  }
+
+  return [
+    {
+      title: groupTitle(workLabels.value.opdrachten, workLabels.value.wpl1),
+      items: wpl1Opdrachten.value
+    },
+    {
+      title: groupTitle(workLabels.value.evaluations, workLabels.value.wpl1),
+      items: pes.value
+    },
+    {
+      title: groupTitle(workLabels.value.projects, workLabels.value.wpl1),
+      items: wpl1Projecten.value
+    }
+  ]
+})
 
 const infoNav = computed(() => {
   const nav = tm('infoPage.nav')
@@ -33,7 +94,7 @@ const infoNav = computed(() => {
 
 const currentItems = computed(() => {
   if (route.name === 'info') return infoNav.value
-  if (route.name === 'work') return [...opdrachten.value, ...pes.value]
+  if (route.name === 'work') return workNavGroups.value.flatMap((group) => group.items)
   return []
 })
 
@@ -45,15 +106,6 @@ const updateActiveId = async () => {
   await nextTick()
 
   if (Date.now() < activeLockUntil) return
-
-  const lastItem = currentItems.value[currentItems.value.length - 1]
-  const isNearPageBottom =
-    window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 8
-
-  if (isNearPageBottom && lastItem) {
-    activeId.value = lastItem.id
-    return
-  }
 
   const marker = window.scrollY + 150
   let current = currentItems.value[0]?.id ?? null
@@ -92,7 +144,7 @@ onMounted(() => {
 })
 
 watch(
-  () => [route.name, currentItems.value.length],
+  () => [route.name, props.activeWpl, currentItems.value.length],
   () => {
     activeId.value = null
     updateActiveId()
@@ -147,29 +199,20 @@ const scrollTo = (id) => {
 
       <!-- WORK PAGE -->
       <ul v-if="route.name === 'work'">
-
-        <li class="header-lijst-sections">Opdrachten</li>
-        <li v-for="opdracht in opdrachten" :key="opdracht.id">
-          <a
-            :class="{ active: activeId === opdracht.id }"
-            @click.prevent="scrollTo(opdracht.id)"
-          >
-            {{ opdracht.title }}
-          </a>
-        </li>
-
-        <li class="header-lijst-sections" style="margin-top: 1rem;">
-          PE's
-        </li>
-        <li v-for="pe in pes" :key="pe.id">
-          <a
-            :class="{ active: activeId === pe.id }"
-            @click.prevent="scrollTo(pe.id)"
-          >
-            {{ pe.title }}
-          </a>
-        </li>
-
+        <template
+          v-for="group in workNavGroups"
+          :key="group.title"
+        >
+          <li class="header-lijst-sections">{{ group.title }}</li>
+          <li v-for="item in group.items" :key="item.id">
+            <a
+              :class="{ active: activeId === item.id }"
+              @click.prevent="scrollTo(item.id)"
+            >
+              {{ item.title }}
+            </a>
+          </li>
+        </template>
       </ul>
 
     </div>
@@ -203,6 +246,10 @@ const scrollTo = (id) => {
   letter-spacing: 0.1em;
   color: var(--color-text-muted);
   font-weight: 800;
+}
+
+.header-lijst-sections:not(:first-child) {
+  margin-top: 1rem;
 }
 
 .container-nav-content a {
