@@ -40,7 +40,7 @@ const wpl1Projecten = computed(() =>
   opdrachtenFixed.value.filter((item) => wpl1ProjectIds.has(item.id))
 )
 
-const wpl2Project = computed(() => tm('workPage.wpl2Project'))
+const wpl2Project = computed(() => withImage(tm('workPage.wpl2Project')))
 
 const wpl2Opdrachten = computed(() =>
   tm('workPage.wpl2Opdrachten').map(withImage)
@@ -155,7 +155,12 @@ const setActiveWpl = (wpl) => {
         <router-link :to="{ name: 'project', params: { id: wpl2Project.id }, query: { wpl: activeWpl } }">
           <article class="featured-card">
             <div class="card-visual card-visual--featured">
-              <span>Clockwise</span>
+              <img
+                v-if="wpl2Project.image"
+                :src="wpl2Project.image"
+                :alt="wpl2Project.alt"
+              />
+              <span v-else>Clockwise</span>
             </div>
             <div class="card-content">
               <div class="badges">
@@ -396,9 +401,11 @@ a {
 
 .opdracht--wpl2 .wpl2-preview-image {
   height: 168px;
+  padding: 0.3rem;
   border: 1px solid rgba(148, 163, 184, 0.16);
   border-radius: 6px;
-  object-fit: cover;
+  object-fit: contain;
+  background: #f8fafc;
 }
 
 .opdracht--wpl2 {
@@ -453,8 +460,10 @@ a {
 
 .card-visual--featured {
   min-height: 100%;
+  padding: 0;
   border-width: 0 1px 0 0;
   border-radius: 0;
+  overflow: hidden;
 }
 
 .card-visual span {
@@ -464,7 +473,15 @@ a {
   line-height: 1.2;
 }
 
+.card-visual img {
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  object-fit: cover;
+}
+
 .card-visual--featured span {
+  padding: 1rem;
   font-size: 2.35rem;
 }
 

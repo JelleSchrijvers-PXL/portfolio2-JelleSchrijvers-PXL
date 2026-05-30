@@ -985,7 +985,9 @@
       "workNavigation": "Workplace learning navigation",
       "back": "Back",
       "notFound": "Project not found.",
-      "demoVideo": "Demo video"
+      "demoVideo": "Demo video",
+      "demoVideos": "Demo videos",
+      "evidence": "Evidence"
     },
     "opdrachten": [
       {
@@ -1475,9 +1477,54 @@
       "id": "clockwise",
       "title": "Clockwise",
       "alt": "Clockwise time registration project",
+      "image": "preview-clockwise-wpl2.png",
       "badges": ["WPL2", "Project", "Team project"],
       "summary": "Time registration application for companies, built with DVO and PRO students at the Corda Campus.",
       "technologies": ["Vue.js", "C#/.NET backend", "REST API", "Email service", "Subscription policies", "Technical documentation"],
+      "links": [
+        {
+          "label": "GitHub frontend",
+          "href": "https://github.com/PXL-WPL2-2526/wpl2-pro-frontend-team10"
+        },
+        {
+          "label": "GitHub backend",
+          "href": "https://github.com/PXL-WPL2-2526/wpl2-pro-backend-team10"
+        }
+      ],
+      "infoImagesTitle": "Evidence",
+      "infoImagesDescription": "This image shows a concrete part of my contribution to Clockwise.",
+      "infoImages": [
+        {
+          "title": "Email for company subscription purchase",
+          "description": "For Clockwise, I contributed to emails for subscription confirmations and company flows. This screenshot therefore belongs on the detail page as extra project information.",
+          "file": "email_bedrijf_aankoop.png",
+          "alt": "Email confirmation for a company subscription purchase in Clockwise"
+        }
+      ],
+      "videosTitle": "Clockwise demo videos",
+      "videosDescription": "These demos show the parts I contributed to during the project: roles, management flows, emails, and access for different users.",
+      "videos": [
+        {
+          "title": "Admin panel",
+          "description": "Overview of the admin flow and functionality for company admins.",
+          "file": "Admin_clockwise.mp4"
+        },
+        {
+          "title": "Superadmin panel",
+          "description": "Demo of the overview and management features for the superadmin role in Clockwise.",
+          "file": "superadmin_clockwise.mp4"
+        },
+        {
+          "title": "Employee environment",
+          "description": "How the application works from an employee's perspective.",
+          "file": "medewerker_clockwise.mp4"
+        },
+        {
+          "title": "Company creation and password reset",
+          "description": "Flow for adding a company, subscription email, and password reset.",
+          "file": "bedrijf_toevoegen+paswordReset.mp4"
+        }
+      ],
       "pageInfo": {
         "containerTitle": {
           "h1": "Clockwise",
@@ -1557,6 +1604,7 @@
       {
         "id": "wpl2-data-visualisatie",
         "title": "Charts / Data Visualization",
+        "image": "preview_grafieken.png",
         "alt": "data visualization dashboard assignment",
         "badges": ["WPL2", "Individual assignment", "GitHub"],
         "summary": "Proof-of-concept dashboard in Vue.js with Chart.js, API data, and fallback dummy data.",

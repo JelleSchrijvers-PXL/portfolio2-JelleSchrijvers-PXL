@@ -14,6 +14,22 @@ const img = (bestand) =>
 const video = (bestand) =>
   bestand ? new URL(`../assets/videos/${bestand}`, import.meta.url).href : null
 
+const videos = (items) =>
+  Array.isArray(items)
+    ? items.map((item) => ({
+        ...item,
+        src: video(item.file)
+      }))
+    : []
+
+const infoImages = (items) =>
+  Array.isArray(items)
+    ? items.map((item) => ({
+        ...item,
+        src: img(item.file)
+      }))
+    : []
+
 const labels = computed(() => tm('workPage.labels'))
 
 const project = computed(() => {
@@ -29,7 +45,9 @@ const project = computed(() => {
   return {
     ...found,
     image: img(found.image),
-    video: video(found.video)
+    video: video(found.video),
+    videos: videos(found.videos),
+    infoImages: infoImages(found.infoImages)
   }
 })
 
@@ -100,6 +118,50 @@ const itemKey = (item) =>
         <video controls preload="metadata">
           <source :src="project.video" type="video/mp4">
         </video>
+      </section>
+
+      <section
+        v-if="project.videos?.length"
+        id="demos"
+        class="project-section media-section"
+      >
+        <h3>{{ project.videosTitle || labels.demoVideos }}</h3>
+        <p v-if="project.videosDescription">{{ project.videosDescription }}</p>
+        <div class="video-grid">
+          <article
+            v-for="item in project.videos"
+            :key="item.file"
+            class="video-card"
+          >
+            <h4>{{ item.title }}</h4>
+            <p v-if="item.description">{{ item.description }}</p>
+            <video controls preload="metadata">
+              <source :src="item.src" type="video/mp4">
+            </video>
+          </article>
+        </div>
+      </section>
+
+      <section
+        v-if="project.infoImages?.length"
+        id="bewijsmateriaal"
+        class="project-section evidence-section"
+      >
+        <h3>{{ project.infoImagesTitle || labels.evidence }}</h3>
+        <p v-if="project.infoImagesDescription">{{ project.infoImagesDescription }}</p>
+        <div class="evidence-grid">
+          <article
+            v-for="item in project.infoImages"
+            :key="item.file"
+            class="evidence-card"
+          >
+            <img :src="item.src" :alt="item.alt" />
+            <div>
+              <h4>{{ item.title }}</h4>
+              <p v-if="item.description">{{ item.description }}</p>
+            </div>
+          </article>
+        </div>
       </section>
 
       <section
@@ -252,7 +314,8 @@ const itemKey = (item) =>
   margin-top: 1rem;
   border: 1px solid var(--color-border);
   border-radius: 8px;
-  object-fit: cover;
+  object-fit: contain;
+  background: #f8fafc;
   box-shadow: var(--shadow-soft);
 }
 
@@ -264,6 +327,75 @@ const itemKey = (item) =>
   border-radius: 8px;
   background: rgba(2, 6, 23, 0.82);
   box-shadow: var(--shadow-soft);
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.video-card {
+  display: grid;
+  gap: 0.45rem;
+  padding: 1rem;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  background: rgba(17, 24, 39, 0.72);
+}
+
+.video-card h4 {
+  color: var(--color-heading);
+  font-size: 1rem;
+  font-weight: 850;
+}
+
+.video-card p {
+  color: var(--color-text-muted);
+  font-size: 0.94rem;
+  line-height: 1.55;
+}
+
+.video-card video {
+  max-width: none;
+  margin-top: 0.35rem;
+}
+
+.evidence-grid {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.evidence-card {
+  display: grid;
+  gap: 0.85rem;
+  padding: 1rem;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  background: rgba(17, 24, 39, 0.72);
+}
+
+.evidence-card img {
+  width: 100%;
+  max-height: 420px;
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  border-radius: 6px;
+  object-fit: contain;
+  background: #ffffff;
+}
+
+.evidence-card h4 {
+  color: var(--color-heading);
+  font-size: 1rem;
+  font-weight: 850;
+}
+
+.evidence-card p {
+  color: var(--color-text-muted);
+  font-size: 0.94rem;
+  line-height: 1.6;
 }
 
 .badges,

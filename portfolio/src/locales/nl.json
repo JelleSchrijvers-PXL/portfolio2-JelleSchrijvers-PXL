@@ -985,7 +985,9 @@
     "workNavigation": "Werkplekleren navigatie",
     "back": "Terug",
     "notFound": "Project niet gevonden.",
-    "demoVideo": "Demo filmpje"
+    "demoVideo": "Demo filmpje",
+    "demoVideos": "Demo filmpjes",
+    "evidence": "Bewijsmateriaal"
   },
   "opdrachten" : [
   {
@@ -1475,9 +1477,54 @@
   "id": "clockwise",
   "title": "Clockwise",
   "alt": "Clockwise tijdregistratie project",
+  "image": "preview-clockwise-wpl2.png",
   "badges": ["WPL2", "Project", "Teamproject"],
   "summary": "Tijdregistratie-applicatie voor bedrijven, gebouwd met DVO- en PRO-studenten op de Corda Campus.",
   "technologies": ["Vue.js", "C#/.NET backend", "REST API", "E-mailservice", "Abonnement policies", "Technische documentatie"],
+  "links": [
+    {
+      "label": "GitHub frontend",
+      "href": "https://github.com/PXL-WPL2-2526/wpl2-pro-frontend-team10"
+    },
+    {
+      "label": "GitHub backend",
+      "href": "https://github.com/PXL-WPL2-2526/wpl2-pro-backend-team10"
+    }
+  ],
+  "infoImagesTitle": "Bewijsmateriaal",
+  "infoImagesDescription": "Deze afbeelding toont een concreet onderdeel van mijn bijdrage aan Clockwise.",
+  "infoImages": [
+    {
+      "title": "E-mail bij aankoop van een bedrijfsabonnement",
+      "description": "Voor Clockwise werkte ik mee aan e-mails voor abonnementsbevestigingen en bedrijfsflows. Deze screenshot hoort daarom als extra projectinformatie bij de detailpagina.",
+      "file": "email_bedrijf_aankoop.png",
+      "alt": "E-mailbevestiging voor aankoop van een bedrijfsabonnement in Clockwise"
+    }
+  ],
+  "videosTitle": "Clockwise demo filmpjes",
+  "videosDescription": "Deze demo's tonen de onderdelen waar ik tijdens het project aan meewerkte: rollen, beheerflows, e-mails en toegang voor verschillende gebruikers.",
+  "videos": [
+    {
+      "title": "Admin paneel",
+      "description": "Overzicht van de beheerdersflow en de functionaliteiten voor bedrijfsadmins.",
+      "file": "Admin_clockwise.mp4"
+    },
+    {
+      "title": "Superadmin paneel",
+      "description": "Demo van het overzicht en beheer voor de superadminrol binnen Clockwise.",
+      "file": "superadmin_clockwise.mp4"
+    },
+    {
+      "title": "Medewerker omgeving",
+      "description": "Werking van de applicatie vanuit het perspectief van een medewerker.",
+      "file": "medewerker_clockwise.mp4"
+    },
+    {
+      "title": "Bedrijf toevoegen en wachtwoordreset",
+      "description": "Flow voor het toevoegen van een bedrijf, abonnementsmail en wachtwoordreset.",
+      "file": "bedrijf_toevoegen+paswordReset.mp4"
+    }
+  ],
   "pageInfo": {
     "containerTitle": {
       "h1": "Clockwise",
@@ -1557,6 +1604,7 @@
   {
     "id": "wpl2-data-visualisatie",
     "title": "Grafieken / Data Visualisatie",
+    "image": "preview_grafieken.png",
     "alt": "data visualisatie dashboard opdracht",
     "badges": ["WPL2", "Individuele opdracht", "GitHub"],
     "summary": "Proof-of-concept dashboard in Vue.js met Chart.js, API-data en fallback dummy data.",
