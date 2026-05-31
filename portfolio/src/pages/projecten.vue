@@ -186,6 +186,35 @@ const itemKey = (item) =>
             </template>
           </li>
         </ul>
+        <div v-if="section.cards?.length" class="section-card-grid">
+          <article
+            v-for="card in section.cards"
+            :key="card.name || card.title"
+            class="section-card"
+          >
+            <div v-if="card.initials" class="member-avatar">
+              {{ card.initials }}
+            </div>
+            <div class="section-card-content">
+              <div v-if="card.direction || card.role" class="card-meta">
+                <span v-if="card.direction">{{ card.direction }}</span>
+                <span v-if="card.role">{{ card.role }}</span>
+              </div>
+              <h4>{{ card.name || card.title }}</h4>
+              <p v-if="card.text">{{ card.text }}</p>
+            </div>
+          </article>
+        </div>
+        <div v-if="section.roles?.length" class="role-grid">
+          <article
+            v-for="role in section.roles"
+            :key="role.title"
+            class="role-card"
+          >
+            <span>{{ role.title }}</span>
+            <strong>{{ role.name }}</strong>
+          </article>
+        </div>
         <p v-if="section.outro">{{ section.outro }}</p>
       </section>
 
@@ -466,6 +495,98 @@ const itemKey = (item) =>
 .section-list strong {
   color: var(--color-heading);
   font-weight: 800;
+}
+
+.section-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.section-card,
+.role-card {
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  background: rgba(17, 24, 39, 0.72);
+}
+
+.section-card {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.85rem;
+  padding: 1rem;
+}
+
+.member-avatar {
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  border: 1px solid rgba(56, 189, 248, 0.36);
+  border-radius: 8px;
+  background: rgba(56, 189, 248, 0.12);
+  color: var(--color-heading);
+  font-size: 0.9rem;
+  font-weight: 850;
+}
+
+.section-card-content {
+  min-width: 0;
+}
+
+.card-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 0.45rem;
+}
+
+.card-meta span {
+  padding: 0.22rem 0.45rem;
+  border: 1px solid rgba(148, 163, 184, 0.22);
+  border-radius: 6px;
+  color: var(--color-accent);
+  font-size: 0.72rem;
+  font-weight: 800;
+}
+
+.section-card h4 {
+  color: var(--color-heading);
+  font-size: 1rem;
+  font-weight: 850;
+}
+
+.section-card p {
+  margin-top: 0.4rem;
+  color: var(--color-text-muted);
+  font-size: 0.94rem;
+  line-height: 1.6;
+}
+
+.role-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.role-card {
+  display: grid;
+  gap: 0.25rem;
+  padding: 0.95rem 1rem;
+}
+
+.role-card span {
+  color: var(--color-text-muted);
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.role-card strong {
+  color: var(--color-heading);
+  font-size: 1rem;
 }
 
 .tech-list span {

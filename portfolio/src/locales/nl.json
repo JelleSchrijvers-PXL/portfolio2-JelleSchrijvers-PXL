@@ -1491,16 +1491,6 @@
       "href": "https://github.com/PXL-WPL2-2526/wpl2-pro-backend-team10"
     }
   ],
-  "infoImagesTitle": "Bewijsmateriaal",
-  "infoImagesDescription": "Deze afbeelding toont een concreet onderdeel van mijn bijdrage aan Clockwise.",
-  "infoImages": [
-    {
-      "title": "E-mail bij aankoop van een bedrijfsabonnement",
-      "description": "Voor Clockwise werkte ik mee aan e-mails voor abonnementsbevestigingen en bedrijfsflows. Deze screenshot hoort daarom als extra projectinformatie bij de detailpagina.",
-      "file": "email_bedrijf_aankoop.png",
-      "alt": "E-mailbevestiging voor aankoop van een bedrijfsabonnement in Clockwise"
-    }
-  ],
   "videosTitle": "Clockwise demo filmpjes",
   "videosDescription": "Deze demo's tonen de onderdelen waar ik tijdens het project aan meewerkte: rollen, beheerflows, e-mails en toegang voor verschillende gebruikers.",
   "videos": [
@@ -1534,19 +1524,155 @@
       {
         "id": "beschrijving",
         "h3": "Beschrijving",
-        "p": "Tijdens Werkplekleren 2 werkte ik samen met DVO- en PRO-studenten op de Corda Campus aan Clockwise, een tijdregistratie-applicatie voor bedrijven in België. Het project speelde in op de nieuwe verplichting rond tijdsregistratie en moest bruikbaar zijn voor zowel grotere bedrijven als kleinere kmo's."
+        "p": "Clockwise is een tijdregistratie-applicatie voor bedrijven in België. Vanaf 1 januari 2027 wordt tijdsregistratie verplicht en moeten bedrijven digitaal kunnen bijhouden wanneer werknemers starten, stoppen en pauze nemen. Die gegevens moeten ook vijf jaar bewaard worden. Vooral kmo's maken zich zorgen over extra administratie, hoge kosten en het gevoel dat werknemers opnieuw met een klassieke prikklok moeten werken. Met Clockwise wilden we daarom een eenvoudige en gebruiksvriendelijke oplossing maken. Werknemers kunnen in- en uitklokken via hun smartphone, computer of een tablet op het werk. Bedrijfsadmins krijgen een overzicht van medewerkers, registraties, rollen en abonnementen, terwijl een superadmin bedrijven en abonnementen kan beheren. Het project werd uitgewerkt tijdens Werkplekleren 2 op de Corda Campus, in samenwerking met studenten van PRO en DVO. Daardoor ging het niet alleen om code schrijven, maar ook om ontwerp, gebruiksgemak, communicatie en het samenbrengen van verschillende onderdelen tot een bruikbaar product. Voor ons team was duidelijke communicatie hierbij belangrijk. We moesten telkens nadenken over wat technisch haalbaar was, maar ook over wat voor de eindgebruiker logisch en eenvoudig bleef. Hierdoor leerde ik het project niet alleen als programmeeropdracht te bekijken, maar ook als een echte oplossing voor een concreet bedrijfsprobleem."
       },
       {
         "id": "bijdrage",
         "h3": "Mijn bijdrage",
-        "p": "Ik werkte vooral aan backendfunctionaliteiten en delen van het admin- en superadmin-paneel.",
+        "p": "Mijn aandeel binnen Clockwise lag vooral bij de technische uitwerking van backendfunctionaliteiten en onderdelen van het admin- en superadmin-paneel. Ik werkte mee aan de e-mailservice voor abonnementsbevestigingen, zodat bedrijven na aankoop duidelijke informatie kregen. Daarnaast werkte ik aan de wachtwoordreset met bevestigingsmail en aan de logica rond abonnement policies en toegangsrechten. Daardoor moest ik goed nadenken over welke gebruiker welke acties mocht uitvoeren binnen de applicatie. Ook hielp ik bij functionaliteiten voor admins en superadmins, zoals beheerflows rond bedrijven, rollen en abonnementen. In de laatste sprint werkte ik verder aan bevestigingsmails, productselectie, verwijderen van producten, bulk delete en testing van de EmailService. Naast het programmeren maakte ik technische documentatie voor de PRO-studenten, zodat anderen konden begrijpen hoe bepaalde onderdelen werkten en verder konden bouwen op mijn werk. Tijdens het project stemde ik regelmatig af met DVO- en PRO-teamleden, vooral wanneer frontend, backend en design op elkaar moesten aansluiten. In sprint 3 nam ik ook de rol van scrummaster op, waardoor ik meer verantwoordelijkheid kreeg in planning, opvolging en communicatie binnen het team.",
         "items": [
           "E-mailservice voor abonnementsbevestigingen",
           "Wachtwoordreset met bevestigingsmail",
           "Abonnement policies en toegangsrechten",
           "Admin- en superadminfunctionaliteit",
           "Technische documentatie voor PRO-studenten",
-          "Afstemming met DVO- en PRO-teamleden"
+          "Afstemming met DVO- en PRO-teamleden",
+          "Scrummaster in sprint 3"
+        ]
+      },
+      {
+        "id": "team",
+        "h3": "Team en afstudeerrichting",
+        "p": "Clockwise werd uitgewerkt door een gemengd team van PRO- en DVO-studenten. De PRO-studenten focusten vooral op de technische realisatie van de applicatie, terwijl de DVO-studenten meewerkten aan ontwerp, visuele communicatie en gebruiksvriendelijkheid.",
+        "cards": [
+          {
+            "name": "Can Ciftci",
+            "direction": "PRO",
+            "role": "Jira/Confluence PRO",
+            "initials": "CC",
+            "text": "PRO-student binnen het ontwikkelteam en verantwoordelijke voor Jira/Confluence aan de programmeerkant."
+          },
+          {
+            "name": "Ali Haidari",
+            "direction": "PRO",
+            "role": "Scrummaster sprint 2",
+            "initials": "AH",
+            "text": "Bouwt graag websites en apps die goed werken en makkelijk te gebruiken zijn. Hij focust graag op .NET- en databaseontwikkeling."
+          },
+          {
+            "name": "Jelle Schrijvers",
+            "direction": "PRO",
+            "role": "Scrummaster sprint 3",
+            "initials": "JS",
+            "text": "Ik hou mij graag bezig met programmeren, .NET en websites. Ik haal voldoening uit het omzetten van een idee naar een werkend en bruikbaar product."
+          },
+          {
+            "name": "Kenza Duret",
+            "direction": "DVO",
+            "role": "Scrummaster sprint 1",
+            "initials": "KD",
+            "text": "DVO-student binnen het ontwerpteam van Clockwise."
+          },
+          {
+            "name": "Ruben Marques",
+            "direction": "DVO",
+            "role": "Jira/Confluence DVO",
+            "initials": "RM",
+            "text": "Heeft een passie voor design en vertaalt graag ideeën van een klant naar een concreet ontwerp."
+          },
+          {
+            "name": "Angel Lin",
+            "direction": "DVO",
+            "role": "Design",
+            "initials": "AL",
+            "text": "Houdt zich graag bezig met designs en denkt mee na over hoe sites eruit kunnen zien."
+          },
+          {
+            "name": "Sila Deveci",
+            "direction": "DVO",
+            "role": "Design",
+            "initials": "SD",
+            "text": "Creatieve student Digitale Vormgeving met sterke skills in Photoshop, Illustrator en Figma."
+          }
+        ]
+      },
+      {
+        "id": "rolverdeling",
+        "h3": "Rolverdeling",
+        "p": "Tijdens Werkplekleren 2 lagen enkele verantwoordelijkheden vast. De verantwoordelijken voor Jira en Confluence bleven dezelfde doorheen het project, terwijl de scrummaster per sprint wisselde.",
+        "roles": [
+          {
+            "title": "Jira/Confluence DVO",
+            "name": "Ruben"
+          },
+          {
+            "title": "Jira/Confluence PRO",
+            "name": "Can"
+          },
+          {
+            "title": "Scrummaster sprint 1",
+            "name": "Kenza"
+          },
+          {
+            "title": "Scrummaster sprint 2",
+            "name": "Ali"
+          },
+          {
+            "title": "Scrummaster sprint 3",
+            "name": "Jelle"
+          }
+        ]
+      },
+      {
+        "id": "sprintreviews",
+        "h3": "Sprintreviews",
+        "p": "Tijdens de sprintreviews werd telkens overlopen welke taken afgerond waren, welke problemen nog openstonden en welke feedback meegenomen werd naar de volgende sprint. Zo bleef de voortgang van zowel PRO als DVO zichtbaar.",
+        "cards": [
+          {
+            "title": "Sprint 1",
+            "role": "Onderzoek, basis en eerste schermen",
+            "initials": "S1",
+            "text": "In sprint 1 werkte DVO vooral aan benchmarking, persona's, SWOT, missie en visie, sitemap, moodboard, wireframes, teampagina, survey en conceptposter. PRO werkte aan de eerste technische basis, zoals repository, branches, ERD, dashboard, databasevoorbereiding, navigatie en login/registratie. Mijn eigen focus lag op de ContactPage, backend routing, responsiviteit, dark/light mode, kleurvariabelen, navigatie, Jira/Confluence-documentatie en het debuggen van mijn individuele NUnit-opdracht."
+          },
+          {
+            "title": "Sprint 2",
+            "role": "Branding, database en API-koppelingen",
+            "initials": "S2",
+            "text": "In sprint 2 werd de visuele identiteit verder uitgewerkt met logo, brand identity, component library, wireframes en prototypes. Aan PRO-zijde lag de focus op ERD, database, abonnementen, login/register, dashboard, gebruikersbeheer, authentication en API-koppelingen. Mijn taken waren onder andere onderzoek naar grafieken en web API's, de database schetsen en opbouwen, het ERD laten goedkeuren, password reset voorbereiden, productbeheer verder bekijken en problemen rond frontend-backendcommunicatie onderzoeken."
+          },
+          {
+            "title": "Sprint 3",
+            "role": "Afwerking, testing en oplevering",
+            "initials": "S3",
+            "text": "In sprint 3 werd het project afgerond. Het team werkte aan abonnementen, bestellingflows, dashboardfunctionaliteiten, public API, layout, responsive verbeteringen, bugs, branding, prototypes, campagne-uitwerking, eindpresentatie en documentatie. Mijn taken waren onder andere bevestigingsmails na bestellingen, productselectie en verwijderen, bulk delete, testing van de EmailService, abonnement policies, medewerkerbeheer, bugfixes, Jira/Confluence, documentatie product management, de MAUI-app, mijn portfolio, GitHub Pages en de eindreflectie."
+          }
+        ]
+      },
+      {
+        "id": "scrummaster-sprint-3",
+        "h3": "Scrummaster sprint 3 en retrospective",
+        "p": "In sprint 3 was ik Scrum Master van Team10. Ik organiseerde de daily stand-ups, probeerde iedereen betrokken te houden, volgde de voortgang op en zorgde ervoor dat meetings konden doorgaan. Tijdens de retrospective bespraken we wat goed liep en wat beter kon.",
+        "items": [
+          {
+            "label": "Wat behouden we?",
+            "text": "Goede samenwerking, feedback blijven vragen, elkaar helpen wanneer iemand vastzit en deadlines en voortgang duidelijk delen."
+          },
+          {
+            "label": "Wat pakken we aan?",
+            "text": "Minder laat beginnen aan taken, minder afleiding, Jira beter en vaker updaten, sneller hulp vragen en een betere taakverdeling maken aan het begin van de sprint."
+          },
+          {
+            "label": "Feedback van het team",
+            "text": "Mijn teamgenoten gaven aan dat ik de daily stand-ups duidelijk organiseerde, correct werkte, meetings regelde en de groep goed op de hoogte hield van de vooruitgang."
+          },
+          {
+            "label": "Mijn inzicht",
+            "text": "De rol van Scrum Master ligt mij minder goed dan puur ontwikkelwerk, omdat ik mij graag volledig focus op mijn eigen taken. Toch leerde ik hoe belangrijk communicatie, opvolging en duidelijke taakverdeling zijn binnen een team."
+          },
+          {
+            "label": "Tip voor de volgende Scrum Master",
+            "text": "Zorg dat iedereen duidelijke taken heeft, volg het Scrum board dagelijks op, hou meetings kort en efficiënt en spreek mensen snel aan wanneer iets niet vooruitgaat."
+          }
         ]
       },
       {

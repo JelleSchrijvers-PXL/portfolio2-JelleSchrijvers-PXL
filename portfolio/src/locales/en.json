@@ -1491,16 +1491,6 @@
           "href": "https://github.com/PXL-WPL2-2526/wpl2-pro-backend-team10"
         }
       ],
-      "infoImagesTitle": "Evidence",
-      "infoImagesDescription": "This image shows a concrete part of my contribution to Clockwise.",
-      "infoImages": [
-        {
-          "title": "Email for company subscription purchase",
-          "description": "For Clockwise, I contributed to emails for subscription confirmations and company flows. This screenshot therefore belongs on the detail page as extra project information.",
-          "file": "email_bedrijf_aankoop.png",
-          "alt": "Email confirmation for a company subscription purchase in Clockwise"
-        }
-      ],
       "videosTitle": "Clockwise demo videos",
       "videosDescription": "These demos show the parts I contributed to during the project: roles, management flows, emails, and access for different users.",
       "videos": [
@@ -1534,19 +1524,155 @@
           {
             "id": "beschrijving",
             "h3": "Description",
-            "p": "During Workplace Learning 2, I worked together with DVO and PRO students at the Corda Campus on Clockwise, a time registration application for companies in Belgium. The project responded to the new obligation around time registration and had to be usable for both larger companies and smaller SMEs."
+            "p": "Clockwise is a time registration application for companies in Belgium. From January 1, 2027, time registration becomes mandatory and companies must be able to digitally record when employees start, stop, and take breaks. These records also have to be stored for five years. Smaller SMEs in particular are worried about extra administration, higher costs, and the feeling that employees have to return to an old-fashioned punch clock. With Clockwise, we wanted to create a simple and user-friendly solution. Employees can clock in and out using their smartphone, computer, or a tablet at work. Company admins get an overview of employees, registrations, roles, and subscriptions, while a superadmin can manage companies and subscriptions. The project was developed during Workplace Learning 2 at the Corda Campus, together with PRO and DVO students. This meant that the project was not only about writing code, but also about design, usability, communication, and combining different parts into one usable product. We constantly had to think about what was technically feasible, but also about what remained logical and simple for the end user. Because of that, I learned to see the project not only as a programming assignment, but also as a real solution for a concrete business problem."
           },
           {
             "id": "bijdrage",
             "h3": "My contribution",
-            "p": "I mainly worked on backend functionality and parts of the admin and superadmin panel.",
+            "p": "My contribution to Clockwise mainly focused on the technical implementation of backend functionality and parts of the admin and superadmin panel. I contributed to the email service for subscription confirmations, so companies received clear information after purchasing a subscription. I also worked on the password reset flow with a confirmation email and on the logic around subscription policies and access rights. This forced me to think carefully about which user was allowed to perform which actions inside the application. I also helped with functionality for admins and superadmins, such as management flows for companies, roles, and subscriptions. In the final sprint, I continued working on confirmation emails, product selection, product deletion, bulk delete, and testing of the EmailService. Besides programming, I wrote technical documentation for the PRO students, so others could understand how certain parts worked and continue building on my work. During the project, I regularly aligned with both DVO and PRO team members, especially when frontend, backend, and design had to fit together. In sprint 3, I also took on the role of scrummaster, which gave me more responsibility in planning, follow-up, and communication within the team.",
             "items": [
               "Email service for subscription confirmations",
               "Password reset with confirmation email",
               "Subscription policies and access rights",
               "Admin and superadmin functionality",
               "Technical documentation for PRO students",
-              "Alignment with DVO and PRO team members"
+              "Alignment with DVO and PRO team members",
+              "Scrummaster in sprint 3"
+            ]
+          },
+          {
+            "id": "team",
+            "h3": "Team and study direction",
+            "p": "Clockwise was developed by a mixed team of PRO and DVO students. The PRO students mainly focused on the technical implementation of the application, while the DVO students contributed to design, visual communication, and usability.",
+            "cards": [
+              {
+                "name": "Can Ciftci",
+                "direction": "PRO",
+                "role": "Jira/Confluence PRO",
+                "initials": "CC",
+                "text": "PRO student in the development team and responsible for Jira/Confluence on the programming side."
+              },
+              {
+                "name": "Ali Haidari",
+                "direction": "PRO",
+                "role": "Scrummaster sprint 2",
+                "initials": "AH",
+                "text": "Enjoys building websites and apps that work well and are easy to use. He mainly focuses on .NET and database development."
+              },
+              {
+                "name": "Jelle Schrijvers",
+                "direction": "PRO",
+                "role": "Scrummaster sprint 3",
+                "initials": "JS",
+                "text": "I enjoy programming, .NET, and building websites. I get satisfaction from turning an idea into a working and usable product."
+              },
+              {
+                "name": "Kenza Duret",
+                "direction": "DVO",
+                "role": "Scrummaster sprint 1",
+                "initials": "KD",
+                "text": "DVO student in the Clockwise design team."
+              },
+              {
+                "name": "Ruben Marques",
+                "direction": "DVO",
+                "role": "Jira/Confluence DVO",
+                "initials": "RM",
+                "text": "Has a passion for design and enjoys translating client ideas into concrete designs."
+              },
+              {
+                "name": "Angel Lin",
+                "direction": "DVO",
+                "role": "Design",
+                "initials": "AL",
+                "text": "Enjoys working on designs and thinking about how websites should look and feel."
+              },
+              {
+                "name": "Sila Deveci",
+                "direction": "DVO",
+                "role": "Design",
+                "initials": "SD",
+                "text": "Creative Digital Design student with strong skills in Photoshop, Illustrator, and Figma."
+              }
+            ]
+          },
+          {
+            "id": "rolverdeling",
+            "h3": "Role distribution",
+            "p": "During Workplace Learning 2, several responsibilities were assigned. The Jira and Confluence owners stayed the same throughout the project, while the scrummaster changed each sprint.",
+            "roles": [
+              {
+                "title": "Jira/Confluence DVO",
+                "name": "Ruben"
+              },
+              {
+                "title": "Jira/Confluence PRO",
+                "name": "Can"
+              },
+              {
+                "title": "Scrummaster sprint 1",
+                "name": "Kenza"
+              },
+              {
+                "title": "Scrummaster sprint 2",
+                "name": "Ali"
+              },
+              {
+                "title": "Scrummaster sprint 3",
+                "name": "Jelle"
+              }
+            ]
+          },
+          {
+            "id": "sprintreviews",
+            "h3": "Sprint reviews",
+            "p": "During the sprint reviews, we discussed which tasks were completed, which problems were still open, and which feedback had to be taken into the next sprint. This made the progress of both PRO and DVO visible.",
+            "cards": [
+              {
+                "title": "Sprint 1",
+                "role": "Research, foundation, and first screens",
+                "initials": "S1",
+                "text": "In sprint 1, DVO mainly worked on benchmarking, personas, SWOT, mission and vision, sitemap, moodboard, wireframes, team page, survey, and concept poster. PRO worked on the first technical foundation, such as the repository, branches, ERD, dashboard, database preparation, navigation, and login/registration. My own focus was the ContactPage, backend routing, responsiveness, dark/light mode, color variables, navigation, Jira/Confluence documentation, and debugging my individual NUnit assignment."
+              },
+              {
+                "title": "Sprint 2",
+                "role": "Branding, database, and API connections",
+                "initials": "S2",
+                "text": "In sprint 2, the visual identity was further developed with the logo, brand identity, component library, wireframes, and prototypes. On the PRO side, the focus was on the ERD, database, subscriptions, login/register, dashboard, user management, authentication, and API connections. My tasks included research into charts and web APIs, sketching and building the database, getting the ERD approved, preparing password reset, reviewing product management, and investigating frontend-backend communication problems."
+              },
+              {
+                "title": "Sprint 3",
+                "role": "Finishing, testing, and delivery",
+                "initials": "S3",
+                "text": "In sprint 3, the project was finished. The team worked on subscriptions, order flows, dashboard functionality, public API, layout, responsive improvements, bugs, branding, prototypes, campaign work, final presentation, and documentation. My tasks included confirmation emails after orders, product selection and deletion, bulk delete, EmailService testing, subscription policies, employee management, bug fixes, Jira/Confluence, product management documentation, the MAUI app, my portfolio, GitHub Pages, and the final reflection."
+              }
+            ]
+          },
+          {
+            "id": "scrummaster-sprint-3",
+            "h3": "Scrummaster sprint 3 and retrospective",
+            "p": "In sprint 3, I was the Scrummaster of Team10. I organized the daily stand-ups, tried to keep everyone involved, followed up on progress, and made sure meetings could take place. During the retrospective, we discussed what went well and what could be improved.",
+            "items": [
+              {
+                "label": "What do we keep?",
+                "text": "Good collaboration, continuing to ask for feedback, helping each other when someone gets stuck, and clearly sharing deadlines and progress."
+              },
+              {
+                "label": "What do we improve?",
+                "text": "Starting tasks earlier, reducing distractions, updating Jira more often, asking for help sooner, and creating a better task distribution at the start of the sprint."
+              },
+              {
+                "label": "Team feedback",
+                "text": "My teammates said that I organized the daily stand-ups clearly, worked correctly, arranged meetings, and kept the group informed about sprint progress."
+              },
+              {
+                "label": "My insight",
+                "text": "The Scrummaster role suits me less than pure development work, because I prefer to focus fully on my own tasks. Still, I learned how important communication, follow-up, and clear task division are within a team."
+              },
+              {
+                "label": "Tip for the next Scrummaster",
+                "text": "Make sure everyone has clear tasks, follow up on the Scrum board every day, keep meetings short and efficient, and speak up quickly when something is not moving forward."
+              }
             ]
           },
           {
