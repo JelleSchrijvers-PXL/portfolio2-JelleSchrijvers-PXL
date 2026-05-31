@@ -967,12 +967,15 @@
     "labels": {
       "wpl1": "WPL1",
       "wpl2": "WPL2",
+      "personal": "Personal",
       "wpl1Subtitle": "Assignments and permanent evaluations from Workplace Learning 1.",
       "wpl2Subtitle": "Project work, individual assignments, and downloads from Workplace Learning 2.",
+      "personalProjectsSubtitle": "Own projects I start outside the regular WPL assignments to explore ideas and keep learning.",
       "opdrachten": "Assignments",
       "pes": "PEs",
       "evaluations": "Evaluations",
       "projects": "Projects",
+      "personalProjects": "Personal projects",
       "clockwise": "Project Clockwise",
       "wpl2Assignments": "Individual assignments",
       "downloads": "Reflection & downloads",
@@ -995,6 +998,13 @@
         "title": "Scratch",
         "image": "scratch-foto-inleinding.png",
         "alt": "photo of the Scratch project",
+        "links": [
+          {
+            "label": "Download Scratch project",
+            "href": "/downloads/Balloon_1PROE_JelleSchrijvers.sb3",
+            "download": "Balloon_1PROE_JelleSchrijvers.sb3"
+          }
+        ],
         "pageInfo": {
           "containerTitle": {
             "h1": "Scratch game",
@@ -1512,7 +1522,7 @@
         {
           "title": "Company creation and password reset",
           "description": "Flow for adding a company, subscription email, and password reset.",
-          "file": "bedrijf_toevoegen+paswordReset.mp4"
+          "file": "bedrijf_toevoegen-paswordReset.mp4"
         }
       ],
       "pageInfo": {
@@ -1848,6 +1858,61 @@
         "file": "Opdracht eindreflectie WPL2_Schrijvers_Jelle.pdf",
         "downloadName": "Opdracht eindreflectie WPL2_Schrijvers_Jelle.pdf"
       }
+    ],
+    "personalProjects": [
+      {
+        "id": "repo-neuroplan",
+        "title": "NeuroPlan",
+        "alt": "NeuroPlan personal project",
+        "badges": ["Personal project", "In development", "repo-neuroplan"],
+        "summary": "An early personal project in which I am building my own planning tool to make tasks, deadlines, and focus easier to manage.",
+        "technologies": ["Concept development", "Project structure", "GitHub", "UI planning"],
+        "links": [
+          {
+            "label": "GitHub repository",
+            "href": "https://github.com/JelleSchrijvers-PXL/repo-NeuroPlan"
+          }
+        ],
+        "pageInfo": {
+          "containerTitle": {
+            "h1": "NeuroPlan",
+            "h2": "Personal project - early stage"
+          },
+          "sections": [
+            {
+              "id": "description",
+              "h3": "Description",
+              "p": "NeuroPlan is a personal project that I have only just started. The idea is to create my own planning tool where tasks, deadlines, and priorities come together clearly in one place. Because the project is still in an early stage, the current focus is on defining the idea, thinking through the structure, and preparing the first technical foundation."
+            },
+            {
+              "id": "idea",
+              "h3": "How I got the idea",
+              "p": "I got the idea because I noticed during school assignments and projects that keeping overview can become difficult when many tasks are running at the same time. Existing planners are often very extensive or do not fully match the way I like to work. That is why I wanted to design my own tool that feels calmer and more personal, with attention to what needs to happen first and what can wait."
+            },
+            {
+              "id": "done",
+              "h3": "What I have done so far",
+              "p": "So far, I have mainly determined the direction of the project and thought about the most important parts: adding tasks, setting priorities, tracking statuses, and creating a clear overview by day or period. The repo-neuroplan repository is the starting point for developing this idea step by step."
+            },
+            {
+              "id": "next-steps",
+              "h3": "Next steps",
+              "items": [
+                "Work out the basic layout of the application.",
+                "Create a simple structure for tasks, priorities, and statuses.",
+                "Add functionality to create, edit, and delete tasks.",
+                "Later investigate whether a calendar overview or deadline system is useful."
+              ]
+            },
+            {
+              "id": "learning",
+              "h3": "What I want to learn",
+              "p": "With NeuroPlan, I want to learn how to make my own idea smaller and achievable. Instead of immediately trying to build a large application, I want to work step by step: first get the core right, then add extra features. This helps me practise planning, project structure, user experience, and independently developing a personal project."
+            }
+          ]
+        }
+      }
     ]
   }
 }
+

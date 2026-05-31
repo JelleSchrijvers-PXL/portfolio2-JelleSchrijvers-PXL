@@ -48,7 +48,15 @@ const wpl2Opdrachten = computed(() =>
 
 const wpl2Downloads = computed(() => tm('workPage.wpl2Downloads'))
 
-const activeWpl = computed(() => (route.query.wpl === 'wpl2' ? 'wpl2' : 'wpl1'))
+const personalProjects = computed(() =>
+  tm('workPage.personalProjects').map(withImage)
+)
+
+const activeWpl = computed(() => {
+  if (route.query.wpl === 'wpl2') return 'wpl2'
+  if (route.query.wpl === 'personal') return 'personal'
+  return 'wpl1'
+})
 
 const setActiveWpl = (wpl) => {
   if (activeWpl.value === wpl) {
@@ -84,6 +92,14 @@ const setActiveWpl = (wpl) => {
         @click="setActiveWpl('wpl2')"
       >
         {{ labels.wpl2 }}
+      </button>
+      <button
+        type="button"
+        class="work-tab"
+        :class="{ active: activeWpl === 'personal' }"
+        @click="setActiveWpl('personal')"
+      >
+        {{ labels.personal }}
       </button>
     </nav>
 
@@ -248,6 +264,51 @@ const setActiveWpl = (wpl) => {
         </section>
       </div>
     </section>
+
+    <section
+      v-if="activeWpl === 'personal'"
+      id="personal-projects"
+      class="work-period work-period--personal"
+    >
+      <div class="period-header">
+        <p class="period-kicker">{{ labels.personal }}</p>
+        <h2>{{ labels.personalProjects }}</h2>
+        <p>{{ labels.personalProjectsSubtitle }}</p>
+      </div>
+
+      <div class="work-grid work-grid--wpl2">
+        <section
+          v-for="item in personalProjects"
+          :key="item.id"
+          :id="item.id"
+        >
+          <router-link :to="{ name: 'project', params: { id: item.id }, query: { wpl: activeWpl } }">
+            <article class="opdracht opdracht--wpl2">
+              <img
+                v-if="item.image"
+                class="wpl2-preview-image"
+                :src="item.image"
+                :alt="item.alt"
+              />
+              <div v-else class="card-visual">
+                <span>{{ item.title }}</span>
+              </div>
+              <div class="badges">
+                <span
+                  v-for="badge in item.badges"
+                  :key="badge"
+                  class="badge"
+                >
+                  {{ badge }}
+                </span>
+              </div>
+              <h3>{{ item.title }}</h3>
+              <p>{{ item.summary }}</p>
+            </article>
+          </router-link>
+        </section>
+      </div>
+    </section>
   </div>
 </template>
 
@@ -296,7 +357,8 @@ const setActiveWpl = (wpl) => {
   scroll-margin-top: 110px;
 }
 
-.work-period--wpl2 {
+.work-period--wpl2,
+.work-period--personal {
   padding-top: 2.5rem;
   border-top: 1px solid rgba(148, 163, 184, 0.22);
 }

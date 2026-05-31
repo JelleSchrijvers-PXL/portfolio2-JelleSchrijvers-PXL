@@ -43,9 +43,20 @@ const wpl2Opdrachten = computed(() => tm('workPage.wpl2Opdrachten'))
 
 const wpl2Downloads = computed(() => tm('workPage.wpl2Downloads'))
 
+const personalProjects = computed(() => tm('workPage.personalProjects'))
+
 const groupTitle = (label, wplLabel) => `${label} ${wplLabel}`
 
 const workNavGroups = computed(() => {
+  if (props.activeWpl === 'personal') {
+    return [
+      {
+        title: workLabels.value.personalProjects,
+        items: personalProjects.value
+      }
+    ]
+  }
+
   if (props.activeWpl === 'wpl2') {
     return [
       {

@@ -967,12 +967,15 @@
   "labels": {
     "wpl1": "WPL1",
     "wpl2": "WPL2",
+    "personal": "Persoonlijk",
     "wpl1Subtitle": "Opdrachten en permanente evaluaties uit Werkplekleren 1.",
     "wpl2Subtitle": "Projectwerk, individuele opdrachten en downloads uit Werkplekleren 2.",
+    "personalProjectsSubtitle": "Eigen projecten die ik buiten de gewone WPL-opdrachten opstart om ideeën uit te werken en bij te leren.",
     "opdrachten": "Opdrachten",
     "pes": "PE's",
     "evaluations": "Evaluaties",
     "projects": "Projecten",
+    "personalProjects": "Persoonlijke projecten",
     "clockwise": "Project Clockwise",
     "wpl2Assignments": "Individuele opdrachten",
     "downloads": "Reflectie & downloads",
@@ -995,6 +998,13 @@
     "title": "Scratch",
     "image": "scratch-foto-inleinding.png",
     "alt": "foto van scratch project",
+    "links": [
+      {
+        "label": "Download Scratch-project",
+        "href": "/downloads/Balloon_1PROE_JelleSchrijvers.sb3",
+        "download": "Balloon_1PROE_JelleSchrijvers.sb3"
+      }
+    ],
     "pageInfo" : {
       "containerTitle" : {
         "h1" : "Scratch game",
@@ -1512,7 +1522,7 @@
     {
       "title": "Bedrijf toevoegen en wachtwoordreset",
       "description": "Flow voor het toevoegen van een bedrijf, abonnementsmail en wachtwoordreset.",
-      "file": "bedrijf_toevoegen+paswordReset.mp4"
+      "file": "bedrijf_toevoegen-paswordReset.mp4"
     }
   ],
   "pageInfo": {
@@ -1848,6 +1858,61 @@
     "file": "Opdracht eindreflectie WPL2_Schrijvers_Jelle.pdf",
     "downloadName": "Opdracht eindreflectie WPL2_Schrijvers_Jelle.pdf"
   }
+],
+"personalProjects": [
+  {
+    "id": "repo-neuroplan",
+    "title": "NeuroPlan",
+    "alt": "NeuroPlan persoonlijk project",
+    "badges": ["Persoonlijk project", "In ontwikkeling", "repo-neuroplan"],
+    "summary": "Een beginnend persoonlijk project waarin ik een eigen planningstool uitwerk om taken, deadlines en focus overzichtelijker te maken.",
+    "technologies": ["Conceptontwikkeling", "Projectstructuur", "GitHub", "UI-planning"],
+    "links": [
+      {
+        "label": "GitHub repository",
+        "href": "https://github.com/JelleSchrijvers-PXL/repo-NeuroPlan"
+      }
+    ],
+    "pageInfo": {
+      "containerTitle": {
+        "h1": "NeuroPlan",
+        "h2": "Persoonlijk project - beginfase"
+      },
+      "sections": [
+        {
+          "id": "beschrijving",
+          "h3": "Beschrijving",
+          "p": "NeuroPlan is een persoonlijk project waar ik nog maar net mee begonnen ben. Het idee is om een eigen planningstool te maken waarmee taken, deadlines en prioriteiten duidelijker op één plaats komen. Omdat het project nog in de beginfase zit, ligt de focus nu vooral op het afbakenen van het idee, het nadenken over de structuur en het voorbereiden van een eerste technische basis."
+        },
+        {
+          "id": "idee",
+          "h3": "Hoe ik op het idee kwam",
+          "p": "Ik kwam op het idee omdat ik tijdens schoolopdrachten en projecten merkte dat overzicht houden soms moeilijk wordt wanneer er veel taken tegelijk lopen. Bestaande planners zijn vaak heel uitgebreid of passen niet volledig bij hoe ik zelf wil werken. Daarom wilde ik een eigen tool bedenken die rustiger en persoonlijker aanvoelt, met aandacht voor wat eerst moet gebeuren en wat later kan."
+        },
+        {
+          "id": "gedaan",
+          "h3": "Wat ik al heb gedaan",
+          "p": "Tot nu toe heb ik vooral de richting van het project bepaald en nagedacht over de belangrijkste onderdelen: taken toevoegen, prioriteiten bepalen, statussen bijhouden en een duidelijk overzicht maken per dag of periode. De repository repo-neuroplan dient als startpunt om dit idee stap voor stap verder uit te werken."
+        },
+        {
+          "id": "volgende-stappen",
+          "h3": "Volgende stappen",
+          "items": [
+            "De basislayout van de applicatie uitwerken.",
+            "Een eenvoudige structuur maken voor taken, prioriteiten en statussen.",
+            "Functionaliteit toevoegen om taken aan te maken, aan te passen en te verwijderen.",
+            "Later onderzoeken of een kalenderoverzicht of deadlinesysteem nuttig is."
+          ]
+        },
+        {
+          "id": "bijgeleerd",
+          "h3": "Wat ik hieruit wil leren",
+          "p": "Met NeuroPlan wil ik leren om een eigen idee kleiner en haalbaar te maken. In plaats van meteen een grote applicatie te willen bouwen, wil ik stap voor stap werken: eerst de kern goed krijgen, daarna pas extra functies toevoegen. Zo oefen ik met plannen, projectstructuur, gebruikerservaring en het zelfstandig uitwerken van een persoonlijk project."
+        }
+      ]
+    }
+  }
 ]
 }
 }
+

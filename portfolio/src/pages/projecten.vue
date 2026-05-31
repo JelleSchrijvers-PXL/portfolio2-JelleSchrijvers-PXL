@@ -11,8 +11,25 @@ const { tm } = useI18n()
 const img = (bestand) =>
   bestand ? new URL(`../assets/foto/${bestand}`, import.meta.url).href : null
 
+const publicAsset = (folder, bestand) => {
+  if (!bestand) return null
+
+  const base = import.meta.env.BASE_URL || '/'
+  const encodedFile = bestand.split('/').map(encodeURIComponent).join('/')
+  return `${base.replace(/\/$/, '')}/${folder}/${encodedFile}`
+}
+
 const video = (bestand) =>
-  bestand ? new URL(`../assets/videos/${bestand}`, import.meta.url).href : null
+  publicAsset('videos', bestand)
+
+const isExternal = (href = '') => /^https?:\/\//.test(href)
+
+const projectHref = (href = '') => {
+  if (/^(https?:|mailto:|tel:)/.test(href)) return href
+
+  const base = import.meta.env.BASE_URL || '/'
+  return `${base.replace(/\/$/, '')}/${href.replace(/^\//, '')}`
+}
 
 const videos = (items) =>
   Array.isArray(items)
@@ -38,7 +55,8 @@ const project = computed(() => {
     ...tm('workPage.opdrachten').map((item) => ({ ...item, wpl: 'wpl1' })),
     ...tm('workPage.pes').map((item) => ({ ...item, wpl: 'wpl1' })),
     { ...tm('workPage.wpl2Project'), wpl: 'wpl2' },
-    ...tm('workPage.wpl2Opdrachten').map((item) => ({ ...item, wpl: 'wpl2' }))
+    ...tm('workPage.wpl2Opdrachten').map((item) => ({ ...item, wpl: 'wpl2' })),
+    ...tm('workPage.personalProjects').map((item) => ({ ...item, wpl: 'personal' }))
   ]
   const found = all.find(item => item.id === id)
   if (!found) return null
@@ -54,7 +72,11 @@ const project = computed(() => {
 const backToWork = computed(() => ({
   name: 'work',
   query: {
-    wpl: project.value?.wpl || (route.query.wpl === 'wpl2' ? 'wpl2' : 'wpl1')
+    wpl:
+      project.value?.wpl ||
+      (route.query.wpl === 'wpl2' || route.query.wpl === 'personal'
+        ? route.query.wpl
+        : 'wpl1')
   }
 }))
 
@@ -98,9 +120,10 @@ const itemKey = (item) =>
           <a
             v-for="link in project.links"
             :key="link.href"
-            :href="link.href"
-            target="_blank"
-            rel="noreferrer"
+            :href="projectHref(link.href)"
+            :target="isExternal(link.href) ? '_blank' : undefined"
+            :rel="isExternal(link.href) ? 'noreferrer' : undefined"
+            :download="link.download"
           >
             {{ link.label }}
           </a>
@@ -630,3 +653,4 @@ const itemKey = (item) =>
   }
 }
 </style>
+

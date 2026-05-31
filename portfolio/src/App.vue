@@ -8,7 +8,11 @@ import Sidenav from './components/sidenav.vue';
 const route = useRoute();
 
 const hasSideNav = computed(() => route.name === 'info' || route.name === 'work');
-const activeWpl = computed(() => (route.query.wpl === 'wpl2' ? 'wpl2' : 'wpl1'));
+const activeWpl = computed(() => {
+  if (route.query.wpl === 'wpl2') return 'wpl2';
+  if (route.query.wpl === 'personal') return 'personal';
+  return 'wpl1';
+});
 
 watch(
   () => route.fullPath,
