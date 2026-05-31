@@ -129,11 +129,13 @@ const weeks = computed(() => {
             :key="`${activeSemester}-${week.week}`"
             :class="{ 'row--empty': isEmptyWeek(week) }"
           >
-            <td class="col-week">
+            <td class="col-week" :data-label="$t('infoPage.logboek.col.week')">
               <span class="week-number">{{ week.week }}</span>
             </td>
-            <td class="col-periode">{{ formatPeriode(week.periode) }}</td>
-            <td class="col-list">
+            <td class="col-periode" :data-label="$t('infoPage.logboek.col.periode')">
+              {{ formatPeriode(week.periode) }}
+            </td>
+            <td class="col-list" :data-label="$t('infoPage.logboek.col.inhoud')">
               <ul v-if="toArray(week.inhoud).length">
                 <li
                   v-for="(item, i) in toArray(week.inhoud)"
@@ -143,7 +145,7 @@ const weeks = computed(() => {
                 </li>
               </ul>
             </td>
-            <td class="col-list">
+            <td class="col-list" :data-label="$t('infoPage.logboek.col.evaluaties')">
               <ul v-if="toArray(week.evaluaties).length">
                 <li
                   v-for="(item, i) in toArray(week.evaluaties)"
@@ -153,7 +155,7 @@ const weeks = computed(() => {
                 </li>
               </ul>
             </td>
-            <td class="col-list">
+            <td class="col-list" :data-label="$t('infoPage.logboek.col.opdrachten')">
               <ul v-if="toArray(week.opdrachten).length">
                 <li
                   v-for="(item, i) in toArray(week.opdrachten)"

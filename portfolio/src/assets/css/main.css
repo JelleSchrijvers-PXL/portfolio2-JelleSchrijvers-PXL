@@ -1,17 +1,571 @@
 @import '../css/base.css';
 
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 html,
 body,
 #app {
-  height: 100%;
+  min-height: 100%;
 }
 
 #app {
   width: 100%;
+}
+
+.layout {
+  display: flex;
+  min-height: 100vh;
+  padding-top: var(--header-height);
+}
+
+.main-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  padding: 0 var(--page-gutter) 2.5rem;
+}
+
+.layout--with-sidenav .main-wrapper {
+  margin-left: var(--sidenav-width);
+}
+
+header {
+  position: fixed;
+  inset: 0 0 auto;
+  z-index: 1000;
+  min-height: var(--header-height);
+  border-bottom: 1px solid var(--color-border);
+  background: rgba(10, 15, 23, 0.84);
+  backdrop-filter: blur(18px);
+}
+
+.container-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  min-height: var(--header-height);
+  padding: 0.75rem var(--page-gutter);
+}
+
+.container-right,
+.basis-info,
+.container-social,
+.language-switch {
+  display: flex;
+  align-items: center;
+}
+
+.container-right {
+  gap: 1rem;
+}
+
+.basis-info {
+  gap: 0.85rem;
+}
+
+.container-profile-picture img {
+  width: 3.6rem;
+  height: 3.6rem;
+  border: 2px solid rgba(56, 189, 248, 0.35);
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 0 6px rgba(56, 189, 248, 0.06);
+}
+
+.container-name h1 {
+  margin: 0;
+  color: var(--color-heading);
+  font-size: 1.15rem;
+  font-weight: 750;
+  line-height: 1.1;
+}
+
+.container-functie {
+  margin-top: 0.2rem;
+  color: var(--color-text-muted);
+  font-size: 0.85rem;
+}
+
+.container-center nav ul {
+  display: flex;
+  gap: 0.25rem;
+  margin: 0;
+  padding: 0.4rem;
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.05);
+  list-style: none;
+}
+
+.container-center nav a {
+  display: block;
+  padding: 0.45rem 1.1rem;
+  border-radius: 999px;
+  color: var(--color-text);
+  font-size: 0.9rem;
+  font-weight: 650;
+  text-decoration: none;
+  transition:
+    background 0.2s ease,
+    color 0.2s ease;
+}
+
+.container-center nav a:hover,
+.container-center nav .router-link-active {
+  background: var(--color-accent-soft);
+  color: #ffffff;
+}
+
+.container-social {
+  gap: 0.8rem;
+}
+
+.container-social a {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: var(--color-text);
+  font-size: 0.85rem;
+  font-weight: 650;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.container-social a:hover,
+.container-social .router-link-active {
+  color: var(--color-accent);
+}
+
+.container-social img {
+  width: 1rem;
+  height: 1rem;
+}
+
+.language-switch {
+  gap: 0.25rem;
+  padding: 0.25rem;
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.language-switch button {
+  padding: 0.35rem 0.55rem;
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  color: var(--color-text-muted);
+  cursor: pointer;
+  font-size: 0.78rem;
+  font-weight: 750;
+}
+
+.language-switch button.active,
+.language-switch button:hover {
+  background: rgba(56, 189, 248, 0.16);
+  color: #ffffff;
+}
+
+.container-nav-content {
+  position: fixed;
+  top: calc(var(--header-height) + 1rem);
+  bottom: 1.5rem;
+  left: 0;
+  width: var(--sidenav-width);
+  padding: 0 1.25rem 1rem 2rem;
+  overflow-y: auto;
+  border-right: 1px solid var(--color-border);
+}
+
+.container-nav-content ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.header-lijst-sections {
+  color: var(--color-text-muted);
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.header-lijst-sections:not(:first-child) {
+  margin-top: 1rem;
+}
+
+.container-nav-content a {
+  position: relative;
+  display: block;
+  padding: 0.25rem 0;
+  color: var(--color-text-muted);
+  cursor: pointer;
+  font-size: 0.9rem;
+  line-height: 1.35;
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+
+.container-nav-content a:hover {
+  color: var(--color-heading);
+  transform: translateX(4px);
+}
+
+.container-nav-content a.active {
+  color: var(--color-heading);
+  font-weight: 750;
+}
+
+.container-nav-content a.active::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: -10px;
+  width: 3px;
+  height: 70%;
+  border-radius: 999px;
+  background: var(--color-accent);
+  transform: translateY(-50%);
+}
+
+footer {
+  margin-top: auto;
+  padding: 2rem 0 0;
+  border-top: 1px solid var(--color-border);
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+}
+
+.scroll-to-top {
+  position: fixed;
+  right: 2rem;
+  bottom: 2rem;
+  z-index: 1000;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.9rem;
+  height: 2.9rem;
+  border: 1px solid var(--color-border);
+  border-radius: 50%;
+  background-color: rgba(17, 24, 39, 0.92);
+  color: var(--color-accent);
+  box-shadow: var(--shadow-soft);
+  font-size: 1.25rem;
+  text-align: center;
+  text-decoration: none;
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease,
+    color 0.2s ease;
+}
+
+.scroll-to-top:hover {
+  background-color: var(--color-accent);
+  color: #08111d;
+  transform: translateY(-3px);
+}
+
+#app .container-over-mij,
+#app .container-work,
+#app .logboek,
+#app .project-page,
+#app .cv-page,
+#app .cv-pdf-mode,
+#app .container-ontwikkeling,
+#app .container-reflectie,
+#app .volgende-WPL,
+#app .x-factor,
+#app #competenties,
+#app #activiteiten {
+  width: min(100%, var(--content-max-width));
+}
+
+#app .work-tabs {
+  max-width: 100%;
+  overflow-x: auto;
+  scrollbar-width: thin;
+}
+
+#app .project-header h1 {
+  font-size: clamp(2.15rem, 7vw, 3.2rem);
+}
+
+#app .over-mij h2 {
+  font-size: clamp(2.35rem, 8vw, 3.4rem);
+}
+
+#app .period-header h2,
+#app .cv-section h2,
+#app .logboek__title {
+  font-size: clamp(1.5rem, 5vw, 2rem);
+}
+
+@media (max-width: 980px) {
+  .layout {
+    padding-top: var(--header-height);
+  }
+
+  .main-wrapper,
+  .layout--with-sidenav .main-wrapper {
+    margin-left: 0;
+  }
+
+  .layout > aside {
+    display: none;
+  }
+}
+
+@media (max-width: 860px) {
+  header {
+    position: sticky;
+  }
+
+  .layout {
+    padding-top: 0;
+  }
+
+  .container-nav {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.85rem;
+    padding-block: 0.9rem;
+  }
+
+  .container-right,
+  .container-center,
+  .container-center nav,
+  .container-center nav ul {
+    width: 100%;
+  }
+
+  .container-center nav ul {
+    justify-content: center;
+  }
+
+  .container-right {
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 760px) {
+  #app .logboek__table-wrap {
+    overflow: visible;
+    border: 0;
+    background: transparent;
+    box-shadow: none;
+  }
+
+  #app .logboek__table,
+  #app .logboek__table thead,
+  #app .logboek__table tbody,
+  #app .logboek__table tr,
+  #app .logboek__table td {
+    display: block;
+    width: 100%;
+    min-width: 0;
+  }
+
+  #app .logboek__table {
+    border-collapse: separate;
+    font-size: 0.9rem;
+  }
+
+  #app .logboek__table thead {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    white-space: nowrap;
+  }
+
+  #app .logboek__table tbody {
+    display: grid;
+    gap: 0.85rem;
+  }
+
+  #app .logboek__table tbody tr {
+    display: grid;
+    gap: 0.65rem;
+    padding: 1rem;
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    background: rgba(17, 24, 39, 0.72);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
+  }
+
+  #app .logboek__table tbody tr:hover {
+    background: rgba(17, 24, 39, 0.82);
+  }
+
+  #app .logboek__table tbody tr.row--empty {
+    opacity: 0.55;
+  }
+
+  #app .logboek__table td {
+    display: grid;
+    grid-template-columns: minmax(6.5rem, 0.42fr) minmax(0, 1fr);
+    gap: 0.75rem;
+    align-items: start;
+    padding: 0;
+    color: var(--color-text);
+  }
+
+  #app .logboek__table td::before {
+    content: attr(data-label);
+    color: var(--color-accent);
+    font-size: 0.72rem;
+    font-weight: 850;
+    letter-spacing: 0.06em;
+    line-height: 1.3;
+    text-transform: uppercase;
+  }
+
+  #app .col-week {
+    width: 100%;
+    text-align: left;
+  }
+
+  #app .col-periode {
+    width: 100%;
+    white-space: normal;
+  }
+
+  #app .week-number {
+    width: 35px;
+    height: 35px;
+    font-size: 0.8rem;
+  }
+
+  #app .col-list:empty::after,
+  #app .col-list:not(:has(ul))::after {
+    content: '-';
+    color: var(--color-text-muted);
+  }
+
+  #app .download-link {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 640px) {
+  .main-wrapper {
+    padding-bottom: 2rem;
+  }
+
+  .container-nav {
+    gap: 0.75rem;
+  }
+
+  .basis-info {
+    width: 100%;
+  }
+
+  .container-profile-picture img {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .container-name h1 {
+    font-size: 1rem;
+  }
+
+  .container-functie {
+    font-size: 0.78rem;
+  }
+
+  .container-center nav ul {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    border-radius: 8px;
+  }
+
+  .container-center nav a {
+    padding: 0.55rem 0.75rem;
+    text-align: center;
+  }
+
+  .container-right,
+  .container-social {
+    flex-wrap: wrap;
+    gap: 0.65rem;
+  }
+
+  .container-social a,
+  .language-switch button {
+    min-height: 2.35rem;
+  }
+
+  .scroll-to-top {
+    display: none;
+  }
+
+  #app .container-over-mij,
+  #app .container-work,
+  #app .logboek,
+  #app .project-page,
+  #app .cv-page {
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+  }
+
+  #app .over-mij,
+  #app .cv-card,
+  #app .language-card,
+  #app .video-card,
+  #app .evidence-card,
+  #app .activiteit,
+  #app .x-factor-item {
+    padding: 1rem;
+  }
+
+  #app .work-tabs {
+    display: flex;
+    width: 100%;
+  }
+
+  #app .work-tab {
+    flex: 1 0 max-content;
+  }
+
+  #app .work-grid,
+  #app .download-grid,
+  #app .cards-grid,
+  #app .video-grid,
+  #app .section-card-grid,
+  #app .role-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  #app .section-card {
+    grid-template-columns: 1fr;
+  }
+
+  #app .opdracht:hover,
+  #app .download-card:hover,
+  #app .featured-card:hover,
+  .scroll-to-top:hover {
+    transform: none;
+  }
+}
+
+@media (max-width: 420px) {
+  .container-right {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .language-switch {
+    align-self: flex-start;
+  }
+
+  #app .meta-row {
+    flex-direction: column;
+  }
 }
