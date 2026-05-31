@@ -1864,13 +1864,37 @@
     "id": "repo-neuroplan",
     "title": "NeuroPlan",
     "alt": "NeuroPlan persoonlijk project",
-    "badges": ["Persoonlijk project", "In ontwikkeling", "repo-neuroplan"],
+    "badges": ["Persoonlijk project", "In ontwikkeling"],
     "summary": "Een beginnend persoonlijk project waarin ik een eigen planningstool uitwerk om taken, deadlines en focus overzichtelijker te maken.",
-    "technologies": ["Conceptontwikkeling", "Projectstructuur", "GitHub", "UI-planning"],
+    "technologies": ["Python", "API-integraties", "GitHub", "UI-planning"],
     "links": [
       {
         "label": "GitHub repository",
         "href": "https://github.com/JelleSchrijvers-PXL/repo-NeuroPlan"
+      },
+      {
+        "label": "SoloLearn Python",
+        "href": "https://www.sololearn.com/en/learn/courses/python-introduction"
+      },
+      {
+        "label": "Gemini API documentatie",
+        "href": "https://ai.google.dev/gemini-api/docs"
+      },
+      {
+        "label": "OpenAI API documentatie",
+        "href": "https://platform.openai.com/docs"
+      },
+      {
+        "label": "Ollama YouTube uitleg",
+        "href": "https://www.youtube.com/results?search_query=ollama+python+api+tutorial"
+      },
+      {
+        "label": "Gmail API documentatie",
+        "href": "https://developers.google.com/workspace/gmail/api/reference/rest"
+      },
+      {
+        "label": "Google Calendar API documentatie",
+        "href": "https://developers.google.com/workspace/calendar/api/v3/reference"
       }
     ],
     "pageInfo": {
@@ -1892,7 +1916,26 @@
         {
           "id": "gedaan",
           "h3": "Wat ik al heb gedaan",
-          "p": "Tot nu toe heb ik vooral de richting van het project bepaald en nagedacht over de belangrijkste onderdelen: taken toevoegen, prioriteiten bepalen, statussen bijhouden en een duidelijk overzicht maken per dag of periode. De repository repo-neuroplan dient als startpunt om dit idee stap voor stap verder uit te werken."
+          "p": "Tot nu toe heb ik vooral de richting van het project bepaald en nagedacht over de belangrijkste onderdelen: taken toevoegen, prioriteiten bepalen, statussen bijhouden en een duidelijk overzicht maken per dag of periode. De GitHub-repository dient als startpunt om dit idee stap voor stap verder uit te werken."
+        },
+        {
+          "id": "programmeertaal-en-bronnen",
+          "h3": "Programmeertaal en leerbronnen",
+          "p": "Voor NeuroPlan gebruik ik Python. De basis van Python heb ik geleerd via SoloLearn. Daarna ben ik mij verder gaan verdiepen in API-werking: voor Gemini gebruikte ik de documentatie van Gemini zelf, voor OpenAI de officiële OpenAI-documentatie, voor Ollama vooral YouTube-uitleg en voor Gmail en Google Calendar de documentatiepagina's van Google zelf.",
+          "items": [
+            {
+              "label": "Python:",
+              "text": "gekozen als programmeertaal omdat het duidelijk leesbaar is en geschikt is om snel API's en automatisaties uit te proberen."
+            },
+            {
+              "label": "AI API's:",
+              "text": "Gemini, OpenAI en Ollama gebruik ik om te leren hoe externe en lokale AI-modellen vanuit code kunnen worden aangestuurd."
+            },
+            {
+              "label": "Google API's:",
+              "text": "Gmail en Google Calendar onderzoek ik om later mails, agenda-items of planninginformatie met NeuroPlan te kunnen verbinden."
+            }
+          ]
         },
         {
           "id": "volgende-stappen",

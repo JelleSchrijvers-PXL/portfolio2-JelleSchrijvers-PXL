@@ -1864,13 +1864,37 @@
         "id": "repo-neuroplan",
         "title": "NeuroPlan",
         "alt": "NeuroPlan personal project",
-        "badges": ["Personal project", "In development", "repo-neuroplan"],
+        "badges": ["Personal project", "In development"],
         "summary": "An early personal project in which I am building my own planning tool to make tasks, deadlines, and focus easier to manage.",
-        "technologies": ["Concept development", "Project structure", "GitHub", "UI planning"],
+        "technologies": ["Python", "API integrations", "GitHub", "UI planning"],
         "links": [
           {
             "label": "GitHub repository",
             "href": "https://github.com/JelleSchrijvers-PXL/repo-NeuroPlan"
+          },
+          {
+            "label": "SoloLearn Python",
+            "href": "https://www.sololearn.com/en/learn/courses/python-introduction"
+          },
+          {
+            "label": "Gemini API documentation",
+            "href": "https://ai.google.dev/gemini-api/docs"
+          },
+          {
+            "label": "OpenAI API documentation",
+            "href": "https://platform.openai.com/docs"
+          },
+          {
+            "label": "Ollama YouTube tutorials",
+            "href": "https://www.youtube.com/results?search_query=ollama+python+api+tutorial"
+          },
+          {
+            "label": "Gmail API documentation",
+            "href": "https://developers.google.com/workspace/gmail/api/reference/rest"
+          },
+          {
+            "label": "Google Calendar API documentation",
+            "href": "https://developers.google.com/workspace/calendar/api/v3/reference"
           }
         ],
         "pageInfo": {
@@ -1892,7 +1916,26 @@
             {
               "id": "done",
               "h3": "What I have done so far",
-              "p": "So far, I have mainly determined the direction of the project and thought about the most important parts: adding tasks, setting priorities, tracking statuses, and creating a clear overview by day or period. The repo-neuroplan repository is the starting point for developing this idea step by step."
+              "p": "So far, I have mainly determined the direction of the project and thought about the most important parts: adding tasks, setting priorities, tracking statuses, and creating a clear overview by day or period. The GitHub repository is the starting point for developing this idea step by step."
+            },
+            {
+              "id": "language-and-sources",
+              "h3": "Programming language and learning sources",
+              "p": "For NeuroPlan, I use Python. I learned the basics of Python through SoloLearn. After that, I explored how APIs work: for Gemini I used Gemini's own documentation, for OpenAI the official OpenAI documentation, for Ollama mainly YouTube explanations, and for Gmail and Google Calendar Google's own documentation pages.",
+              "items": [
+                {
+                  "label": "Python:",
+                  "text": "chosen as the programming language because it is readable and useful for quickly trying APIs and automation."
+                },
+                {
+                  "label": "AI APIs:",
+                  "text": "I use Gemini, OpenAI, and Ollama to learn how external and local AI models can be controlled from code."
+                },
+                {
+                  "label": "Google APIs:",
+                  "text": "I am exploring Gmail and Google Calendar so NeuroPlan can later connect with emails, calendar events, or planning information."
+                }
+              ]
             },
             {
               "id": "next-steps",
